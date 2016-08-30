@@ -1,0 +1,42 @@
+<resources>
+
+     <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+
+     <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+	<dimen name="chat_nick_margin_left">17dp</dimen>
+
+
+
+    <dimen name="chat_nick_text_size">13sp</dimen>
+
+
+
+    <dimen name = "size_title">20sp</dimen>
+    <dimen name = "size_pop_text">15sp</dimen>
+    <dimen name = "size_pop_padding">8dp</dimen>
+    <dimen name="size_xiaoxi_name">18sp</dimen>
+    <dimen name="size_set">18sp</dimen>
+
+    <dimen name="xiaotubiao_size">18dp</dimen>
+
+   <!--分割线的长度和高度-->
+    <dimen name="size_left_padding">11dp</dimen>
+    <dimen name="size_right_padding">11dp</dimen>
+    <dimen name="item_divider">1px</dimen>
+
+    <!--登陆的相关-->
+    <dimen name="login_edit_width">200dp</dimen>
+    <dimen name="login_edit_size">14sp</dimen>
+    <dimen name="login_img_size">25dp</dimen>
+</resources>

@@ -1,0 +1,1330 @@
+[
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mytextsuperwebview.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mytextsuperwebview.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_expression_gridview.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_expression_gridview.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_contact_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_contact_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_simle_details.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_simle_details.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_group.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\fragment_group.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_conversation_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_conversation_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_new_friends_msg.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_new_friends_msg.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_voice_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_voice_call.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_main_botton_tab.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_main_botton_tab.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_voice_recorder.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_text.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_text.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\popup_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\popup_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_switch_button.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_switch_button.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_chat_neterror_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_chat_neterror_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_recorder_activity.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_recorder_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_show_file.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_show_file.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_voice.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_voice.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_platform_selector_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_platform_selector_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qr_scan.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\activity_qr_scan.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_file.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_file.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_video_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_details.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_details.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_alert_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_baidumap.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_baidumap.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_show_file.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_show_file.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\popup_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\popup_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_bind_select_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_bind_select_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_shareboard_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_shareboard_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qr_scan.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\activity_qr_scan.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_video.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_video.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_commom_back_btn.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_commom_back_btn.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_add_contact.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_add_contact.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_main_init_view.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_main_init_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_layout_chat_primary_menu.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_layout_chat_primary_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_offline_push.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_offline_push.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_voice_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_voice_call.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_video_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_logout_actionsheet.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_logout_actionsheet.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_curtain.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_curtain.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_image_grid_fragment.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_image_grid_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_text.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_text.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_at_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_at_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_group_notice.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_group_notice.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_robots.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_row_robots.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\pop_right_menu_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\pop_right_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_sign.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_sign.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog_button.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_base_alert_dialog_button.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_chat_history.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_chat_history.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_image.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_image.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_message.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_message.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_capture.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_capture.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgfileadapter.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgfileadapter.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_contact.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_contact.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_choose_griditem.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_choose_griditem.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_show_big_image.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_show_big_image.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_sign.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_sign.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_widget_contact_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_widget_contact_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_search_bar_with_padding.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_search_bar_with_padding.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_emojicon_tab_bar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_emojicon_tab_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_post_share.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_post_share.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_layout_emojicon_menu.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_layout_emojicon_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_picture.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_picture.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dao_you_main.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\activity_dao_you_main.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_simle_details.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_simle_details.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_conversation_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_conversation_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_bigexpression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_bigexpression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_layout_loading_data.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_layout_loading_data.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_location.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_location.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog_button.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_base_alert_dialog_button.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_chat_input_menu.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_chat_input_menu.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_forget.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_forget.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_alert_dialog_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_at_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_at_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_public_groups_search.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_public_groups_search.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_photogrally.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_photogrally.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgfileadapter.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgfileadapter.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_chat.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_chat.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_chat.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_chat.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_diagnose.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_diagnose.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_new_friends_msg.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_new_friends_msg.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_creat_qrcode.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_creat_qrcode.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_blacklist.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_blacklist.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_expression.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_expression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_main_menu.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_main_menu.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_group_notice.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_group_notice.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_simple_spinner_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_simple_spinner_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_webkit.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_webkit.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_shareboard_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_shareboard_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_main_init_view.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_main_init_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_login.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_login.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_image_grid_fragment.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_image_grid_fragment.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_chat_primary_menu.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_chat_primary_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_webkit.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_webkit.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_video_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_video_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_video.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_video.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_grid.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_grid.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_logout_actionsheet.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_logout_actionsheet.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_picture.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_picture.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgsitem.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgsitem.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_show_big_image.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_show_big_image.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_failed_load_page.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_failed_load_page.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_location.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_location.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mytextsuperwebview.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mytextsuperwebview.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_groups.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_groups.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_register.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_register.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_scroll_tab_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_scroll_tab_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_location.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_location.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_show_file.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_show_file.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_contact.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_contact.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_location.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_location.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_conversation_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_conversation_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_switch_button.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_switch_button.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_chatroom.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_chatroom.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_alert_dialog_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\tb_munion_adview.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\tb_munion_adview.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_video.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_video.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_update_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mlx_video.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\activity_mlx_video.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_grid.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_grid.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_commom_back_btn.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_commom_back_btn.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_robots.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_row_robots.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_at_list_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_at_list_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_contact_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_contact_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_new_group.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_new_group.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_add_group.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_row_add_group.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\pop_right_menu_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\pop_right_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_add_group.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_row_add_group.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_capture.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_capture.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_post_share.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_post_share.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_bind_select_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_bind_select_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_contact_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_contact_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_platform_item_simple.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_platform_item_simple.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_login.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_login.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_simple_spinner_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_simple_spinner_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_add_contact.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_add_contact.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_contacts_header.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_contacts_header.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_chat_neterror_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_chat_neterror_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_show_file.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_show_file.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_video_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_public_groups.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_public_groups.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_search_bar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_search_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_showvideo_activity.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_showvideo_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_photogrally.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_photogrally.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_chat_primary_menu.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_chat_primary_menu.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_location.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_location.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_at_list_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_at_list_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_emojicon.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_emojicon.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_big_expression.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_big_expression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_public_groups.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_public_groups.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_contact_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_contact_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_search_bar_with_padding.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_search_bar_with_padding.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_pick_contacts.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_pick_contacts.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_emojicon.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_emojicon.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_black_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_black_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_robots.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_robots.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_groups.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_groups.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_title_bar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_title_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_video.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_video.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_group.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_row_group.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_chat_input_menu.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_chat_input_menu.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_login.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_login.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgsitem.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgsitem.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_failed_load_page.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_failed_load_page.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_big_expression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_big_expression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_picture.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_picture.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_pick_contact_no_checkbox.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_pick_contact_no_checkbox.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_chat.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_chat.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\tb_munion_aditem.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\tb_munion_aditem.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_group.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\fragment_group.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_main.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_main.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wxpay_entry.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\activity_wxpay_entry.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_offline_push.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_offline_push.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_message.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_message.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_image.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_image.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_chatroom.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_chatroom.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_base_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_contact_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_contact_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_splash.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_splash.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_update_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_pick_contacts.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_pick_contacts.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgfilelist.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgfilelist.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_chat_menu_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_chat_menu_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_picture.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_picture.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_emojicon_tab_bar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_emojicon_tab_bar.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_diagnose.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_diagnose.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_platform_item_simple.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_platform_item_simple.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dao_you_main.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\activity_dao_you_main.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_emojicon.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_emojicon.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_alert_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_scroll_tab_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_scroll_tab_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_conversation_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_conversation_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_black_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_black_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_search_bar_with_padding.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_search_bar_with_padding.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_contact_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_contact_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_voice.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_voice.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_conversation_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_conversation_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_layout_emojicon_menu.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_layout_emojicon_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_contact_with_checkbox.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_row_contact_with_checkbox.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_chat_message_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_chat_message_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_file.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_file.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_invite_msg.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_row_invite_msg.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_showvideo_activity.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_showvideo_activity.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_splash.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_splash.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_chat_history_4.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_chat_history_4.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_activity_baidumap.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_activity_baidumap.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_voice_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_voice_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_voice_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_voice_call.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_voice_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_voice_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_voice_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_voice_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_pick_contact_no_checkbox.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_pick_contact_no_checkbox.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_bigexpression.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_bigexpression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_edit.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_edit.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_contact_with_checkbox.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_row_contact_with_checkbox.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_conversation_settings.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_conversation_settings.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\tb_munion_adview.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\tb_munion_adview.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_listview_footer_view.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_listview_footer_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_chat_history.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_chat_history.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_widget_contact_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_widget_contact_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_details.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_details.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_expression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_expression.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_base_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_layout_chat_primary_menu.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_layout_chat_primary_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_emojicon.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_emojicon.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_titile_bar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_titile_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_alert_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_location.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_location.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_recorder_activity.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_recorder_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\tb_munion_aditem.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\tb_munion_aditem.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_creat_qrcode.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_creat_qrcode.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_main_botton_tab.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_main_botton_tab.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_main_menu.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_main_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\popup_view.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\popup_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_activity_mlx_forget.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_activity_mlx_forget.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_chat_menu_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_chat_menu_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_message.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_message.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_login.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_login.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_video.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_video.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_voice_recorder.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_expression_gridview.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_expression_gridview.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_title_bar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_widget_title_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_chat_history_4.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_chat_history_4.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_contacts_header.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_contacts_header.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_user_profile.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_user_profile.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_curtain.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_curtain.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_voice.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_voice.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_conversation_settings.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_conversation_settings.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_voice.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_voice.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_file.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_file.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_choosevideoactivity.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_choosevideoactivity.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_public_groups_search.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_public_groups_search.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mlx_video.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\activity_mlx_video.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_invite_msg.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_row_invite_msg.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_bigexpression.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_bigexpression.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\popup_view.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\popup_view.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_edit.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_edit.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_new_group.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_new_group.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_row_group.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_row_group.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wxpay_entry.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\activity_wxpay_entry.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_voice.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_voice.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_oauth_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_oauth_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_chat_message_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_chat_message_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_register.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_register.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_file.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_file.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_listview_footer_view.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_listview_footer_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_fragment_robots.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_fragment_robots.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_group_blacklist.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_group_blacklist.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_video.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_received_video.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_bak_platform_selector_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_bak_platform_selector_dialog.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_message.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_message.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_search_bar_with_padding.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_search_bar_with_padding.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_user_profile.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_activity_user_profile.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_layout_loading_data.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_layout_loading_data.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_search_bar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_search_bar.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_oauth_dialog.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_oauth_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_conversation_item.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_conversation_item.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_bigexpression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_bigexpression.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_choosevideoactivity.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_choosevideoactivity.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_full_alert_dialog.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_full_alert_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\mlx_imgfilelist.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\mlx_imgfilelist.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_video_call.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_row_sent_video_call.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_context_menu_for_voice.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_context_menu_for_voice.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_choose_griditem.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_choose_griditem.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\em_activity_main.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\em_activity_main.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_titile_bar.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_titile_bar.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\layout\\ease_fragment_chat.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\layout\\ease_fragment_chat.xml"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_message.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\menu\\em_delete_message.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_remove_from_blacklist.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\menu\\em_remove_from_blacklist.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_contact_list.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\menu\\em_context_contact_list.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_contact.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\menu\\em_delete_contact.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_contact.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\menu\\em_delete_contact.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_remove_from_blacklist.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\menu\\em_remove_from_blacklist.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_tab_contact.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\menu\\em_context_tab_contact.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_tab_contact.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\menu\\em_context_tab_contact.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_delete_message.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\menu\\em_delete_message.xml"
+    },
+    {
+        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\menu\\em_context_contact_list.xml",
+        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\menu\\em_context_contact_list.xml"
+    }
+]

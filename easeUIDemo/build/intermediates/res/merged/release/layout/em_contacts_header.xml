@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.mlxing.chatui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mlxing.chatui.widget.ContactItemView
+        android:id="@+id/application_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/mlx_header_new_friend"
+        app:contactItemName="@string/Application_and_notify" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_divider"
+        android:background="@color/divider_list"
+        android:layout_marginRight="@dimen/size_right_padding"
+        android:layout_marginLeft="@dimen/size_left_padding"/>
+
+    <com.mlxing.chatui.widget.ContactItemView
+        android:id="@+id/group_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/mlx_header_group"
+        app:contactItemName="@string/group_chat" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_divider"
+        android:background="@color/divider_list"
+        android:layout_marginRight="@dimen/size_right_padding"
+        android:layout_marginLeft="@dimen/size_left_padding"/>
+    <com.mlxing.chatui.widget.ContactItemView
+        android:id="@+id/black_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/mlx_header_bloack"
+        app:contactItemName="@string/black_item" />
+
+    <!--<com.mlxing.chatui.widget.ContactItemView
+        android:id="@+id/chat_room_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/chat_room" />-->
+
+   <!-- <ContactItemView
+        android:id="@+id/robot_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/robot_chat" />-->
+
+</LinearLayout>

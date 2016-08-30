@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/glide-3.6.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0a766d011214e5d73480b90d2b5bcad5df0b9660">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/glide-3.6.1_e18ff6540a4ec15c122137dc4f5badd4f5b3a61e/classes.dex" />
+    </item>
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/org.apache.http.legacy.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8165b510cbf792975d8a1040d7e6b33c6561b72c">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/org.apache.http.legacy_1bcbf8df562d7d1cdee07e83d396d5e1553376c3/classes.dex" />
+    </item>
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/easemobchat_2.2.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="022b4c0f8f076ac9fbe1379a4269405198774f18">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/easemobchat_2.2.5_98b55a7ba410b5e57f954c8c1937afc80f1109ae/classes.dex" />
+    </item>
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/BaiduLBS_Android.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c5d8c4dd82cc047aeab3892ca14235ada755cfc8">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/BaiduLBS_Android_2e505f2d6a9821e0e41b4d4c636a1cd53ba0728d/classes.dex" />
+    </item>
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/google-play-services.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2aa2eef24b4e0438d1ff59185caaa787955d93e2">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/google-play-services_8040f481e77ca108c001f0cc2bc232314e177eb9/classes.dex" />
+    </item>
+    <item
+        jar="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/mlwjapp/easeUI/unspecified/jars/libs/MiPush_SDK_Client_2_2_19.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0aca202e0d179c7e7b19db832cf521b01dab6507">
+        <dex dex="/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/dex/debug/folders/1000/8/MiPush_SDK_Client_2_2_19_bc4316211495b0d0a571febc9184b7cdca7502cf/classes.dex" />
+    </item>
+
+</items>

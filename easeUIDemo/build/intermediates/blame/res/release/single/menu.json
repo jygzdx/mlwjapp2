@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/menu/em_remove_from_blacklist.xml",
+        "source": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/menu/em_remove_from_blacklist.xml"
+    },
+    {
+        "merged": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/menu/em_delete_contact.xml",
+        "source": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/menu/em_delete_contact.xml"
+    },
+    {
+        "merged": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/menu/em_context_contact_list.xml",
+        "source": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/menu/em_context_contact_list.xml"
+    },
+    {
+        "merged": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/menu/em_delete_message.xml",
+        "source": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/menu/em_delete_message.xml"
+    },
+    {
+        "merged": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/menu/em_context_tab_contact.xml",
+        "source": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/menu/em_context_tab_contact.xml"
+    }
+]
