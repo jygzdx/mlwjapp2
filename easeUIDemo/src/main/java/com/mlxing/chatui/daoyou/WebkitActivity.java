@@ -50,6 +50,7 @@ import com.mlxing.chatui.ui.ChatActivity;
 import com.mlxing.chatui.ui.SChatActivity;
 import com.tencent.mm.sdk.modelpay.PayReq;
 import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.umeng.socialize.UMShareAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -502,6 +503,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);
         //接收二维码返回的消息，判断是否加入群聊天
         if (requestCode == QRCODE_REQUEST && resultCode == QRCODE_RESULT) {
             String url = data.getStringExtra("qr");

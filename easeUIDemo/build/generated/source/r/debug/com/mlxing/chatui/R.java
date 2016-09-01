@@ -3304,6 +3304,7 @@ containing a value of this type.
         public static final int umeng_socialize_tip_loginfailed=0x7f0601c0;
         public static final int umeng_socialize_ucenter_login_title_guide=0x7f0601c1;
         public static final int umeng_socialize_ucenter_login_title_platform=0x7f0601c2;
+        public static final int umshare=0x7f0601c3;
         public static final int unable_to_connect=0x7f060079;
         public static final int unable_to_get_loaction=0x7f060148;
         public static final int update_black_list=0x7f060149;

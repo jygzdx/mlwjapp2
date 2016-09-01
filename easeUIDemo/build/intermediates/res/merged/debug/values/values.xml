@@ -684,6 +684,7 @@
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
     <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+    <string name="umshare">share</string>
     <string name="unable_to_connect">Unable to connect to the server</string>
     <string name="unable_to_get_loaction">Unable to get to your location information!</string>
     <string name="user_already_in_contactlist">This user already is your friend, only need remove out from the black list</string>

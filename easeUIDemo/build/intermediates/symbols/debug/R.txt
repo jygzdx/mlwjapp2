@@ -2150,6 +2150,7 @@ int string umeng_socialize_tip_blacklist 0x7f0601bf
 int string umeng_socialize_tip_loginfailed 0x7f0601c0
 int string umeng_socialize_ucenter_login_title_guide 0x7f0601c1
 int string umeng_socialize_ucenter_login_title_platform 0x7f0601c2
+int string umshare 0x7f0601c3
 int string unable_to_connect 0x7f060079
 int string unable_to_get_loaction 0x7f060148
 int string update_black_list 0x7f060149

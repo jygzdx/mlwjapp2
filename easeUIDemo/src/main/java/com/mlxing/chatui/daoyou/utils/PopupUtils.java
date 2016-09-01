@@ -10,6 +10,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
+import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +30,8 @@ import com.mlxing.chatui.db.InviteMessgeDao;
 import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.bean.SHARE_MEDIA;
 import com.umeng.socialize.media.UMImage;
+import com.umeng.socialize.shareboard.SnsPlatform;
+import com.umeng.socialize.utils.ShareBoardlistener;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -37,6 +40,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2016/3/28.
  */
 public class PopupUtils {
+    private String TAG = getClass().getSimpleName();
     private static Context mcontext;
     private static PopupUtils popupUtils = new PopupUtils();
     private static Intent intent;
@@ -152,9 +156,44 @@ public class PopupUtils {
                 }
                 break;
             case R.id.pop_share:
-                UMImage image = new UMImage(mcontext,R.drawable.mlx_icon);
+                final UMImage image = new UMImage(mcontext,R.drawable.mlx_icon);
                 new ShareAction((Activity) mcontext).setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
-                        .withText("你要的大咖导游，都在这里，戳").withTargetUrl(Constant.POP_SHARE).withMedia(image).open();
+                        .addButton("umshare","umshare","em_add","em_add")
+                        .setShareboardclickCallback(new ShareBoardlistener() {
+                            @Override
+                            public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
+                                Log.i(TAG, "onclickword: "+snsPlatform.mKeyword);
+                                if (snsPlatform.mKeyword.equals("umshare")){
+                                    Log.i(TAG, "onclick: ");
+                                }else{
+
+                                    if (share_media==SHARE_MEDIA.WEIXIN){
+                                        new ShareAction((Activity) mcontext)
+                                                .setPlatform(share_media)
+                                                .withText("你要的大咖导游，都在这里，戳")
+                                                .withTargetUrl(Constant.POP_SHARE)
+                                                .withMedia(image)
+                                                .share();
+                                    }else if (share_media==SHARE_MEDIA.WEIXIN_CIRCLE){
+                                        new ShareAction((Activity) mcontext)
+                                                .setPlatform(share_media)
+                                                .withText("你要的大咖导游，都在这里，戳")
+                                                .withTargetUrl(Constant.POP_SHARE)
+                                                .withMedia(image)
+                                                .share();
+                                    }
+
+
+/*
+                                    new ShareAction((Activity) mcontext)
+                                            .setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
+                                            .withText("你要的大咖导游，都在这里，戳")
+                                            .withTargetUrl(Constant.POP_SHARE)
+                                            .withMedia(image)
+                                            .open();*/
+                                }
+                            }
+                        }).open();
                 popupWindow.dismiss();
                 break;
             case R.id.pop_sao:
