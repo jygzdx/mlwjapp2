@@ -22,7 +22,7 @@
 
 
 
-    <dimen name = "size_title">20sp</dimen>
+    <dimen name = "size_title">18sp</dimen>
     <dimen name = "size_pop_text">15sp</dimen>
     <dimen name = "size_pop_padding">8dp</dimen>
     <dimen name="size_xiaoxi_name">18sp</dimen>

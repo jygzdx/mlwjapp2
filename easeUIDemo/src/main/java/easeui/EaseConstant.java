@@ -35,4 +35,10 @@ public class EaseConstant {
     
     public static final String EXTRA_CHAT_TYPE = "chatType";
     public static final String EXTRA_USER_ID = "userId";
+
+
+    public static final String MESSAGE_ATTR_IS_SHARE ="SharedMessageType";
+    public static final String SHARE_TITLE="SharedMessageTitle";
+    public static final String SHARE_IMAGE="SharedMessageImage";
+    public static final String SHARE_CONTENT="SharedMessageContent";
 }

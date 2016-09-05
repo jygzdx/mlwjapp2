@@ -8,8 +8,10 @@ import com.mlxing.chatui.daoyou.ui.MainMenuActivity;
 import com.mlxing.chatui.daoyou.ui.MlxForgetActivity;
 import com.mlxing.chatui.daoyou.ui.MlxSignActivity;
 import com.mlxing.chatui.daoyou.ui.MlxVideoActivity;
+import com.mlxing.chatui.ui.GroupsActivity;
 import com.mlxing.chatui.ui.MainActivity;
 
+import easeui.EaseConstant;
 import easeui.ui.EaseBaiduMapActivity;
 
 /**
@@ -104,5 +106,11 @@ public class UIHelper {
         intent.putExtra("popup", "yes");
         context.startActivity(intent);
 
+    }
+
+    public  static void gotoShareGroup(Context context){
+        Intent intent=new Intent(context, GroupsActivity.class);
+        intent.putExtra(EaseConstant.MESSAGE_ATTR_IS_SHARE,true);
+        context.startActivity(intent);
     }
 }

@@ -72,7 +72,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private WebView webView;
     private EaseTitleBar mTitleBar;
     private ProgressBar pgWv;
-    private ImageView btn_chat_dot,btn_chat_nodot;
+    private ImageView btn_chat_dot, btn_chat_nodot;
     private ImageView imgError;
 
     private IWXAPI api;
@@ -127,8 +127,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar = (EaseTitleBar) findViewById(R.id.title_bar);
         pgWv = (ProgressBar) findViewById(R.id.pg_wv);
         btn_chat_dot = (ImageView) findViewById(R.id.btn_chat_dot);
-        btn_chat_nodot= (ImageView) findViewById(R.id.btn_chat_nodot);
-        imgError= (ImageView) findViewById(R.id.img_error);
+        btn_chat_nodot = (ImageView) findViewById(R.id.btn_chat_nodot);
+        imgError = (ImageView) findViewById(R.id.img_error);
     }
 
     private void initWebView() {
@@ -237,10 +237,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 //                    startActivity(new Intent(WebkitActivity.this, LoginActivity.class));
 
                     //如果有unionid，直接进入主界面
-                    String unionid = (String) SPUtils.get(WebkitActivity.this, SPUtils.SP_UNIONID, "");
+                    String unionid = (String) SPUtils.get(WebkitActivity.this, SPUtils
+                            .SP_UNIONID, "");
                     if (!unionid.equals("")) {
                         webView.loadUrl(unionid);
-                    }else {
+                    } else {
                         UIHelper.gotoHomeLoginActivity(WebkitActivity.this);
                     }
                     return true;
@@ -268,7 +269,9 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     DemoHelper.getInstance().getContactInfos();
 
                     if (!DemoHelper.getInstance().isLoggedIn()) {
-                        EMChatManager.getInstance().login(SPUtils.get(WebkitActivity.this, SPUtils.USERNAME, "").toString(), SPUtils.get(WebkitActivity.this, SPUtils.PASSWORD, "").toString(), new EMCallBack() {
+                        EMChatManager.getInstance().login(SPUtils.get(WebkitActivity.this,
+                                SPUtils.USERNAME, "").toString(), SPUtils.get(WebkitActivity
+                                .this, SPUtils.PASSWORD, "").toString(), new EMCallBack() {
                             @Override
                             public void onSuccess() {
                                 UIHelper.goToMainActivity(WebkitActivity.this, 4);
@@ -307,26 +310,32 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 //                mTitleBar.setTitle(getaTitle());
                 code = (int) SPUtils.get(WebkitActivity.this, "js", 9);
                 Log.i(TAG, "onPageFinished: " + code);
-                if (code == 0||code==-1||code==-2) {
+                if (code == 0 || code == -1 || code == -2) {
                     webView.loadUrl("javascript:_jsCallbackForAppPay(" + code + ")");
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
-                if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT.equals(url)) {
+                if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
+                        .equals(url)) {
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
                 }
 
-                if (url.contains("http://weixin.mlxing.com/zf/ddzf/")){//支付
-//                    String ht = "javascript:window.mlxapp.getBody(document.getElementsByTagName('html')[0].innerHTML);";
+                if (url.contains("http://weixin.mlxing.com/zf/ddzf/")) {//支付
+//                    String ht = "javascript:window.mlxapp.getBody(document.getElementsByTagName
+// ('html')[0].innerHTML);";
                     String ht = "javascript:window.mlxapp.getBody(getPayJson());";
                     webView.loadUrl(ht);
                     onBackPressed();
                 }
+
+                webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
+
             }
 
             @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+            public void onReceivedError(WebView view, int errorCode, String description, String
+                    failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
                 imgError.setVisibility(View.VISIBLE);
             }
@@ -357,9 +366,10 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onReceivedTitle(WebView view, String tit) {
                 super.onReceivedTitle(view, tit);
                 title = tit;
-                titles.add(title);
-                mTitleBar.setTitle(getaTitle());
-                if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant.SET_ABOUT.equals(view.getUrl())) {
+//                titles.add(title);
+//                mTitleBar.setTitle(getaTitle());
+                if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant
+                        .SET_ABOUT.equals(view.getUrl())) {
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -429,7 +439,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 openFileChooserImpl(uploadMsg);
             }
 
-            public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String capture) {
+            public void openFileChooser(ValueCallback<Uri> uploadMsg, String acceptType, String
+                    capture) {
                 openFileChooserImpl(uploadMsg);
             }
         });
@@ -455,7 +466,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar.getRightLayout(), WebkitActivity.this);
+                PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
+                        .getRightLayout(), WebkitActivity.this);
             }
         });
         mTitleBar.setLeftTextVisiable(View.INVISIBLE);
@@ -474,7 +486,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     public void onBackPressed() {
         if (webView.canGoBack()) {
 
-            if (titles.size() > 0) {
+            /*if (titles.size() > 0) {
 
                 if (title != titles.get(titles.size() - 1)) {
 
@@ -482,7 +494,13 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     mTitleBar.setTitle(getaTitle());
                 }
                 titles.remove(titles.size() - 1);
-            }
+            }*/
+           /* if (titles.size() > 1) {
+                titles.remove(titles.size() - 1);
+                title = titles.get(titles.size() - 1);
+                mTitleBar.setTitle(getaTitle());
+            }*/
+            LogTool.i(TAG, titles.toString());
             webView.goBack();
         } else {
             if ("帮助中心".equals(title) || "功能介绍".equals(title)) {
@@ -583,7 +601,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         sdkHelper.pushActivity(this);
         code = (int) SPUtils.get(this, SPUtils.SP_JS, 9);
         Log.i(TAG, "onResume: " + code);
-        if (code == 0||code==-1||code==-2) {
+        if (code == 0 || code == -1 || code == -2) {
             webView.loadUrl("javascript:_jsCallbackForAppPay(" + code + ")");
             SPUtils.put(this, SPUtils.SP_JS, 9);
         }
@@ -728,7 +746,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
         if (!DemoHelper.getInstance().isLoggedIn()) {
 
-            /*EMChatManager.getInstance().login(SPUtils.get(this, SPUtils.USERNAME, "").toString(), SPUtils.get(this, SPUtils.PASSWORD, "").toString(), new EMCallBack() {
+            /*EMChatManager.getInstance().login(SPUtils.get(this, SPUtils.USERNAME, "").toString
+            (), SPUtils.get(this, SPUtils.PASSWORD, "").toString(), new EMCallBack() {
                 @Override
                 public void onSuccess() {
                     UIHelper.goToMainActivity(WebkitActivity.this, 4);
@@ -754,18 +773,19 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     /**
      * 重新加载网络
+     *
      * @param v
      */
-    public void netClick(View v){
-         webView.reload();
+    public void netClick(View v) {
+        webView.reload();
         imgError.setVisibility(View.GONE);
     }
 
     /**
      * 是否显示网络错误页面
      */
-    private void checkShowError(){
-        if (!NetUtils.hasNetwork(getApplicationContext())){
+    private void checkShowError() {
+        if (!NetUtils.hasNetwork(getApplicationContext())) {
             imgError.setVisibility(View.VISIBLE);
         }
     }
@@ -778,7 +798,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             LogTool.i(TAG, "body:" + body);
             final PayReq req = new PayReq();
             //支付
-            body=body.substring(body.indexOf("{"),body.indexOf("}")+1);
+            body = body.substring(body.indexOf("{"), body.indexOf("}") + 1);
             LogTool.i(TAG, "body2:" + body);
             //body=body.replaceAll("\\","");
             api = DemoApplication.getApi();
@@ -797,6 +817,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     e.printStackTrace();
                 }
             }
+        }
+        @JavascriptInterface
+        public void getTitle(String title) {
+            mTitleBar.setTitle(title);
+            Log.i(TAG, "getTitle: "+title);
         }
     }
 }

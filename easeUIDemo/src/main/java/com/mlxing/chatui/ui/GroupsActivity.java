@@ -36,6 +36,8 @@ import com.mlxing.chatui.adapter.GroupAdapter;
 
 import java.util.List;
 
+import easeui.EaseConstant;
+
 public class GroupsActivity extends BaseActivity {
 	public static final String TAG = "GroupsActivity";
 	protected ListView groupListView;
@@ -118,6 +120,7 @@ public class GroupsActivity extends BaseActivity {
 					// it is group chat
 					intent.putExtra("chatType", Constant.CHATTYPE_GROUP);
 					intent.putExtra("userId", groupAdapter.getItem(position - 1).getGroupId());
+					intent.putExtra(EaseConstant.MESSAGE_ATTR_IS_SHARE,getIntent().getBooleanExtra(EaseConstant.MESSAGE_ATTR_IS_SHARE,false));
 					startActivityForResult(intent, 0);
 				}
 			}

@@ -27,17 +27,17 @@ import com.easemob.chat.EMConversation;
 import com.easemob.chat.EMMessage;
 
 import easeui.EaseConstant;
-import easeui.widget.EaseChatMessageList;
+import easeui.widget.EaseChatMessageList.MessageListItemClickListener;
 import easeui.widget.chatrow.EaseChatRow;
 import easeui.widget.chatrow.EaseChatRowBigExpression;
 import easeui.widget.chatrow.EaseChatRowFile;
 import easeui.widget.chatrow.EaseChatRowImage;
 import easeui.widget.chatrow.EaseChatRowLocation;
+import easeui.widget.chatrow.EaseChatRowShare;
 import easeui.widget.chatrow.EaseChatRowText;
 import easeui.widget.chatrow.EaseChatRowVideo;
 import easeui.widget.chatrow.EaseChatRowVoice;
 import easeui.widget.chatrow.EaseCustomChatRowProvider;
-import easeui.widget.EaseChatMessageList.MessageListItemClickListener;
 
 
 public class EaseMessageAdapter extends BaseAdapter{
@@ -64,6 +64,8 @@ public class EaseMessageAdapter extends BaseAdapter{
 	private static final int MESSAGE_TYPE_RECV_FILE = 11;
 	private static final int MESSAGE_TYPE_SENT_EXPRESSION = 12;
 	private static final int MESSAGE_TYPE_RECV_EXPRESSION = 13;
+	private static final int MESSAGE_TYPE_SENT_SHARE = 14;
+	private static final int MESSAGE_TYPE_RECV_SHARE = 15;
 	
 	
 	public int itemTypeCount; 
@@ -201,6 +203,9 @@ public class EaseMessageAdapter extends BaseAdapter{
 		    if(message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_BIG_EXPRESSION, false)){
 		        return message.direct == EMMessage.Direct.RECEIVE ? MESSAGE_TYPE_RECV_EXPRESSION : MESSAGE_TYPE_SENT_EXPRESSION;
 		    }
+			if (message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE,false)){
+				return message.direct == EMMessage.Direct.RECEIVE ? MESSAGE_TYPE_RECV_SHARE : MESSAGE_TYPE_SENT_SHARE;
+			}
 			return message.direct == EMMessage.Direct.RECEIVE ? MESSAGE_TYPE_RECV_TXT : MESSAGE_TYPE_SENT_TXT;
 		}
 		if (message.getType() == EMMessage.Type.IMAGE) {
@@ -232,7 +237,9 @@ public class EaseMessageAdapter extends BaseAdapter{
         case TXT:
             if(message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_BIG_EXPRESSION, false)){
                 chatRow = new EaseChatRowBigExpression(context, message, position, this);
-            }else{
+            }else if(message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE, false)){
+                chatRow = new EaseChatRowShare(context, message, position, this);
+            } else{
                 chatRow = new EaseChatRowText(context, message, position, this);
             }
             break;

@@ -779,7 +779,6 @@ public class DemoHelper {
                     // below is just giving a example to show a cmd toast, the app should not follow this
                     // so be careful of this
                     case EventNewCMDMessage: {
-
                         EMLog.d(TAG, "收到透传消息");
                         //获取消息body
                         CmdMessageBody cmdMsgBody = (CmdMessageBody) message.getBody();

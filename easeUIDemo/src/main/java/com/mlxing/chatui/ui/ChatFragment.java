@@ -39,6 +39,7 @@ import easeui.EaseConstant;
 import easeui.domain.EaseUser;
 import easeui.ui.EaseChatFragment;
 import easeui.widget.chatrow.EaseChatRow;
+import easeui.widget.chatrow.EaseChatRowShare;
 import easeui.widget.chatrow.EaseCustomChatRowProvider;
 import easeui.widget.emojicon.EaseEmojiconMenu;
 import okhttp3.Call;
@@ -62,6 +63,8 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
     private static final int MESSAGE_TYPE_RECV_VOICE_CALL = 2;
     private static final int MESSAGE_TYPE_SENT_VIDEO_CALL = 3;
     private static final int MESSAGE_TYPE_RECV_VIDEO_CALL = 4;
+    private static final int MESSAGE_TYPE_SENT_SHARE=5;
+    private static final int MESSAGE_TYPE_RECV_SHARE=6;
 
     private EMGroup group;
     private List<String> members;
@@ -151,7 +154,9 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
             }
         });
 
-
+        if (isShare){
+            sendShareMessage("biaoti", "fdf", "dfdf");
+        }
     }
 
     @Override
@@ -375,7 +380,7 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
         @Override
         public int getCustomChatRowTypeCount() {
             //音、视频通话发送、接收共4种
-            return 4;
+            return 6;
         }
 
         @Override
@@ -387,6 +392,8 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
                 } else if (message.getBooleanAttribute(Constant.MESSAGE_ATTR_IS_VIDEO_CALL, false)) {
                     //视频通话
                     return message.direct == EMMessage.Direct.RECEIVE ? MESSAGE_TYPE_RECV_VIDEO_CALL : MESSAGE_TYPE_SENT_VIDEO_CALL;
+                }else if(message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE,false)){
+                    return message.direct==EMMessage.Direct.RECEIVE?MESSAGE_TYPE_RECV_SHARE:MESSAGE_TYPE_SENT_SHARE;
                 }
             }
             return 0;
@@ -399,6 +406,8 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
                 if (message.getBooleanAttribute(Constant.MESSAGE_ATTR_IS_VOICE_CALL, false) ||
                         message.getBooleanAttribute(Constant.MESSAGE_ATTR_IS_VIDEO_CALL, false)) {
                     return new ChatRowVoiceCall(getActivity(), message, position, adapter);
+                }else if (message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE,false)){
+                    return new EaseChatRowShare(getActivity(),message,position,adapter);
                 }
             }
             return null;

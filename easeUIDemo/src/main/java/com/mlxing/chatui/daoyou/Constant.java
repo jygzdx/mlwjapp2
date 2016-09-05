@@ -5,7 +5,8 @@ package com.mlxing.chatui.daoyou;
  */
 public class Constant {
     //首页
-    public static String URL_HOME = "http://static.mlxing.com/index.html#/home";
+//    public static String URL_HOME = "http://static.mlxing.com/index.html#/home";
+    public static String URL_HOME = "http://static.mlxing.com/index.html#/players_list";
 
     /**
      * 微信授权后登陆接口
@@ -64,4 +65,12 @@ public class Constant {
 
     //分享的内容
     public static String POP_SHARE="http://front.oss.mlxing.com/front/html/app_share.html";
+
+
+    //首页的几个大块
+    public static  final String MAIN_DAOYOU="http://static.mlxing.com/index.html#/players_list";
+    public static  final String MAIN_QUANZI="http://static.mlxing.com/index.html#/player_crowd";
+    public static  final String MAIN_FAXIAN="http://static.mlxing.com/zhihuilvy-index.html";
+    public static  final String MAIN_HAOWAN="http://static.mlxing.com/index.html#/players_list";
+    public static  final String MAIN_WO="我";
 }

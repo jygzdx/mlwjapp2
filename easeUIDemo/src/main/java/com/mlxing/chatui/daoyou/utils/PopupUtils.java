@@ -164,7 +164,7 @@ public class PopupUtils {
                             public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
                                 Log.i(TAG, "onclickword: "+snsPlatform.mKeyword);
                                 if (snsPlatform.mKeyword.equals("umshare")){
-                                    Log.i(TAG, "onclick: ");
+                                    UIHelper.gotoShareGroup(mcontext);
                                 }else{
 
                                     if (share_media==SHARE_MEDIA.WEIXIN){

@@ -15,9 +15,9 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131493129, "field 'imgWx' and method 'onClick'");
-    target.imgWx = finder.castView(view, 2131493129, "field 'imgWx'");
-    unbinder.view2131493129 = view;
+    view = finder.findRequiredView(source, 2131493132, "field 'imgWx' and method 'onClick'");
+    target.imgWx = finder.castView(view, 2131493132, "field 'imgWx'");
+    unbinder.view2131493132 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -33,26 +33,26 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493270, "field 'textSign' and method 'onClick'");
-    target.textSign = finder.castView(view, 2131493270, "field 'textSign'");
-    unbinder.view2131493270 = view;
+    view = finder.findRequiredView(source, 2131493273, "field 'textSign' and method 'onClick'");
+    target.textSign = finder.castView(view, 2131493273, "field 'textSign'");
+    unbinder.view2131493273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493271, "field 'textFind' and method 'onClick'");
-    target.textFind = finder.castView(view, 2131493271, "field 'textFind'");
-    unbinder.view2131493271 = view;
+    view = finder.findRequiredView(source, 2131493274, "field 'textFind' and method 'onClick'");
+    target.textFind = finder.castView(view, 2131493274, "field 'textFind'");
+    unbinder.view2131493274 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493272, "method 'onClick'");
-    unbinder.view2131493272 = view;
+    view = finder.findRequiredView(source, 2131493275, "method 'onClick'");
+    unbinder.view2131493275 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,15 +69,15 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
   protected static class InnerUnbinder<T extends MlxLoginActivity> implements Unbinder {
     private T target;
 
-    View view2131493129;
+    View view2131493132;
 
     View view2131492958;
 
-    View view2131493270;
+    View view2131493273;
 
-    View view2131493271;
+    View view2131493274;
 
-    View view2131493272;
+    View view2131493275;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -91,15 +91,15 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
     }
 
     protected void unbind(T target) {
-      view2131493129.setOnClickListener(null);
+      view2131493132.setOnClickListener(null);
       target.imgWx = null;
       view2131492958.setOnClickListener(null);
       target.imgLogin = null;
-      view2131493270.setOnClickListener(null);
+      view2131493273.setOnClickListener(null);
       target.textSign = null;
-      view2131493271.setOnClickListener(null);
+      view2131493274.setOnClickListener(null);
       target.textFind = null;
-      view2131493272.setOnClickListener(null);
+      view2131493275.setOnClickListener(null);
     }
   }
 }

@@ -40,9 +40,11 @@ public class ContextMenuActivity extends BaseActivity {
 		        setContentView(R.layout.em_context_menu_for_location);
 		    }else if(message.getBooleanAttribute(Constant.MESSAGE_ATTR_IS_BIG_EXPRESSION, false)){
 		        setContentView(R.layout.em_context_menu_for_image);
+		    }else if(message.getBooleanAttribute(Constant.MESSAGE_ATTR_IS_SHARE, false)){
+				setContentView(R.layout.em_context_menu_for_image);
 		    }else{
-		        setContentView(R.layout.em_context_menu_for_text);
-		    }
+				setContentView(R.layout.em_context_menu_for_text);
+			}
 		} else if (type == EMMessage.Type.LOCATION.ordinal()) {
 		    setContentView(R.layout.em_context_menu_for_location);
 		} else if (type == EMMessage.Type.IMAGE.ordinal()) {

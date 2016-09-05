@@ -1,9 +1,5 @@
 [
     {
-        "merged": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\em_empty_photo.png",
-        "source": "G:\\root\\Android\\AndroidProject\\mlwjapp\\easeUIDemo\\src\\main\\res\\drawable-nodpi\\em_empty_photo.png"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\em_empty_photo.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-nodpi\\em_empty_photo.png"
     }
