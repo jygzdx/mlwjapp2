@@ -739,9 +739,9 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         sendMessage(message);
     }
 
-    protected void sendShareMessage(String title, String image, String content) {
+    protected void sendShareMessage(String title, String image, String content,String url) {
         EMMessage message = EaseCommonUtils.creatShareMessage(toChatUsername, title, image,
-                content);
+                content,url);
         sendMessage(message);
     }
 
@@ -1007,7 +1007,8 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
                 if (forward_msg.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE, false)) {
                     sendShareMessage(forward_msg.getStringAttribute(EaseConstant.SHARE_TITLE,"title")
                     ,forward_msg.getStringAttribute(EaseConstant.SHARE_IMAGE,"image")
-                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_CONTENT,"content"));
+                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_CONTENT,"content")
+                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_URL,"url"));
                 } else {
                     // 获取消息内容，发送消息
                     String content = ((TextMessageBody) forward_msg.getBody()).getMessage();

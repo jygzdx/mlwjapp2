@@ -41,4 +41,5 @@ public class EaseConstant {
     public static final String SHARE_TITLE="SharedMessageTitle";
     public static final String SHARE_IMAGE="SharedMessageImage";
     public static final String SHARE_CONTENT="SharedMessageContent";
+    public static final String SHARE_URL="SharedMessageURL";
 }

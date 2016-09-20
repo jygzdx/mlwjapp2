@@ -25,6 +25,7 @@ import com.mlxing.chatui.DemoHelper;
 import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.JsonUtil;
+import com.mlxing.chatui.daoyou.utils.SPUtils;
 import com.mlxing.chatui.domain.EmojiconExampleGroupData;
 import com.mlxing.chatui.domain.RobotUser;
 import com.mlxing.chatui.widget.ChatRowVoiceCall;
@@ -155,7 +156,11 @@ public class ChatFragment extends EaseChatFragment implements EaseChatFragment.E
         });
 
         if (isShare){
-            sendShareMessage("biaoti", "fdf", "dfdf");
+            String title = (String) SPUtils.get(getActivity().getApplicationContext(),EaseConstant.SHARE_TITLE,"title");
+            String content = (String) SPUtils.get(getActivity().getApplicationContext(),EaseConstant.SHARE_CONTENT,"content");
+            String url = (String) SPUtils.get(getActivity().getApplicationContext(),EaseConstant.SHARE_URL,"url");
+
+            sendShareMessage(title, "fdf", content,url);
         }
     }
 

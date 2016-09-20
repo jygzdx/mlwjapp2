@@ -156,6 +156,7 @@ public class PopupUtils {
                 }
                 break;
             case R.id.pop_share:
+                ( (WebkitActivity)((Activity) mcontext)).share();
                 final UMImage image = new UMImage(mcontext,R.drawable.mlx_icon);
                 new ShareAction((Activity) mcontext).setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
                         .addButton("umshare","umshare","em_add","em_add")
@@ -164,6 +165,7 @@ public class PopupUtils {
                             public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
                                 Log.i(TAG, "onclickword: "+snsPlatform.mKeyword);
                                 if (snsPlatform.mKeyword.equals("umshare")){
+
                                     UIHelper.gotoShareGroup(mcontext);
                                 }else{
 

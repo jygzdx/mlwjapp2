@@ -31,6 +31,19 @@ public class UIHelper {
 
     }
 
+    /**
+     * 跳转到webview
+     * @param context
+     * @param url
+     */
+    public static  void goToNewWebView(Context context,String url){
+        Intent intent = new Intent(context, WebkitActivity.class);
+        intent.putExtra("startUrl",url);
+        intent.putExtra("isShare",true);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+
+    }
 
     /**
      * 跳转到聊天界面

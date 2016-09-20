@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2013-2014 EaseMob Technologies. All rights reserved.
- * <p/>
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -82,13 +82,13 @@ public class EaseCommonUtils {
      * @return
      */
     public static EMMessage creatShareMessage(String toChatUserName, String title, String image,
-                                              String content) {
-        EMMessage message = EMMessage.createTxtSendMessage(title,toChatUserName);
+                                              String content, String url) {
+        EMMessage message = EMMessage.createTxtSendMessage("某某分享了一个链接", toChatUserName);
         message.setAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE, true);
         message.setAttribute(EaseConstant.SHARE_CONTENT, content);
         message.setAttribute(EaseConstant.SHARE_IMAGE, image);
         message.setAttribute(EaseConstant.SHARE_TITLE, title);
-
+        message.setAttribute(EaseConstant.SHARE_URL, url);
         return message;
     }
 
@@ -135,7 +135,7 @@ public class EaseCommonUtils {
                     } else {
                         digest = getString(context, R.string.dynamic_expression);
                     }
-                } else if (message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE,false)) {
+                } else if (message.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE, false)) {
                     digest = "分享链接";
                 } else {
                     digest = txtBody.getMessage();
@@ -188,7 +188,8 @@ public class EaseCommonUtils {
         if (Character.isDigit(headerName.charAt(0))) {
             user.setInitialLetter("#");
         } else {
-            user.setInitialLetter(HanziToPinyin.getInstance().get(headerName.substring(0, 1)).get(0).target.substring(0, 1)
+            user.setInitialLetter(HanziToPinyin.getInstance().get(headerName.substring(0, 1)).get
+                    (0).target.substring(0, 1)
                     .toUpperCase());
             char header = user.getInitialLetter().toLowerCase().charAt(0);
             if (header < 'a' || header > 'z') {

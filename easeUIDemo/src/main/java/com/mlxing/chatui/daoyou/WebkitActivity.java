@@ -62,6 +62,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import easeui.EaseConstant;
 import easeui.widget.EaseTitleBar;
 
 /**
@@ -93,6 +94,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private String mCameraPhotoPath;
     private String title;
     private int code;
+    private boolean isShare;
 
     /**
      * 保存获取的网页标题
@@ -111,6 +113,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         initTitle();
         initWebView();
 
+        isShare=getIntent().getBooleanExtra("isShare",false);
         String url = getIntent().getStringExtra("startUrl");
         LogTool.i(TAG, url);
         webView.loadUrl(url);
@@ -315,7 +318,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
-                        .equals(url)) {
+                        .equals(url)||isShare) {
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -503,7 +506,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             LogTool.i(TAG, titles.toString());
             webView.goBack();
         } else {
-            if ("帮助中心".equals(title) || "功能介绍".equals(title)) {
+            if ("帮助中心".equals(title) || "功能介绍".equals(title)||isShare) {
                 super.onBackPressed();
             } else {
 
@@ -790,6 +793,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         }
     }
 
+    /**
+     * 获取分享信息
+     */
+    public void share(){
+        webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
+        webView.loadUrl("javascript:window.mlxapp.getShareInfo(getShareInfo());");
+    }
+
 
     class InJavaScriptGetBody {
 
@@ -822,6 +833,28 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         public void getTitle(String title) {
             mTitleBar.setTitle(title);
             Log.i(TAG, "getTitle: "+title);
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE,title);
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT,"某某分享了一个链接");
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL,Constant.POP_SHARE);
+
+        }
+
+        @JavascriptInterface
+        public void getShareInfo(String info){
+
+            try {
+                JSONObject jsonObject = new JSONObject(info);
+                String title = jsonObject.getString("title");
+                String content = jsonObject.getString("content");
+                String url = jsonObject.getString("url");
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE,title);
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT,content);
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL,url);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
         }
     }
 }

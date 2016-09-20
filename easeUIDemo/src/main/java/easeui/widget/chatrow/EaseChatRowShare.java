@@ -10,15 +10,18 @@ import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMMessage;
 import com.easemob.exceptions.EaseMobException;
 import com.mlxing.chatui.R;
+import com.mlxing.chatui.daoyou.utils.UIHelper;
 
 import easeui.EaseConstant;
 
 /**
+ * 分享聊天对话框
  * Created by Administrator on 2016/9/2.
  */
 public class EaseChatRowShare extends EaseChatRow {
     private TextView share_title, share_content;
     private ImageView share_image;
+    private String url;
 
     public EaseChatRowShare(Context context, EMMessage message, int position, BaseAdapter adapter) {
         super(context, message, position, adapter);
@@ -45,8 +48,9 @@ public class EaseChatRowShare extends EaseChatRow {
     @Override
     protected void onSetUpView() {
         String content = message.getStringAttribute(EaseConstant.SHARE_CONTENT,"kong");
-        String image=message.getStringAttribute(EaseConstant.SHARE_IMAGE,"image");
+//        String image=message.getStringAttribute(EaseConstant.SHARE_IMAGE,"image");
         String title=message.getStringAttribute(EaseConstant.SHARE_TITLE,"title");
+        url=message.getStringAttribute(EaseConstant.SHARE_URL, com.mlxing.chatui.daoyou.Constant.POP_SHARE);
         share_content.setText(content);
         share_title.setText(title);
         handleSendMessage();
@@ -90,5 +94,6 @@ public class EaseChatRowShare extends EaseChatRow {
     @Override
     protected void onBubbleClick() {
 //点击事件
+        UIHelper.goToNewWebView(context,url);
     }
 }
