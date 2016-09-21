@@ -800,7 +800,6 @@ com/mlxing/chatui/ui/GroupPickContactsActivity$1.class
 com/xiaomi/mipush/sdk/MessageHandleService.class
 com/mlxing/chatui/daoyou/ui/MlxForgetActivity$4.class
 rx/android/schedulers/AndroidSchedulers.class
-com/mlxing/chatui/daoyou/ui/MlxVideoActivity$1.class
 org/apache/http/impl/HttpConnectionMetricsImpl.class
 org/apache/http/impl/conn/DefaultClientConnection.class
 com/easemob/chat/EMMessage.class

@@ -1721,7 +1721,6 @@ int menu em_remove_from_blacklist 0x7f0d0004
 int raw beep 0x7f050000
 int raw em_outgoing 0x7f050001
 int raw mlxing 0x7f050002
-int raw welcomeapp 0x7f050003
 int string Add_a_button_was_clicked 0x7f060080
 int string Add_a_friend 0x7f060081
 int string Add_group_members_fail 0x7f060082
