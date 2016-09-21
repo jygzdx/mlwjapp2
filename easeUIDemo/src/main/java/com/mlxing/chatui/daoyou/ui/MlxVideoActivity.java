@@ -24,6 +24,7 @@ public class MlxVideoActivity extends Activity {
 
     @BindView(R.id.video)
     VideoView video;
+
     @BindView(R.id.img_start)
     ImageView imgStart;
 
