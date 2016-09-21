@@ -46,6 +46,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * 废掉的
+ */
 public class MlxLoginActivity extends Activity {
     private Context context;
     private String TAG="MlxLoginActivity";
