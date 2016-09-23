@@ -1,7 +1,7 @@
--injars /root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar
--outjars /root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/multi-dex/release/componentClasses.jar
+-injars 'G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\transforms\jarMerging\release\jars\1\1f\combined.jar'
+-outjars 'G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\multi-dex\release\componentClasses.jar'
 
--libraryjars /root/Android/android-sdk-linux/build-tools/23.0.3/lib/shrinkedAndroid.jar
+-libraryjars 'E:\devTools\adt-bundle-windows-x86_64-20140702\sdk\build-tools\23.0.3\lib\shrinkedAndroid.jar'
 
 -forceprocessing
 -dontoptimize
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration /root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/multi-dex/release/components.flags
+-printconfiguration 'G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\multi-dex\release\components.flags'
 
 
 -keep class com.mlxing.chatui.DemoApplication {

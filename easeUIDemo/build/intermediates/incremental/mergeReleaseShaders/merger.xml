@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/shaders"/></dataSet><dataSet config="release"><source path="/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/release/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\shaders"/></dataSet><dataSet config="release"><source path="G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\release\shaders"/></dataSet></merger>
