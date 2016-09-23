@@ -15,8 +15,6 @@ public class MlxVideoActivity$$ViewBinder<T extends MlxVideoActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131492956, "field 'video'");
-    target.video = finder.castView(view, 2131492956, "field 'video'");
     view = finder.findRequiredView(source, 2131492957, "field 'imgStart' and method 'onClick'");
     target.imgStart = finder.castView(view, 2131492957, "field 'imgStart'");
     unbinder.view2131492957 = view;
@@ -60,7 +58,6 @@ public class MlxVideoActivity$$ViewBinder<T extends MlxVideoActivity> implements
     }
 
     protected void unbind(T target) {
-      target.video = null;
       view2131492957.setOnClickListener(null);
       target.imgStart = null;
       view2131492958.setOnClickListener(null);

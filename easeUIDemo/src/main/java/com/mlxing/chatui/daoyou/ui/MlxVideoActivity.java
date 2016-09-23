@@ -2,13 +2,10 @@ package com.mlxing.chatui.daoyou.ui;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.VideoView;
 
 import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.Constant;
@@ -22,8 +19,8 @@ import butterknife.OnClick;
 
 public class MlxVideoActivity extends Activity {
 
-    @BindView(R.id.video)
-    VideoView video;
+   /* @BindView(R.id.video)
+    VideoView video;*/
 
     @BindView(R.id.img_start)
     ImageView imgStart;
@@ -43,8 +40,8 @@ public class MlxVideoActivity extends Activity {
         }
         ButterKnife.bind(this);
 
-        String uri = "android.resource://" + getPackageName() + "/" + R.raw.welcomeapp;
-        video.setVideoURI(Uri.parse(uri));
+       /* String uri = "android.resource://" + getPackageName() + "/" + R.raw.welcomeapp;
+        video.setVideoURI(Uri.parse(uri));*/
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.FILL_PARENT,
                 RelativeLayout.LayoutParams.FILL_PARENT);
@@ -52,35 +49,35 @@ public class MlxVideoActivity extends Activity {
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-        video.setLayoutParams(layoutParams);
+       /* video.setLayoutParams(layoutParams);
         video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 video.start();
             }
         });
-        video.start();
+        video.start();*/
     }
 
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        video.stopPlayback();
+//        video.stopPlayback();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        video.start();
-        video.seekTo(position);
+//        video.start();
+//        video.seekTo(position);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        position = video.getCurrentPosition();
-        video.pause();
+//        position = video.getCurrentPosition();
+//        video.pause();
     }
 
     @OnClick({R.id.img_start, R.id.img_login})

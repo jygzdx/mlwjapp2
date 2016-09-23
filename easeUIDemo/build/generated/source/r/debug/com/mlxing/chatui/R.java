@@ -2868,7 +2868,6 @@ containing a value of this type.
         public static final int beep=0x7f050000;
         public static final int em_outgoing=0x7f050001;
         public static final int mlxing=0x7f050002;
-        public static final int welcomeapp=0x7f050003;
     }
     public static final class string {
         public static final int Add_a_button_was_clicked=0x7f060080;

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/res/merged/release/values-v11/values-v11.xml",
+        "outputFile": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 219
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/values-v11/ease_styles.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 638
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1063
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 1491
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 1917
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 2338
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -138,7 +138,7 @@
                     "endOffset": 2773
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -159,7 +159,7 @@
                     "endOffset": 3206
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -180,7 +180,7 @@
                     "endOffset": 3653
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -200,7 +200,7 @@
                     "endOffset": 3731
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -219,7 +219,7 @@
                     "endOffset": 3823
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -238,7 +238,7 @@
                     "endOffset": 3913
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 10642
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -278,7 +278,7 @@
                     "endOffset": 10737
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 162,
                         "startColumn": 4,
@@ -297,7 +297,7 @@
                     "endOffset": 10854
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 164,
                         "startColumn": 4,
@@ -317,7 +317,7 @@
                     "endOffset": 11218
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 166,
                         "startColumn": 4,
@@ -338,7 +338,7 @@
                     "endOffset": 14855
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 172,
                         "startColumn": 4,
@@ -359,7 +359,7 @@
                     "endOffset": 18506
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 219,
                         "startColumn": 4,
@@ -380,7 +380,7 @@
                     "endOffset": 22282
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 266,
                         "startColumn": 4,
@@ -401,7 +401,7 @@
                     "endOffset": 26072
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\values-v11\\values.xml",
                     "position": {
                         "startLine": 314,
                         "startColumn": 4,
@@ -422,7 +422,7 @@
                     "endOffset": 26247
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/values-v11/ease_styles.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -442,7 +442,7 @@
                     "endOffset": 26332
                 },
                 "from": {
-                    "file": "/root/Android/AndroidProject/mlwjapp/easeUIDemo/src/main/res/values-v11/ease_styles.xml",
+                    "file": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
