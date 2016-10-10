@@ -36,10 +36,10 @@ public class UIHelper {
      * @param context
      * @param url
      */
-    public static  void goToNewWebView(Context context,String url){
+    public static  void goToNewWebView(Context context,String url,boolean isShare){
         Intent intent = new Intent(context, WebkitActivity.class);
         intent.putExtra("startUrl",url);
-        intent.putExtra("isShare",true);
+        intent.putExtra("isShare",isShare);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
 

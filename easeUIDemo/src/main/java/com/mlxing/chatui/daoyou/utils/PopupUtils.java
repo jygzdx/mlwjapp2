@@ -157,45 +157,7 @@ public class PopupUtils {
                 break;
             case R.id.pop_share:
                 ( (WebkitActivity)((Activity) mcontext)).share();
-                final UMImage image = new UMImage(mcontext,R.drawable.mlx_icon);
-                new ShareAction((Activity) mcontext).setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
-                        .addButton("umshare","umshare","em_add","em_add")
-                        .setShareboardclickCallback(new ShareBoardlistener() {
-                            @Override
-                            public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
-                                Log.i(TAG, "onclickword: "+snsPlatform.mKeyword);
-                                if (snsPlatform.mKeyword.equals("umshare")){
 
-                                    UIHelper.gotoShareGroup(mcontext);
-                                }else{
-
-                                    if (share_media==SHARE_MEDIA.WEIXIN){
-                                        new ShareAction((Activity) mcontext)
-                                                .setPlatform(share_media)
-                                                .withText("你要的大咖导游，都在这里，戳")
-                                                .withTargetUrl(Constant.POP_SHARE)
-                                                .withMedia(image)
-                                                .share();
-                                    }else if (share_media==SHARE_MEDIA.WEIXIN_CIRCLE){
-                                        new ShareAction((Activity) mcontext)
-                                                .setPlatform(share_media)
-                                                .withText("你要的大咖导游，都在这里，戳")
-                                                .withTargetUrl(Constant.POP_SHARE)
-                                                .withMedia(image)
-                                                .share();
-                                    }
-
-
-/*
-                                    new ShareAction((Activity) mcontext)
-                                            .setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
-                                            .withText("你要的大咖导游，都在这里，戳")
-                                            .withTargetUrl(Constant.POP_SHARE)
-                                            .withMedia(image)
-                                            .open();*/
-                                }
-                            }
-                        }).open();
                 popupWindow.dismiss();
                 break;
             case R.id.pop_sao:

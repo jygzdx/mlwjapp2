@@ -94,6 +94,6 @@ public class EaseChatRowShare extends EaseChatRow {
     @Override
     protected void onBubbleClick() {
 //点击事件
-        UIHelper.goToNewWebView(context,url);
+        UIHelper.goToNewWebView(context,url,true);
     }
 }

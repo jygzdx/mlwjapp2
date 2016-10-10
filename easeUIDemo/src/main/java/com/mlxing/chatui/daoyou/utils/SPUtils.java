@@ -35,6 +35,8 @@ public class SPUtils {
      */
     public static String USERNAME="username";
     public static String PASSWORD="password";
+    public static String PHONE="phone";
+
 
     public SPUtils() {
         /* cannot be instantiated */

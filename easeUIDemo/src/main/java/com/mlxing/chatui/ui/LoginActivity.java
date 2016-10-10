@@ -32,6 +32,7 @@ import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.Constant;
 import com.mlxing.chatui.daoyou.entity.ForgetEntity;
 import com.mlxing.chatui.daoyou.entity.LoginEntity;
+import com.mlxing.chatui.daoyou.entity.UserInfoEntity;
 import com.mlxing.chatui.daoyou.entity.WxHuanXinEntity;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.JsonUtil;
@@ -240,6 +241,11 @@ public class LoginActivity extends BaseActivity {
                         DaoYouMainActivity.class);
                 startActivity(intent);*/
                 SPUtils.put(LoginActivity.this, SPUtils.SP_UNIONID, String.format(Constant.URL_LOGIN, unionId));
+
+                getUserPhone(unionId);
+
+
+
                 UIHelper.goToWebView(LoginActivity.this, (String) SPUtils.get(LoginActivity.this, SPUtils.SP_UNIONID, ""));
                 finish();
             }
@@ -262,6 +268,23 @@ public class LoginActivity extends BaseActivity {
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
+            }
+        });
+    }
+
+    private void getUserPhone(String unionId) {
+        HttpUtil.getClient().getUserInfo(unionId).enqueue(new Callback<UserInfoEntity>() {
+            @Override
+            public void onResponse(Call<UserInfoEntity> call, Response<UserInfoEntity> response) {
+                UserInfoEntity userInfoEntity = response.body();
+                if("200".equals(userInfoEntity.getCode())){
+                    SPUtils.put(getApplicationContext(),SPUtils.PHONE,userInfoEntity.getResult().getPhone());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UserInfoEntity> call, Throwable t) {
+
             }
         });
     }

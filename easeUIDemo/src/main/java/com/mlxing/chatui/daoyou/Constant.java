@@ -73,4 +73,9 @@ public class Constant {
     public static  final String MAIN_FAXIAN="http://static.mlxing.com/zhihuilvy-index.html";
     public static  final String MAIN_HAOWAN="http://static.mlxing.com/index.html#/players_list";
     public static  final String MAIN_WO="我";
+
+    //题库处理返回的地址
+    public static final String Url_TIKU_OLD="http://static.mlxing.com/travelApp/html/exameScore.html";
+    public static final String Url_TIKU_NEW="http://static.mlxing.com/travelApp/html/startPratice.html";
+    public static final String Url_TIKU_INDEX="http://static.mlxing.com/travelApp/html/index.html";
 }

@@ -56,7 +56,7 @@
                 android:layout_below="@+id/share_title"
                 android:layout_width="40dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/em_logo_uidemo"
+                android:src="@drawable/mlx_icon"
                 android:layout_height="40dp"/>
             <TextView
                 android:id="@+id/share_content"

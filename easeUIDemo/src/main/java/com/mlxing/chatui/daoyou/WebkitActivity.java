@@ -50,7 +50,12 @@ import com.mlxing.chatui.ui.ChatActivity;
 import com.mlxing.chatui.ui.SChatActivity;
 import com.tencent.mm.sdk.modelpay.PayReq;
 import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.UMShareAPI;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.socialize.media.UMImage;
+import com.umeng.socialize.shareboard.SnsPlatform;
+import com.umeng.socialize.utils.ShareBoardlistener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,6 +75,7 @@ import easeui.widget.EaseTitleBar;
  */
 public class WebkitActivity extends BaseActivity implements EMEventListener {
     private static final String TAG = "WebkitActivity";
+    private Context mContext;
     private WebView webView;
     private EaseTitleBar mTitleBar;
     private ProgressBar pgWv;
@@ -93,6 +99,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     public ValueCallback<Uri> mUploadMessage;
     private String mCameraPhotoPath;
     private String title;
+    private String tikuUrl;
     private int code;
     private boolean isShare;
 
@@ -112,8 +119,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         initView();
         initTitle();
         initWebView();
-
-        isShare=getIntent().getBooleanExtra("isShare",false);
+        mContext = this;
+        isShare = getIntent().getBooleanExtra("isShare", false);
         String url = getIntent().getStringExtra("startUrl");
         LogTool.i(TAG, url);
         webView.loadUrl(url);
@@ -177,7 +184,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 checkShowError();
-
+                tikuUrl = url;
                 Log.i(TAG, "shouldOverrideUrlLoading: " + url);
                 if (url.contains("mlxing.group")) {
                     //http://mlxing.group/?group_id=XXX
@@ -318,7 +325,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
-                        .equals(url)||isShare) {
+                        .equals(url) || isShare) {
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -333,6 +340,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 }
 
                 webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
+                //webView.loadUrl("javascript:window.mlxapp.getUserMobile();");
 
             }
 
@@ -487,6 +495,13 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     @Override
     public void onBackPressed() {
+
+        if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
+
+           webView.goBackOrForward(-2);
+            return;
+        }
+
         if (webView.canGoBack()) {
 
             /*if (titles.size() > 0) {
@@ -506,7 +521,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             LogTool.i(TAG, titles.toString());
             webView.goBack();
         } else {
-            if ("帮助中心".equals(title) || "功能介绍".equals(title)||isShare) {
+            if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
                 super.onBackPressed();
             } else {
 
@@ -796,9 +811,51 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     /**
      * 获取分享信息
      */
-    public void share(){
-        webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
+    public void share() {
+        webView.loadUrl("javascript:window.mlxapp.setTitle(document.title);");
         webView.loadUrl("javascript:window.mlxapp.getShareInfo(getShareInfo());");
+
+        final UMImage image = new UMImage(mContext, R.drawable.mlx_icon);
+        new ShareAction((Activity) mContext).setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN,
+                SHARE_MEDIA.WEIXIN_CIRCLE})
+                .addButton("umshare", "umshare", "em_add", "em_add")
+                .setShareboardclickCallback(new ShareBoardlistener() {
+                    @Override
+                    public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
+                        Log.i(TAG, "onclickword: " + snsPlatform.mKeyword);
+                        if (snsPlatform.mKeyword.equals("umshare")) {
+
+                            UIHelper.gotoShareGroup(mContext);
+                        } else {
+
+                            if (share_media == SHARE_MEDIA.WEIXIN) {
+                                new ShareAction((Activity) mContext)
+                                        .setPlatform(share_media)
+                                        .withText("你要的大咖导游，都在这里，戳")
+                                        .withTargetUrl(Constant.POP_SHARE)
+                                        .withMedia(image)
+                                        .share();
+                            } else if (share_media == SHARE_MEDIA.WEIXIN_CIRCLE) {
+                                new ShareAction((Activity) mContext)
+                                        .setPlatform(share_media)
+                                        .withText("你要的大咖导游，都在这里，戳")
+                                        .withTargetUrl(Constant.POP_SHARE)
+                                        .withMedia(image)
+                                        .share();
+                            }
+
+
+/*
+                                    new ShareAction((Activity) mcontext)
+                                            .setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA.WEIXIN,
+                                             SHARE_MEDIA.WEIXIN_CIRCLE})
+                                            .withText("你要的大咖导游，都在这里，戳")
+                                            .withTargetUrl(Constant.POP_SHARE)
+                                            .withMedia(image)
+                                            .open();*/
+                        }
+                    }
+                }).open();
     }
 
 
@@ -829,32 +886,91 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 }
             }
         }
+
         @JavascriptInterface
         public void getTitle(String title) {
             mTitleBar.setTitle(title);
-            Log.i(TAG, "getTitle: "+title);
-            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE,title);
-            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT,"某某分享了一个链接");
-            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL,Constant.POP_SHARE);
+
+
+        }
+        @JavascriptInterface
+        public void setTitle(String title) {
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE, title);
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT, "某某分享了一个链接");
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL, Constant.POP_SHARE);
 
         }
 
         @JavascriptInterface
-        public void getShareInfo(String info){
-
+        public void getShareInfo(String info) {
+            //{ content:neirong,url:wangzhi,title:bitoai  }
             try {
                 JSONObject jsonObject = new JSONObject(info);
                 String title = jsonObject.getString("title");
                 String content = jsonObject.getString("content");
                 String url = jsonObject.getString("url");
-                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE,title);
-                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT,content);
-                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL,url);
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE, title);
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT, content);
+                SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL, url);
+
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
 
+        }
+
+        @JavascriptInterface
+        public String getUserMobile() {
+            String phone = (String) SPUtils.get(getApplicationContext(), SPUtils.PHONE, "none");
+            LogTool.i(TAG, phone);
+            return phone;
+        }
+
+        @JavascriptInterface
+        public void gotoNewWebView(String url) {
+            UIHelper.goToNewWebView(WebkitActivity.this, url, false);
+        }
+
+        @JavascriptInterface
+        public void mlxShare(final String title, final String content, final String shareUrl) {
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE, title);
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_CONTENT, content);
+            SPUtils.put(getApplicationContext(), EaseConstant.SHARE_URL, shareUrl);
+
+            final UMImage image = new UMImage(mContext, R.drawable.mlx_icon);
+            new ShareAction((Activity) mContext).setDisplayList(new SHARE_MEDIA[]{SHARE_MEDIA
+                    .WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE})
+                    .addButton("umshare", "umshare", "em_add", "em_add")
+                    .setShareboardclickCallback(new ShareBoardlistener() {
+                        @Override
+                        public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
+                            Log.i(TAG, "onclickword: " + snsPlatform.mKeyword);
+                            if (snsPlatform.mKeyword.equals("umshare")) {
+
+                                UIHelper.gotoShareGroup(mContext);
+                            } else {
+
+                                if (share_media == SHARE_MEDIA.WEIXIN) {
+                                    new ShareAction((Activity) mContext)
+                                            .setPlatform(share_media).withTitle(title)
+                                            .withText(content)
+                                            .withTargetUrl(Constant.POP_SHARE)
+                                            .withMedia(image)
+                                            .share();
+                                } else if (share_media == SHARE_MEDIA.WEIXIN_CIRCLE) {
+                                    new ShareAction((Activity) mContext)
+                                            .setPlatform(share_media).withTitle(title)
+                                            .withText(content)
+                                            .withTargetUrl(Constant.POP_SHARE)
+                                            .withMedia(image)
+                                            .share();
+                                }
+
+                            }
+                        }
+                    }).open();
         }
     }
 }

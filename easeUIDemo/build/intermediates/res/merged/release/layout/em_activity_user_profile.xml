@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/title_bar_background"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_user_profile"
+            android:textColor="@color/title_bar_font"
+            android:textSize="@dimen/size_title" />
+
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+            <ImageView 
+                android:id="@+id/user_head_avatar"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/em_default_avatar"
+                />
+            <ImageView 
+                android:id="@+id/user_head_headphoto_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_head_avatar"
+                android:layout_alignBottom="@+id/user_head_avatar"
+                android:layout_alignRight="@+id/user_head_avatar"
+                android:layout_margin="3dip"
+                android:src="@drawable/em_profile_headphoto_update_icon"
+                />
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_head_avatar"
+                android:layout_alignBottom="@+id/user_head_avatar"
+
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <TextView 
+                        android:id="@+id/user_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_pressed"
+
+            />
+        <RelativeLayout 
+            android:id="@+id/rl_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dip"
+            >
+            <TextView 
+				android:layout_width="wrap_content"                
+				android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dip"
+				android:layout_alignParentLeft="true"
+				android:text="@string/nickname"
+				android:textSize="18sp"
+				android:gravity="center_vertical"
+				android:textColor="#000"
+                android:background="#FFFFFF"
+                />
+            <TextView 
+                android:id="@+id/user_nickname"
+				android:layout_width="wrap_content"                
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_alignParentRight="true"
+				android:paddingRight="20dip"
+				android:textSize="16sp"
+				android:gravity="center_vertical"
+				android:textColor="#3366cc"
+                android:background="#FFFFFF"
+                />
+            <ImageView 
+                android:id="@+id/ic_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mlx_roght_goto"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dip"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="#E6E6E6" />
+    <RelativeLayout
+        android:id="@+id/rl_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dip"
+            android:text="加好友"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dip"
+            android:text="发消息"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="#E6E6E6" />
+    <RelativeLayout
+        android:id="@+id/rl_add_to_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_add_to_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dip"
+            android:text="拉黑"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_delete_chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_delete_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dip"
+            android:text="删除聊天记录"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#E6E6E6" />
+    </RelativeLayout>
+
+
+</LinearLayout>

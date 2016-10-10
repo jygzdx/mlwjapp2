@@ -5,6 +5,7 @@ import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.entity.ForgetEntity;
 import com.mlxing.chatui.daoyou.entity.LoginEntity;
 import com.mlxing.chatui.daoyou.entity.SendMsgEntity;
+import com.mlxing.chatui.daoyou.entity.UserInfoEntity;
 import com.mlxing.chatui.daoyou.entity.WxHuanXinEntity;
 
 import java.io.IOException;
@@ -33,7 +34,9 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 /**
  * Created by Administrator on 2016/3/8.
@@ -128,6 +131,10 @@ public class HttpUtil {
         @FormUrlEncoded
         @POST("http://weixin.mlxing.com/login/mmsverify")
         Call<SendMsgEntity> sendMsg(@Field("mobile") String mobile);
+
+        //获取个人信息
+        @GET("http://wjapi.mlxing.com/guide/v1/guide/getDyUser")
+        Call<UserInfoEntity> getUserInfo(@Query("unionId") String unionId);
     }
 
 
