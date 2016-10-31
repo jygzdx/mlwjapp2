@@ -809,7 +809,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     }
 
     /**
-     * 获取分享信息
+     * 获取分享信息--友盟sdk
      */
     public void share() {
         webView.loadUrl("javascript:window.mlxapp.setTitle(document.title);");

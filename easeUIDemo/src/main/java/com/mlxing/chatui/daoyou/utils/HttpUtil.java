@@ -51,7 +51,7 @@ public class HttpUtil {
         OkHttpClient mOkHttpClient = null;
         InputStream inputStream = null;
         inputStream = DemoApplication.getInstance().getResources().openRawResource(R.raw.mlxing);
-        CertificateFactory certificateFactory = null;
+        CertificateFactory certificateFactory = null;//证书处理
         try {
             certificateFactory = CertificateFactory.getInstance("X.509");
             Certificate certificate = certificateFactory.generateCertificate(inputStream);
