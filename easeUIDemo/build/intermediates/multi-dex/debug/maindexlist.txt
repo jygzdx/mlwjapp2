@@ -5,6 +5,7 @@ com/mlxing/chatui/daoyou/ui/MlxLoginActivity$3.class
 org/apache/http/cookie/Cookie.class
 android/support/v4/app/FragmentManagerState.class
 com/google/zxing/common/BitMatrix.class
+cn/jpush/android/service/e.class
 easeui/ui/EaseContactListFragment.class
 com/easemob/chat/core/s.class
 com/mlxing/chatui/R$raw.class
@@ -18,6 +19,7 @@ org/apache/http/client/methods/HttpDelete.class
 com/mlxing/chatui/ui/VoiceCallActivity$2.class
 com/umeng/socialize/h.class
 com/google/gson/annotations/SerializedName.class
+cn/jpush/android/helpers/b.class
 com/umeng/socialize/PlatformConfig.class
 rx/annotations/Experimental.class
 org/apache/commons/logging/impl/Jdk14Logger.class
@@ -49,6 +51,7 @@ android/support/v4/app/FragmentManagerImpl$3.class
 android/support/annotation/DimenRes.class
 org/apache/http/cookie/CookiePathComparator.class
 org/apache/http/impl/client/DefaultRequestDirector.class
+cn/jpush/android/ui/f.class
 com/mlxing/chatui/ui/LoginActivity$4.class
 com/baidu/mapapi/map/i.class
 easeui/utils/EaseCommonUtils.class
@@ -65,11 +68,13 @@ org/apache/commons/codec/DecoderException.class
 com/baidu/mapapi/map/MapStatusUpdate.class
 org/apache/http/impl/cookie/RFC2965VersionAttributeHandler.class
 easeui/widget/EaseAlertDialog.class
+cn/jpush/android/b.class
 com/xiaomi/mipush/sdk/MessageHandleService$a.class
 org/apache/http/impl/DefaultHttpResponseFactory.class
 com/easemob/chat/EMMessage$Type.class
 easeui/ui/EaseShowBigImageActivity.class
 org/apache/http/auth/InvalidCredentialsException.class
+cn/jpush/android/service/m.class
 org/apache/http/io/HttpMessageWriter.class
 android/support/annotation/StringDef.class
 org/apache/http/impl/cookie/DateParseException.class
@@ -77,12 +82,14 @@ com/baidu/mapapi/model/CoordUtil.class
 easeui/widget/EaseSwitchButton.class
 com/mlxing/chatui/daoyou/WebkitActivity$7.class
 com/google/zxing/FormatException.class
+cn/jpush/android/data/b.class
 com/mlxing/chatui/ui/BlacklistActivity$BlacklistAdapater.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21.class
 android/support/annotation/IdRes.class
 android/support/v7/widget/LinearLayoutCompat$OrientationMode.class
 org/apache/http/HeaderElementIterator.class
 org/apache/http/auth/AuthSchemeFactory.class
+cn/jpush/android/ui/PushActivity.class
 com/umeng/socialize/handler/UMWXHandler$4.class
 com/baidu/mapapi/map/BitmapDescriptorFactory.class
 android/support/v4/content/ContextCompat.class
@@ -91,6 +98,7 @@ com/mlxing/chatui/ui/RobotsActivity$1.class
 org/apache/http/impl/client/DefaultConnectionKeepAliveStrategy.class
 org/apache/http/protocol/ExecutionContext.class
 org/apache/http/cookie/params/CookieSpecParamBean.class
+cn/jpush/android/util/u.class
 com/mlxing/chatui/Constant.class
 org/apache/http/impl/auth/NTLMEngine.class
 com/mlxing/chatui/ui/MainActivity$6.class
@@ -117,6 +125,7 @@ org/apache/http/impl/io/ContentLengthInputStream.class
 retrofit2/http/FormUrlEncoded.class
 com/easemob/EMValueCallBack.class
 com/mlxing/chatui/ui/CallActivity$1.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$1.class
 org/apache/http/ProtocolVersion.class
 com/umeng/socialize/bean/RequestType.class
 org/apache/http/auth/AUTH.class
@@ -144,6 +153,7 @@ com/google/zxing/DecodeHintType.class
 android/support/v4/app/BackStackState.class
 org/apache/http/HttpServerConnection.class
 com/tencent/mm/sdk/openapi/IWXAPI.class
+cn/jpush/android/service/DaemonService.class
 org/apache/http/client/protocol/ResponseProcessCookies.class
 android/support/v4/widget/SwipeRefreshLayout.class
 org/apache/http/HttpClientConnection.class
@@ -154,10 +164,12 @@ com/mlxing/chatui/adapter/NewFriendsMsgAdapter.class
 com/mlxing/chatui/ui/UserProfileActivity$3.class
 com/tencent/mm/sdk/modelmsg/SendAuth$Resp.class
 com/mlxing/chatui/ui/GroupsActivity$2.class
+cn/jpush/android/service/b.class
 com/umeng/socialize/UMShareListener.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class
 com/baidu/mapapi/map/MyLocationConfiguration.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
+cn/jpush/android/service/h.class
 com/easemob/chat/EMMonitor.class
 org/apache/http/conn/EofSensorInputStream.class
 com/mlxing/chatui/DemoHelper.class
@@ -186,12 +198,14 @@ org/apache/http/client/params/CookiePolicy.class
 com/mlxing/chatui/daoyou/ui/MlxSignActivity.class
 android/support/v4/view/NestedScrollingChild.class
 org/apache/http/protocol/SyncBasicHttpContext.class
+cn/jpush/android/data/m.class
 org/apache/http/RequestLine.class
 com/mlxing/chatui/ui/PublicChatRoomsActivity.class
 com/google/zxing/qrcode/QRCodeReader.class
 org/apache/http/impl/cookie/BrowserCompatSpec.class
 android/support/v4/media/session/MediaSessionCompat$QueueItem.class
 com/umeng/socialize/handler/UMWXHandler$ShareListenerWrapper.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$3.class
 com/mlxing/chatui/ui/UserProfileActivity.class
 com/mlxing/chatui/daoyou/DaoYouMainActivity$6.class
 org/apache/http/impl/client/RoutedRequest.class
@@ -209,6 +223,7 @@ org/apache/http/protocol/HttpProcessor.class
 org/apache/http/client/RedirectHandler.class
 com/umeng/socialize/ShareContent.class
 org/apache/http/io/HttpMessageParser.class
+cn/jpush/android/service/PushProtocol.class
 easeui/choisepictures/ImgsAdapter$ImgClallBackLisner.class
 com/umeng/socialize/media/WeiXinShareContent.class
 com/tencent/mm/sdk/modelbase/BaseReq.class
@@ -237,11 +252,14 @@ android/support/annotation/WorkerThread.class
 org/apache/http/conn/OperatedClientConnection.class
 easeui/choisepictures/ImgsAdapter$OnItemClickClass.class
 org/apache/http/cookie/CookieSpecRegistry.class
+cn/jpush/android/util/ac.class
 org/apache/http/message/AbstractHttpMessage.class
 butterknife/internal/ListenerClass.class
 com/easemob/util/NetUtils.class
 android/support/v4/widget/MaterialProgressDrawable$3.class
+cn/jpush/android/util/r.class
 com/google/zxing/Result.class
+cn/jpush/android/util/b.class
 android/support/annotation/CallSuper.class
 android/net/http/SslCertificate.class
 org/apache/http/impl/AbstractHttpClientConnection.class
@@ -250,6 +268,7 @@ com/easemob/chat/EMVideoCallHelper.class
 com/mlxing/chatui/ui/ChatActivity.class
 org/apache/http/protocol/RequestExpectContinue.class
 org/apache/http/impl/cookie/CookieSpecBase.class
+cn/jpush/android/api/n.class
 com/tencent/mm/sdk/modelmsg/SendMessageToWX$Req.class
 com/baidu/location/BDLocationListener.class
 com/umeng/socialize/bean/HandlerRequestCode.class
@@ -267,12 +286,14 @@ com/easemob/chat/EMContact.class
 com/mlxing/chatui/ui/SettingsFragment.class
 org/apache/commons/logging/LogFactory.class
 com/mlxing/chatui/ui/LoginActivity$2.class
+cn/jpush/android/ui/a.class
 easeui/choisepictures/ImgFileListAdapter.class
 com/bumptech/glide/util/Util.class
 com/tencent/mm/sdk/openapi/IWXAPIEventHandler.class
 rx/functions/Action.class
 org/apache/http/message/BasicStatusLine.class
 org/apache/http/conn/params/ConnManagerParamBean.class
+cn/jpush/android/service/DownloadService.class
 com/baidu/platform/comapi/map/B.class
 android/support/v4/media/session/MediaSessionCompat.class
 com/google/zxing/BarcodeFormat.class
@@ -291,6 +312,7 @@ com/mlxing/chatui/daoyou/utils/SPUtils.class
 com/umeng/socialize/utils/Log.class
 org/apache/http/protocol/ResponseContent.class
 org/apache/http/impl/conn/LoggingSessionInputBuffer.class
+cn/jpush/android/b/a/b.class
 com/mlxing/chatui/ui/PublicGroupsActivity$GroupsAdapter.class
 org/apache/http/protocol/RequestContent.class
 rx/functions/Action1.class
@@ -310,18 +332,22 @@ com/mlxing/chatui/R$color.class
 org/apache/http/client/protocol/ClientContextConfigurer.class
 android/support/annotation/ArrayRes.class
 org/apache/http/client/RedirectException.class
+cn/jpush/android/service/g.class
 org/apache/http/impl/cookie/RFC2965CommentUrlAttributeHandler.class
 android/support/v4/app/FragmentManagerImpl.class
 org/apache/http/auth/BasicUserPrincipal.class
 easeui/adapter/EaseContactAdapter.class
+cn/jpush/android/service/k.class
 com/mlxing/chatui/ui/VoiceCallActivity$4.class
 com/umeng/socialize/f.class
 com/baidu/platform/comapi/map/i.class
+cn/jpush/android/helpers/h.class
 com/google/zxing/NotFoundException.class
 org/apache/http/cookie/CookieIdentityComparator.class
 org/apache/commons/logging/impl/LogFactoryImpl.class
 com/mlxing/chatui/ui/CallActivity.class
 com/baidu/mapapi/map/MapView.class
+com/mlxing/chatui/daoyou/ui/JpushActivity.class
 com/xiaomi/mipush/sdk/MiPushMessage.class
 com/mlxing/chatui/ui/OfflinePushNickActivity$1.class
 com/mlxing/chatui/ui/ForwardMessageActivity$1.class
@@ -377,6 +403,7 @@ org/apache/http/impl/DefaultHttpClientConnection.class
 android/support/v4/content/WakefulBroadcastReceiver.class
 com/easemob/chat/EMGroupInfo.class
 android/support/v4/app/BackStackRecord$TransitionState.class
+cn/jpush/android/service/PushReceiver.class
 org/apache/http/impl/conn/tsccm/PoolEntryRequest.class
 easeui/ui/EaseChatFragment.class
 com/mlxing/chatui/ui/PickContactNoCheckboxActivity$1.class
@@ -404,6 +431,7 @@ org/apache/http/impl/conn/IdleConnectionHandler.class
 org/apache/http/entity/BasicHttpEntity.class
 org/apache/http/impl/client/AbstractHttpClient.class
 org/apache/http/protocol/HttpResponseInterceptorList.class
+cn/jpush/android/b/a/a.class
 com/mlxing/chatui/ui/RecorderVideoActivity$1.class
 com/mlxing/chatui/daoyou/ui/MlxForgetActivity$1.class
 android/support/v4/app/Fragment$SavedState.class
@@ -411,9 +439,11 @@ android/support/v4/media/session/MediaSessionCompat$1.class
 easeui/ui/EaseBaseFragment.class
 android/support/v4/media/session/PlaybackStateCompat$1.class
 org/apache/http/conn/ManagedClientConnection.class
+cn/jpush/a/a/a/f.class
 android/support/annotation/FloatRange.class
 easeui/choisepictures/ImgCallBack.class
 org/apache/http/conn/routing/HttpRouteDirector.class
+cn/jpush/android/util/ao.class
 com/easemob/EMEventListener.class
 org/apache/http/client/HttpClient.class
 com/easemob/EMGroupChangeListener.class
@@ -434,6 +464,7 @@ android/support/v4/media/session/PlaybackStateCompatApi22.class
 org/apache/http/client/RequestDirector.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase.class
 com/mlxing/chatui/ui/GroupDetailsActivity$ViewHolder.class
+cn/jpush/a/a/a/k.class
 org/apache/http/impl/cookie/AbstractCookieSpec.class
 org/apache/http/impl/cookie/RFC2965DomainAttributeHandler.class
 org/apache/http/client/methods/HttpRequestBase.class
@@ -451,6 +482,7 @@ com/google/zxing/Writer.class
 android/support/v4/util/DebugUtils.class
 org/apache/http/conn/scheme/PlainSocketFactory.class
 com/umeng/socialize/PlatformConfig$Platform.class
+cn/jpush/android/service/d.class
 android/support/annotation/LayoutRes.class
 com/mlxing/chatui/daoyou/ui/MlxLoginActivity$2.class
 easeui/ui/EaseShowVideoActivity$1.class
@@ -458,6 +490,7 @@ rx/Scheduler.class
 org/apache/http/params/HttpConnectionParamBean.class
 org/apache/http/impl/DefaultConnectionReuseStrategy.class
 com/mlxing/chatui/daoyou/ui/MainMenuActivity$1.class
+cn/jpush/android/ui/PopWinActivity.class
 com/google/zxing/qrcode/QRCodeWriter.class
 com/easemob/chat/GroupChangeListener.class
 org/apache/http/message/BasicHttpResponse.class
@@ -471,6 +504,7 @@ android/support/annotation/MainThread.class
 com/mlxing/chatui/ui/PublicChatRoomsActivity$ChatRoomAdapter.class
 com/bumptech/glide/BitmapOptions.class
 android/support/v4/app/NotificationCompat$Builder.class
+cn/jpush/android/data/a.class
 org/apache/http/io/SessionOutputBuffer.class
 com/mlxing/chatui/video/util/Utils.class
 org/apache/http/impl/SocketHttpServerConnection.class
@@ -479,6 +513,8 @@ butterknife/Optional.class
 easeui/utils/EaseUserUtils.class
 com/tencent/bugly/crashreport/crash/h5/H5JavaScriptInterface.class
 butterknife/OnItemSelected.class
+cn/jpush/android/ui/FullScreenView.class
+cn/jpush/android/ui/c.class
 android/support/v4/app/SuperNotCalledException.class
 com/mlxing/chatui/ui/LoginActivity$5.class
 android/support/v4/media/VolumeProviderCompat.class
@@ -512,6 +548,7 @@ com/mlxing/chatui/ui/SplashActivity.class
 org/apache/http/HttpEntity.class
 retrofit2/http/HTTP.class
 com/umeng/socialize/handler/UMWXHandler$2.class
+cn/jpush/android/util/o.class
 android/support/annotation/IntDef.class
 org/apache/http/impl/cookie/RFC2965PortAttributeHandler.class
 org/apache/http/util/LangUtils.class
@@ -526,6 +563,7 @@ easeui/choisepictures/ImgsActivity$BottomImgIcon.class
 com/umeng/socialize/Config.class
 com/mlxing/chatui/ui/MainActivity$7.class
 android/support/annotation/Keep.class
+cn/jpush/android/data/JPushLocalNotification.class
 com/mlxing/chatui/ui/GroupFragment.class
 retrofit2/http/PartMap.class
 com/mlxing/chatui/daoyou/ui/MlxSignActivity$3.class
@@ -536,6 +574,7 @@ org/apache/http/conn/params/ConnRoutePNames.class
 android/support/v4/app/Fragment$InstantiationException.class
 android/support/annotation/AnyRes.class
 android/support/v4/app/FragmentManagerImpl$AnimateOnHWLayerIfNeededListener.class
+cn/jpush/android/e.class
 com/mlxing/chatui/daoyou/DaoYouMainActivity$4.class
 com/umeng/socialize/weixin/view/WXCallbackActivity.class
 com/easemob/util/PathUtil.class
@@ -598,6 +637,7 @@ com/umeng/socialize/common/QueuedWork$UMAsyncTask.class
 retrofit2/http/QueryMap.class
 org/apache/http/client/methods/HttpTrace.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImpl.class
+cn/jpush/android/service/a.class
 com/baidu/location/b/k.class
 org/apache/http/util/EntityUtils.class
 com/mlxing/chatui/daoyou/ui/MainMenuActivity$2.class
@@ -605,6 +645,7 @@ com/mlxing/chatui/R$drawable.class
 butterknife/OnFocusChange.class
 com/easemob/chat/FileMessageBody.class
 android/support/v7/app/ActionBar$NavigationMode.class
+cn/jpush/android/helpers/f.class
 org/apache/commons/codec/EncoderException.class
 org/apache/http/auth/AuthState.class
 com/xiaomi/mipush/sdk/g.class
@@ -625,14 +666,17 @@ org/apache/http/impl/conn/tsccm/WaitingThread.class
 org/apache/commons/codec/binary/Base64.class
 com/mlxing/chatui/daoyou/WebkitActivity$InJavaScriptGetBody.class
 com/umeng/socialize/utils/SocializeUtils.class
+cn/jpush/android/service/AlarmReceiver.class
 org/apache/commons/codec/language/Metaphone.class
 org/apache/http/impl/conn/tsccm/BasicPooledConnAdapter.class
 org/apache/http/message/BasicLineParser.class
 butterknife/OnTextChanged$Callback.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$2.class
 org/apache/http/ParseException.class
 org/apache/http/auth/AuthSchemeRegistry.class
 com/mlxing/chatui/ui/LoginActivity$8.class
 org/apache/http/client/protocol/RequestProxyAuthentication.class
+cn/jpush/android/ui/b.class
 android/support/v4/app/FragmentActivity.class
 org/apache/http/client/HttpRequestRetryHandler.class
 com/baidu/mapapi/map/offline/MKOfflineMap.class
@@ -690,6 +734,7 @@ com/tencent/mm/sdk/modelmsg/SendAuth$Req.class
 android/support/v7/app/ActionBar$OnNavigationListener.class
 butterknife/BindString.class
 butterknife/internal/Utils.class
+cn/jpush/android/b/a/c.class
 com/mlxing/chatui/daoyou/utils/ActivityManager.class
 retrofit2/http/PUT.class
 com/mlxing/chatui/ui/RegisterActivity$1.class
@@ -726,6 +771,7 @@ rx/schedulers/NewThreadScheduler.class
 org/apache/http/client/AuthenticationHandler.class
 org/apache/http/protocol/HttpRequestHandler.class
 org/apache/http/conn/ClientConnectionOperator.class
+cn/jpush/android/b/a/f.class
 android/support/v4/app/ActivityCompatApi23.class
 org/apache/commons/codec/net/QuotedPrintableCodec.class
 org/apache/http/conn/params/ConnManagerParams.class
@@ -742,18 +788,22 @@ easeui/ui/EaseShowBigImageActivity$1.class
 org/apache/http/impl/conn/DefaultHttpRoutePlanner.class
 android/support/annotation/MenuRes.class
 rx/functions/Function.class
+cn/jpush/android/service/f.class
 com/mlxing/chatui/ui/DiagnoseActivity$1.class
 org/apache/http/protocol/DefaultedHttpContext.class
 com/mlxing/chatui/ui/VoiceCallActivity$1.class
 com/umeng/socialize/i.class
+cn/jpush/android/service/l.class
 com/xiaomi/mipush/sdk/PushMessageReceiver.class
 rx/schedulers/ImmediateScheduler.class
 com/baidu/mapapi/map/BaiduMap.class
 com/mlxing/chatui/ui/LoginActivity.class
 android/support/v7/app/ActionBar$Callback.class
 com/umeng/socialize/view/UMFriendListener.class
+cn/jpush/android/helpers/k.class
 com/mlxing/chatui/daoyou/utils/zxing/camera/CameraManager.class
 com/mlxing/chatui/ui/ForwardMessageGroupActivity$1.class
+cn/jpush/android/data/i.class
 org/apache/http/protocol/ResponseConnControl.class
 org/apache/http/protocol/HttpService.class
 com/bumptech/glide/load/MultiTransformation.class
@@ -766,6 +816,8 @@ com/mlxing/chatui/ui/GroupsActivity$1.class
 org/apache/http/impl/io/AbstractMessageWriter.class
 butterknife/OnItemLongClick.class
 com/mlxing/chatui/daoyou/WebkitActivity$8.class
+cn/jpush/android/data/s.class
+cn/jpush/android/data/c.class
 org/apache/http/StatusLine.class
 com/mlxing/chatui/db/InviteMessgeDao.class
 org/apache/http/HttpException.class
@@ -806,6 +858,7 @@ com/mlxing/chatui/daoyou/ui/MlxForgetActivity$4.class
 rx/android/schedulers/AndroidSchedulers.class
 org/apache/http/impl/HttpConnectionMetricsImpl.class
 org/apache/http/impl/conn/DefaultClientConnection.class
+cn/jpush/android/api/c.class
 com/easemob/chat/EMMessage.class
 com/umeng/socialize/SocializeException.class
 org/apache/http/client/methods/HttpHead.class
@@ -829,6 +882,7 @@ com/umeng/socialize/UMShareAPI$a.class
 com/google/gson/annotations/Since.class
 com/xiaomi/mipush/sdk/PushMessageHelper.class
 easeui/choisepictures/ImgsActivity$ImgOnclick.class
+cn/jpush/android/util/ah.class
 org/apache/http/impl/cookie/NetscapeDomainHandler.class
 com/mlxing/chatui/ui/RecorderVideoActivity$5.class
 android/support/v4/util/SimpleArrayMap.class
@@ -846,6 +900,7 @@ retrofit2/http/GET.class
 com/mlxing/chatui/ui/MainActivity.class
 org/apache/http/client/utils/URIUtils.class
 com/baidu/mapapi/utils/CoordinateConverter$CoordType.class
+cn/jpush/android/c.class
 org/apache/commons/codec/net/RFC1522Codec.class
 android/support/v4/view/ViewPager.class
 android/support/v4/app/FragmentManagerImpl$5.class
@@ -891,6 +946,8 @@ com/xiaomi/mipush/sdk/a.class
 org/apache/http/protocol/ResponseDate.class
 butterknife/OnCheckedChanged.class
 org/apache/http/auth/UsernamePasswordCredentials.class
+cn/jpush/android/helpers/d.class
+cn/jpush/android/service/ServiceInterface.class
 com/mlxing/chatui/daoyou/utils/zxing/decode/InactivityTimer.class
 com/easemob/exceptions/EMServiceNotReadyException.class
 com/bumptech/glide/DrawableRequestBuilder.class
@@ -932,6 +989,7 @@ com/mlxing/chatui/ui/MainActivity$3.class
 com/mlxing/chatui/ui/GroupBlacklistActivity$BlacklistAdapter.class
 org/apache/http/impl/cookie/BasicDomainHandler.class
 android/support/v4/app/FragmentController.class
+cn/jpush/android/api/JPushInterface.class
 com/mlxing/chatui/ui/UserProfileActivity$5.class
 com/mlxing/chatui/daoyou/ui/MlxSignActivity$2.class
 org/apache/http/conn/routing/BasicRouteDirector.class
@@ -949,6 +1007,7 @@ org/apache/http/impl/entity/StrictContentLengthStrategy.class
 org/apache/http/impl/cookie/RFC2965SpecFactory.class
 org/apache/http/impl/auth/UnsupportedDigestAlgorithmException.class
 org/apache/http/util/CharArrayBuffer.class
+cn/jpush/android/util/p.class
 com/umeng/socialize/handler/UMWXHandler$1.class
 butterknife/OnPageChange.class
 org/apache/http/impl/conn/LoggingSessionOutputBuffer.class
@@ -968,10 +1027,12 @@ com/umeng/socialize/handler/UMWXHandler$6.class
 android/support/annotation/AnimRes.class
 android/support/v4/app/FragmentActivity$NonConfigurationInstances.class
 org/apache/http/impl/client/BasicCredentialsProvider.class
+cn/jpush/android/util/s.class
 org/apache/http/impl/client/DefaultProxyAuthenticationHandler.class
 org/apache/http/entity/AbstractHttpEntity.class
 butterknife/BindBitmap.class
 org/apache/http/message/BasicTokenIterator.class
+cn/jpush/android/a.class
 org/apache/http/Header.class
 com/mlxing/chatui/ui/ChatRoomDetailsActivity.class
 android/support/annotation/RequiresPermission$Write.class
@@ -996,6 +1057,7 @@ android/support/v4/app/FragmentManagerImpl$4.class
 org/apache/http/entity/mime/content/InputStreamBody.class
 android/support/v4/media/MediaMetadataCompat$BitmapKey.class
 org/apache/http/protocol/HttpExpectationVerifier.class
+com/mlxing/chatui/receiver/JpushReceiver.class
 com/mlxing/chatui/ui/GroupDetailsActivity$6.class
 com/umeng/socialize/handler/UMSSOHandler.class
 com/mlxing/chatui/ui/LoginActivity$6.class
@@ -1006,6 +1068,7 @@ org/apache/http/auth/MalformedChallengeException.class
 org/apache/http/HttpResponseInterceptor.class
 org/apache/http/conn/params/ConnConnectionParamBean.class
 android/support/v4/view/NestedScrollingParent.class
+cn/jpush/android/service/PushService.class
 easeui/choisepictures/ImgsActivity.class
 org/apache/http/client/methods/HttpUriRequest.class
 android/support/v4/media/session/PlaybackStateCompat$Builder.class
@@ -1022,10 +1085,12 @@ org/apache/http/cookie/SM.class
 org/apache/http/conn/params/ConnConnectionPNames.class
 com/easemob/easeui/R.class
 com/baidu/location/Jni.class
+com/mlxing/chatui/daoyou/WebkitActivity$9.class
 org/apache/http/conn/util/InetAddressUtils.class
 butterknife/Unbinder.class
 org/apache/http/client/params/AuthPolicy.class
 com/google/gson/reflect/TypeToken.class
+cn/jpush/android/d.class
 org/apache/http/auth/Credentials.class
 org/apache/commons/codec/net/QCodec.class
 com/easemob/util/ImageUtils.class
@@ -1086,6 +1151,7 @@ org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class
 com/mlxing/chatui/daoyou/ui/MlxForgetActivity.class
 org/apache/http/impl/conn/tsccm/RefQueueHandler.class
 com/mlxing/chatui/ui/LoginActivity$9.class
+cn/jpush/a/a/a/e.class
 org/apache/http/cookie/CookieSpec.class
 com/mlxing/chatui/adapter/GroupAdapter.class
 android/support/annotation/IntRange.class
@@ -1116,10 +1182,12 @@ org/apache/http/impl/cookie/BestMatchSpec.class
 easeui/widget/EaseAlertDialog$AlertDialogUser.class
 android/support/v4/widget/ResourceCursorAdapter.class
 org/apache/http/protocol/HttpDateGenerator.class
+cn/jpush/android/util/i.class
 com/mlxing/chatui/ui/OfflinePushNickActivity.class
 android/support/v4/app/ActivityCompatApi23$RequestPermissionsRequestCodeValidator.class
 butterknife/OnItemClick.class
 android/support/v4/app/BaseFragmentActivityHoneycomb.class
+cn/jpush/android/util/af.class
 org/apache/http/client/methods/HttpGet.class
 android/support/annotation/Size.class
 com/tencent/mm/sdk/modelmsg/SendMessageToWX$Resp.class
@@ -1151,6 +1219,7 @@ com/baidu/mapapi/BMapManager.class
 org/apache/http/impl/cookie/BasicSecureHandler.class
 com/mlxing/chatui/wxapi/WXEntryActivity.class
 org/apache/http/impl/conn/ProxySelectorRoutePlanner.class
+cn/jpush/android/service/o.class
 com/baidu/mapapi/map/MapStatus$Builder.class
 org/apache/http/impl/cookie/RFC2109DomainHandler.class
 org/apache/http/HttpConnection.class
@@ -1158,6 +1227,7 @@ org/apache/http/HttpConnectionMetrics.class
 org/apache/commons/codec/StringEncoderComparator.class
 android/support/v4/content/PermissionChecker$PermissionResult.class
 com/baidu/location/e/p$a.class
+cn/jpush/android/helpers/ConnectingHelper.class
 com/mlxing/chatui/ui/RecorderVideoActivity$2.class
 org/apache/http/conn/ClientConnectionRequest.class
 rx/schedulers/TrampolineScheduler.class

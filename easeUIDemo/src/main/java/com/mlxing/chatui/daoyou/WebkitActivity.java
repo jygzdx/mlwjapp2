@@ -12,6 +12,8 @@ import android.net.http.SslError;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
@@ -27,6 +29,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.easemob.EMCallBack;
 import com.easemob.EMEventListener;
@@ -102,6 +105,23 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private String tikuUrl;
     private int code;
     private boolean isShare;
+    private boolean isJpush = false;
+
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what){
+                case 1:
+                    Log.i("WebkitActivity", (String) msg.obj);
+                    break;
+            }
+        }
+    };
+
+    /**
+     * 记录用户首次点击back键时间
+     */
+    private long firstTime;
 
     /**
      * 保存获取的网页标题
@@ -114,7 +134,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.mlx_activity_webkit);
-
+        Log.i(TAG,"onCreate");
         ActivityManager.getInstance().addActivity(this);
         initView();
         initTitle();
@@ -122,8 +142,16 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mContext = this;
         isShare = getIntent().getBooleanExtra("isShare", false);
         String url = getIntent().getStringExtra("startUrl");
-        LogTool.i(TAG, url);
+        LogTool.i(TAG, "oncreate:"+url);
+
         webView.loadUrl(url);
+
+
+//        x.view().inject(this);
+
+        //checkVersion();
+
+
 
         inviteMessgeDao = new InviteMessgeDao(this);
 
@@ -131,6 +159,15 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         DemoHelper.getInstance().registerGroupAndContactListener();
         registerBroadcastReceiver();
     }
+
+    /**
+     * 查询版本号
+     */
+    public void checkVersion() {
+//        VersionUtils versionUtils = new VersionUtils();
+//        versionUtils.getNewVersion(handler);
+    }
+
 
     private void initView() {
         webView = (WebView) findViewById(R.id.webView);
@@ -186,6 +223,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 checkShowError();
                 tikuUrl = url;
                 Log.i(TAG, "shouldOverrideUrlLoading: " + url);
+                Log.i(TAG,"shouldOverrideUrlLoading");
                 if (url.contains("mlxing.group")) {
                     //http://mlxing.group/?group_id=XXX
                     // 进入群聊
@@ -310,6 +348,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 //handler.cancel(); 默认的处理方式，WebView变成空白页
                 handler.proceed();//接受证书
+                Log.i(TAG,"onReceivedSslError");
                 //handleMessage(Message msg); 其他处理
             }
 
@@ -317,6 +356,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 checkShowError();
+                Log.i(TAG,"onPageFinished");
 //                mTitleBar.setTitle(getaTitle());
                 code = (int) SPUtils.get(WebkitActivity.this, "js", 9);
                 Log.i(TAG, "onPageFinished: " + code);
@@ -325,11 +365,15 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
-                        .equals(url) || isShare) {
+                        .equals(url) || isShare ) {
+                        Log.i(TAG,"onPageFinished.visible");
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
                 }
+//                if(isJpush){
+//                    mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
+//                }
 
                 if (url.contains("http://weixin.mlxing.com/zf/ddzf/")) {//支付
 //                    String ht = "javascript:window.mlxapp.getBody(document.getElementsByTagName
@@ -342,18 +386,21 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
                 //webView.loadUrl("javascript:window.mlxapp.getUserMobile();");
 
+
             }
 
             @Override
             public void onReceivedError(WebView view, int errorCode, String description, String
                     failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
+                Log.i(TAG,"onReceivedError");
                 imgError.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
 //                super.onPageStarted(view, url, favicon);
+                Log.i(TAG,"onPageStarted");
                 checkShowError();
             }
         });
@@ -362,13 +409,13 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 pgWv.setProgress(newProgress);
+                Log.i(TAG,"setWebChromeClient.onProgressChanged");
                 if (newProgress >= 80) {
                     pgWv.setVisibility(View.GONE);
+
                 } else {
                     pgWv.setVisibility(View.VISIBLE);
                 }
-
-
                 super.onProgressChanged
                         (view, newProgress);
             }
@@ -376,11 +423,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onReceivedTitle(WebView view, String tit) {
                 super.onReceivedTitle(view, tit);
+                Log.i(TAG,"setWebChromeClient.onReceivedTitle");
                 title = tit;
-//                titles.add(title);
-//                mTitleBar.setTitle(getaTitle());
+                    titles.add(title);
+                    mTitleBar.setTitle(getaTitle());
+
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant
                         .SET_ABOUT.equals(view.getUrl())) {
+                    Log.i(TAG,"onReceivedTitle.visible");
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -391,6 +441,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public boolean onShowFileChooser(
                     WebView webView, ValueCallback<Uri[]> filePathCallback,
                     WebChromeClient.FileChooserParams fileChooserParams) {
+                Log.i(TAG,"setWebChromeClient.onShowFileChooser");
                 if (mFilePathCallback != null) {
                     mFilePathCallback.onReceiveValue(null);
                 }
@@ -473,7 +524,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     }
 
     private void initTitle() {
-        mTitleBar.setTitle("美丽行");
+        Log.i(TAG,"initTitle");
+//        mTitleBar.setTitle("美丽行");
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -486,47 +538,59 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar.setLeftLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                goBack();
             }
         });
         mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
 
     }
 
-    @Override
-    public void onBackPressed() {
+    public void goBack(){
 
-        if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
+            Log.i(TAG,"onBackPressed");
 
-           webView.goBackOrForward(-2);
-            return;
-        }
+            if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
 
-        if (webView.canGoBack()) {
+                webView.goBackOrForward(-2);
+                return;
+            }
 
-            /*if (titles.size() > 0) {
+            if (webView.canGoBack()) {
 
-                if (title != titles.get(titles.size() - 1)) {
+                if (titles.size() > 0) {
 
+                    if (title != titles.get(titles.size() - 1)) {
+
+                        title = titles.get(titles.size() - 1);
+                        mTitleBar.setTitle(getaTitle());
+                    }
+                    titles.remove(titles.size() - 1);
+                }
+                if (titles.size() > 1) {
+                    titles.remove(titles.size() - 1);
                     title = titles.get(titles.size() - 1);
                     mTitleBar.setTitle(getaTitle());
                 }
-                titles.remove(titles.size() - 1);
-            }*/
-           /* if (titles.size() > 1) {
-                titles.remove(titles.size() - 1);
-                title = titles.get(titles.size() - 1);
-                mTitleBar.setTitle(getaTitle());
-            }*/
-            LogTool.i(TAG, titles.toString());
-            webView.goBack();
-        } else {
-            if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
-                super.onBackPressed();
+                LogTool.i(TAG, titles.toString());
+                webView.goBack();
             } else {
+                if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
+                    super.onBackPressed();
+                } else {
 
-                moveTaskToBack(true);
+                    moveTaskToBack(true);
+                }
             }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(System.currentTimeMillis()-firstTime>2000){
+            firstTime = System.currentTimeMillis();
+            Toast.makeText(this,"再按一次返回键退出程序",Toast.LENGTH_SHORT).show();
+        }else {
+            finish();
+            System.exit(0);
         }
     }
 

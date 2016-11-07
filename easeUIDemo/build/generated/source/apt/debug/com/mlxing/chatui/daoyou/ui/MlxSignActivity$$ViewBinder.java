@@ -15,28 +15,28 @@ public class MlxSignActivity$$ViewBinder<T extends MlxSignActivity> implements V
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131492985, "field 'titleBar'");
-    target.titleBar = finder.castView(view, 2131492985, "field 'titleBar'");
-    view = finder.findRequiredView(source, 2131493123, "field 'editUsername'");
-    target.editUsername = finder.castView(view, 2131493123, "field 'editUsername'");
-    view = finder.findRequiredView(source, 2131493126, "field 'editPswd1'");
-    target.editPswd1 = finder.castView(view, 2131493126, "field 'editPswd1'");
-    view = finder.findRequiredView(source, 2131493270, "field 'editPswd2'");
-    target.editPswd2 = finder.castView(view, 2131493270, "field 'editPswd2'");
-    view = finder.findRequiredView(source, 2131493267, "field 'editCode'");
-    target.editCode = finder.castView(view, 2131493267, "field 'editCode'");
-    view = finder.findRequiredView(source, 2131493272, "field 'imageSign' and method 'onClick'");
-    target.imageSign = finder.castView(view, 2131493272, "field 'imageSign'");
-    unbinder.view2131493272 = view;
+    view = finder.findRequiredView(source, 2131492956, "field 'titleBar'");
+    target.titleBar = finder.castView(view, 2131492956, "field 'titleBar'");
+    view = finder.findRequiredView(source, 2131493125, "field 'editUsername'");
+    target.editUsername = finder.castView(view, 2131493125, "field 'editUsername'");
+    view = finder.findRequiredView(source, 2131493128, "field 'editPswd1'");
+    target.editPswd1 = finder.castView(view, 2131493128, "field 'editPswd1'");
+    view = finder.findRequiredView(source, 2131493281, "field 'editPswd2'");
+    target.editPswd2 = finder.castView(view, 2131493281, "field 'editPswd2'");
+    view = finder.findRequiredView(source, 2131493278, "field 'editCode'");
+    target.editCode = finder.castView(view, 2131493278, "field 'editCode'");
+    view = finder.findRequiredView(source, 2131493283, "field 'imageSign' and method 'onClick'");
+    target.imageSign = finder.castView(view, 2131493283, "field 'imageSign'");
+    unbinder.view2131493283 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493268, "field 'btnGetCode' and method 'onClick'");
-    target.btnGetCode = finder.castView(view, 2131493268, "field 'btnGetCode'");
-    unbinder.view2131493268 = view;
+    view = finder.findRequiredView(source, 2131493279, "field 'btnGetCode' and method 'onClick'");
+    target.btnGetCode = finder.castView(view, 2131493279, "field 'btnGetCode'");
+    unbinder.view2131493279 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,9 +53,9 @@ public class MlxSignActivity$$ViewBinder<T extends MlxSignActivity> implements V
   protected static class InnerUnbinder<T extends MlxSignActivity> implements Unbinder {
     private T target;
 
-    View view2131493272;
+    View view2131493283;
 
-    View view2131493268;
+    View view2131493279;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -74,9 +74,9 @@ public class MlxSignActivity$$ViewBinder<T extends MlxSignActivity> implements V
       target.editPswd1 = null;
       target.editPswd2 = null;
       target.editCode = null;
-      view2131493272.setOnClickListener(null);
+      view2131493283.setOnClickListener(null);
       target.imageSign = null;
-      view2131493268.setOnClickListener(null);
+      view2131493279.setOnClickListener(null);
       target.btnGetCode = null;
     }
   }

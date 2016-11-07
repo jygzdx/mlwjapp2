@@ -16,6 +16,10 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\em_smiley_add_btn_nor.png"
     },
     {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jpush_richpush_progressbar.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\cn.jiguang\\jpush\\2.1.8\\res\\drawable-hdpi-v4\\jpush_richpush_progressbar.xml"
+    },
+    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-hdpi\\abc_list_divider_mtrl_alpha.9.png"
     },
@@ -104,24 +108,24 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\icon_007.gif"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_mm_title_back.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_mm_title_back.png"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_search_clear_normal.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_search_clear_normal.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\umeng_update_close_bg_normal.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\umeng_update_close_bg_normal.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_search_clear_normal.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_search_clear_normal.png"
-    },
-    {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\em_camera_switch_pressed.9.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\em_camera_switch_pressed.9.png"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_mm_title_back.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_mm_title_back.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\em_tab_unread_bg.9.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\em_tab_unread_bg.9.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\em_camera_switch_pressed.9.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\em_camera_switch_pressed.9.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
@@ -604,6 +608,10 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_conversation_normal.png"
     },
     {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_back.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\cn.jiguang\\jpush\\2.1.8\\res\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_back.png"
+    },
+    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_seabar_input.9.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_seabar_input.9.png"
     },
@@ -972,6 +980,10 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\ease_chat_face_normal.png"
     },
     {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jpush_richpush_btn_selector.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\cn.jiguang\\jpush\\2.1.8\\res\\drawable-hdpi-v4\\jpush_richpush_btn_selector.xml"
+    },
+    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-hdpi\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -1246,6 +1258,10 @@
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\em_video_download_btn_nor.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-hdpi\\em_video_download_btn_nor.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_divider.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\cn.jiguang\\jpush\\2.1.8\\res\\drawable-hdpi-v4\\jpush_ic_richpush_actionbar_divider.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ee_27.png",

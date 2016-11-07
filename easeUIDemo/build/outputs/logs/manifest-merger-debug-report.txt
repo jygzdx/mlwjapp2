@@ -1,22 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:1-450:12
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:1-476:12
 	package
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:3:5-32
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:11-38
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:5:5-32
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:5:11-38
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:4:5-29
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:4:11-35
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:11-69
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:3:11-69
 uses-sdk
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:multidex:1.0.1] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [mlwjapp2:easeUI:unspecified] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\mlwjapp2\easeUI\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
@@ -25,6 +25,7 @@ MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwj
 MERGED from [com.tencent.bugly:crashreport:2.1] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.tencent.bugly\crashreport\2.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.jakewharton:butterknife:8.0.1] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.0.1\AndroidManifest.xml:5:5-43
 MERGED from [io.reactivex:rxandroid:1.2.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.0\AndroidManifest.xml:19:5-43
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
@@ -34,146 +35,160 @@ MERGED from [io.reactivex:rxandroid:1.2.0] G:\AndroidStudioProject\mlwjapp2\ease
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
 uses-permission#android.permission.VIBRATE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:11:5-66
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:11:5-65
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:24:5-66
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:11:22-63
 uses-permission#android.permission.INTERNET
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:12:5-67
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:12:5-66
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:18:5-67
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:13:5-71
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:13:5-70
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:13:22-68
 uses-permission#android.permission.CAMERA
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:14:5-65
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:14:5-64
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:14:22-62
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:15:5-79
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:15:5-78
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:26:5-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:15:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:16:5-81
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:16:5-80
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:21:5-81
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:17:5-84
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:17:5-83
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:25:5-84
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:17:22-81
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:18:5-79
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:18:5-78
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:32:5-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:18:22-76
 uses-permission#android.permission.GET_TASKS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:19:5-68
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:19:5-67
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:19:22-65
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:20:5-76
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:20:5-75
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:27:5-76
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:20:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:21:5-76
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:21:5-75
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:31:5-76
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:21:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:22:5-68
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:22:5-67
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:19:5-68
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:22:22-65
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:23:5-80
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:23:5-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:23:22-77
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:24:5-75
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:24:5-74
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:20:5-75
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:24:22-72
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:25:5-81
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:25:5-80
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:25:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:26:5-71
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:26:5-70
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:26:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:27:5-74
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:27:5-73
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:27:22-71
 uses-permission#android.permission.MANAGE_ACCOUNTS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:28:5-74
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:28:5-73
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:28:22-71
 uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:29:5-80
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:29:5-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:29:22-77
 uses-permission#com.android.launcher.permission.READ_SETTINGS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:30:5-85
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:30:5-84
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:30:22-82
 uses-permission#android.permission.BROADCAST_STICKY
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:31:5-75
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:31:5-74
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:31:22-72
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:32:5-73
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:32:5-72
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:23:5-73
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:32:22-70
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:33:5-82
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:33:5-81
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:33:22-79
 uses-permission#android.permission.READ_LOGS
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:34:5-68
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:34:5-67
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:34:22-65
 uses-permission#android.permission.CALL_PHONE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:35:5-69
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:35:5-68
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:35:22-66
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:36:5-81
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:36:5-80
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:30:5-81
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:36:22-78
 uses-permission#android.permission.SET_DEBUG_APP
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:37:5-72
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:37:5-71
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:37:22-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:38:5-78
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:38:5-77
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:38:22-75
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:39:5-80
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:39:5-79
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:22:5-80
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:39:22-77
 permission#com.mlxing.chatui.permission.C2D_MESSAGE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:42:5-44:47
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:42:5-44:46
 	android:protectionLevel
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:44:9-44
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:43:9-64
 uses-permission#com.mlxing.chatui.permission.C2D_MESSAGE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:46:5-80
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:46:5-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:46:22-77
 permission#com.mlxing.chatui.permission.MIPUSH_RECEIVE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:48:5-50:47
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:48:5-50:46
 	android:protectionLevel
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:50:9-44
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:49:9-67
 uses-permission#com.mlxing.chatui.permission.MIPUSH_RECEIVE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:52:5-83
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:52:5-82
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:52:22-80
 application
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:54:5-448:19
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:54:5-474:19
 MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:21.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:36:5-127:19
 	android:label
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:59:9-41
 	android:hardwareAccelerated
@@ -189,13 +204,13 @@ MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwj
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:55:9-40
 meta-data#uz_version
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:62:9-64:37
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:62:9-64:36
 	android:value
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:64:13-34
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:63:13-38
 activity#com.mlxing.chatui.ui.MainActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:66:9-71:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:66:9-71:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:69:13-49
 	android:launchMode
@@ -217,21 +232,21 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:78:13-82:29
 action#android.intent.action.MAIN
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:79:17-69
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:79:17-68
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:79:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:81:17-77
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:81:17-76
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:81:27-74
 activity#com.mlxing.chatui.daoyou.DaoYouMainActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:84:9-86:34
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:84:9-86:33
 	android:label
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:86:13-31
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:85:13-54
 activity#com.mlxing.chatui.ui.LoginActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:89:9-94:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:89:9-94:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:92:13-49
 	android:launchMode
@@ -243,7 +258,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:90:13-45
 activity#com.mlxing.chatui.ui.RegisterActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:97:9-101:71
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:97:9-101:70
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:99:13-49
 	android:windowSoftInputMode
@@ -253,7 +268,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:98:13-48
 activity#com.mlxing.chatui.ui.ChatActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:103:9-108:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:103:9-108:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:106:13-49
 	android:launchMode
@@ -265,7 +280,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:104:13-44
 activity#com.mlxing.chatui.wxapi.WXEntryActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:111:9-116:75
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:111:9-116:74
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:115:13-49
 	android:exported
@@ -277,7 +292,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:112:13-50
 activity#com.easemob.applib.ui.ChatActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:118:9-123:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:118:9-123:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:121:13-49
 	android:launchMode
@@ -289,7 +304,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:119:13-62
 activity#com.mlxing.chatui.ui.AddContactActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:125:9-129:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:125:9-129:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:127:13-49
 	android:windowSoftInputMode
@@ -299,7 +314,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:126:13-50
 activity#com.mlxing.chatui.ui.GroupDetailsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:131:9-134:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:131:9-134:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:133:13-49
 	android:theme
@@ -307,7 +322,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:132:13-52
 activity#com.mlxing.chatui.ui.GroupsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:136:9-140:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:136:9-140:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:138:13-49
 	android:windowSoftInputMode
@@ -317,7 +332,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:137:13-46
 activity#com.mlxing.chatui.ui.ChatRoomActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:141:9-145:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:141:9-145:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:143:13-49
 	android:windowSoftInputMode
@@ -327,7 +342,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:142:13-48
 activity#com.mlxing.chatui.ui.ChatRoomDetailsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:147:9-150:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:147:9-150:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:149:13-49
 	android:theme
@@ -335,7 +350,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:148:13-55
 activity#com.mlxing.chatui.ui.NewGroupActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:153:9-157:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:153:9-157:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:155:13-49
 	android:windowSoftInputMode
@@ -345,7 +360,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:154:13-48
 activity#com.mlxing.chatui.ui.ExitGroupDialog
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:159:9-162:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:159:9-162:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:161:13-49
 	android:theme
@@ -353,7 +368,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:160:13-47
 activity#com.mlxing.chatui.ui.GroupPickContactsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:164:9-168:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:164:9-168:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:166:13-49
 	android:windowSoftInputMode
@@ -363,7 +378,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:165:13-57
 activity#easeui.ui.EaseBaiduMapActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:170:9-173:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:170:9-173:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:172:13-49
 	android:theme
@@ -371,7 +386,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:171:13-58
 activity#com.mlxing.chatui.ui.NewFriendsMsgActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:176:9-179:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:176:9-179:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:178:13-49
 	android:theme
@@ -379,7 +394,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:177:13-53
 activity#com.mlxing.chatui.ui.ForwardMessageActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:181:9-185:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:181:9-185:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:183:13-49
 	android:windowSoftInputMode
@@ -389,7 +404,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:182:13-54
 activity#com.mlxing.chatui.ui.ForwardMessageGroupActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:186:9-190:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:186:9-190:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:188:13-49
 	android:windowSoftInputMode
@@ -399,7 +414,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:187:13-59
 activity#com.mlxing.chatui.ui.ContextMenuActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:192:9-195:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:192:9-195:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:194:13-49
 	android:theme
@@ -407,7 +422,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:193:13-51
 activity#easeui.ui.EaseShowBigImageActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:197:9-200:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:197:9-200:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:199:13-49
 	android:theme
@@ -415,7 +430,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:198:13-62
 activity#easeui.ui.EaseShowNormalFileActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:202:9-205:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:202:9-205:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:204:13-49
 	android:theme
@@ -423,7 +438,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:203:13-64
 activity#com.mlxing.chatui.ui.BlacklistActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:207:9-210:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:207:9-210:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:209:13-49
 	android:theme
@@ -431,7 +446,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:208:13-49
 activity#com.mlxing.chatui.ui.PublicGroupsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:213:9-217:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:213:9-217:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:215:13-49
 	android:windowSoftInputMode
@@ -441,7 +456,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:214:13-52
 activity#com.mlxing.chatui.ui.PublicChatRoomsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:218:9-222:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:218:9-222:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:220:13-49
 	android:windowSoftInputMode
@@ -451,7 +466,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:219:13-55
 activity#com.mlxing.chatui.ui.VoiceCallActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:225:9-229:51
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:225:9-229:50
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:228:13-49
 	android:launchMode
@@ -461,7 +476,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:226:13-49
 activity#com.mlxing.chatui.ui.VideoCallActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:231:9-236:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:231:9-236:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:235:13-49
 	android:launchMode
@@ -473,7 +488,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:232:13-49
 activity#com.mlxing.chatui.ui.GroupSimpleDetailActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:238:9-241:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:238:9-241:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:240:13-49
 	android:theme
@@ -481,7 +496,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:239:13-57
 activity#com.mlxing.chatui.ui.GroupBlacklistActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:243:9-246:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:243:9-246:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:245:13-49
 	android:theme
@@ -489,7 +504,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:244:13-54
 activity#com.mlxing.chatui.ui.PublicGroupsSeachActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:247:9-250:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:247:9-250:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:249:13-49
 	android:theme
@@ -497,7 +512,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:248:13-57
 activity#com.mlxing.chatui.ui.EditActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:251:9-255:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:251:9-255:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:253:13-49
 	android:windowSoftInputMode
@@ -507,7 +522,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:252:13-44
 activity#easeui.ui.EaseShowVideoActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:256:9-260:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:256:9-260:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:258:13-49
 	android:windowSoftInputMode
@@ -517,7 +532,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:257:13-59
 activity#com.mlxing.chatui.ui.ImageGridActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:262:9-266:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:262:9-266:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:264:13-49
 	android:windowSoftInputMode
@@ -527,7 +542,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:263:13-49
 activity#com.mlxing.chatui.ui.RecorderVideoActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:267:9-271:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:267:9-271:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:269:13-49
 	android:windowSoftInputMode
@@ -537,7 +552,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:268:13-53
 activity#com.mlxing.chatui.ui.DiagnoseActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:273:9-277:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:273:9-277:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:275:13-49
 	android:windowSoftInputMode
@@ -547,7 +562,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:274:13-48
 activity#com.mlxing.chatui.ui.OfflinePushNickActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:280:9-284:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:280:9-284:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:282:13-49
 	android:windowSoftInputMode
@@ -557,7 +572,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:281:13-55
 activity#com.mlxing.chatui.ui.RobotsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:286:9-290:63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:286:9-290:62
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:288:13-49
 	android:windowSoftInputMode
@@ -567,7 +582,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:287:13-46
 activity#com.mlxing.chatui.ui.UserProfileActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:292:9-295:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:292:9-295:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:294:13-49
 	android:theme
@@ -583,11 +598,11 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:priority
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:299:28-51
 action#android.intent.action.BOOT_COMPLETED
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:300:17-79
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:300:17-78
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:300:25-76
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:301:17-82
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:301:17-81
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:301:25-79
 receiver#com.easemob.chat.EMGCMBroadcastReceiver
@@ -601,15 +616,15 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 intent-filter#com.easemob.chatuidemo+com.google.android.c2dm.intent.RECEIVE
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:312:13-316:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:313:17-81
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:313:17-80
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:313:25-78
 category#com.easemob.chatuidemo
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:315:17-67
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:315:17-66
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:315:27-64
 service#com.easemob.chat.EMGCMListenerService
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:319:9-321:40
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:319:9-321:39
 	android:exported
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:321:13-37
 	android:name
@@ -623,17 +638,17 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 intent-filter#com.easemob.chatuidemo+com.easemob.sdk.push
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:326:13-330:29
 action#com.easemob.sdk.push
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:327:17-63
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:327:17-62
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:327:25-60
 meta-data#EASEMOB_APPKEY
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:336:9-338:46
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:336:9-338:45
 	android:value
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:338:13-43
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:337:13-42
 service#com.easemob.chat.EMChatService
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:340:9-342:39
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:340:9-342:38
 	android:exported
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:342:13-36
 	android:name
@@ -645,21 +660,21 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 intent-filter#android.intent.action.PACKAGE_REMOVED
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:345:13-349:29
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:346:17-80
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:346:17-79
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:346:25-77
 data
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:348:17-50
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:348:17-49
 	android:scheme
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:348:23-47
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:351:13-354:29
 action#android.intent.action.USER_PRESENT
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:353:17-77
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:353:17-76
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:353:25-74
 service#com.xiaomi.mipush.sdk.PushMessageHandler
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:358:9-361:39
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:358:9-361:38
 	android:enabled
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:360:13-35
 	android:exported
@@ -667,7 +682,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:359:13-68
 service#com.xiaomi.mipush.sdk.MessageHandleService
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:362:9-364:38
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:362:9-364:37
 	android:enabled
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:364:13-35
 	android:name
@@ -681,23 +696,23 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 intent-filter#com.xiaomi.mipush.RECEIVE_MESSAGE
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:369:13-371:29
 action#com.xiaomi.mipush.RECEIVE_MESSAGE
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:370:17-76
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:370:17-75
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:370:25-73
 intent-filter#com.xiaomi.mipush.MESSAGE_ARRIVED
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:372:13-374:29
 action#com.xiaomi.mipush.MESSAGE_ARRIVED
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:373:17-76
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:373:17-75
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:373:25-73
 intent-filter#com.xiaomi.mipush.ERROR
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:375:13-377:29
 action#com.xiaomi.mipush.ERROR
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:376:17-66
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:376:17-65
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:376:25-63
 service#com.baidu.location.f
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:383:9-386:41
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:383:9-386:40
 	android:enabled
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:385:13-35
 	android:process
@@ -705,29 +720,29 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:384:13-48
 meta-data#UMENG_APPKEY
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:388:9-390:56
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:388:9-390:55
 	android:value
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:390:13-53
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:389:13-40
 meta-data#UMENG_CHANNEL
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:391:9-393:39
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:391:9-393:38
 	android:value
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:393:13-36
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:392:13-41
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:395:9-397:64
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:395:9-397:63
 	android:value
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:397:13-61
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:396:13-52
 activity#com.mlxing.chatui.ui.GroupFragment
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:399:9-54
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:399:9-53
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:399:19-51
 activity#com.mlxing.chatui.wxapi.WXPayEntryActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:400:9-403:46
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:400:9-403:45
 	android:launchMode
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:403:13-43
 	android:exported
@@ -735,25 +750,25 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:401:13-53
 activity#com.mlxing.chatui.daoyou.utils.zxing.CaptureActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:404:9-406:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:404:9-406:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:406:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:405:13-63
 activity#com.mlxing.chatui.daoyou.utils.zxing.CreatQrcodeActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:407:9-409:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:407:9-409:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:409:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:408:13-67
 activity#com.mlxing.chatui.daoyou.ui.GroupNoticeActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:410:9-412:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:410:9-412:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:412:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:411:13-58
 activity#com.mlxing.chatui.daoyou.WebkitActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:413:9-417:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:413:9-417:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:415:13-49
 	android:windowSoftInputMode
@@ -763,11 +778,11 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:414:13-50
 activity#com.mlxing.chatui.daoyou.ui.MainMenuActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:418:9-64
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:418:9-63
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:418:19-61
 activity#com.mlxing.chatui.ui.SChatActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:419:9-424:58
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:419:9-424:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:422:13-49
 	android:launchMode
@@ -779,25 +794,25 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:420:13-45
 activity#easeui.choisepictures.ImgFileListActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:425:9-427:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:425:9-427:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:427:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:426:13-69
 activity#easeui.choisepictures.ImgsActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:428:9-430:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:428:9-430:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:430:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:429:13-62
 activity#com.mlxing.chatui.daoyou.ui.MlxVideoActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:431:9-433:52
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:431:9-433:51
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:433:13-49
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:432:13-55
 activity#com.mlxing.chatui.daoyou.ui.MlxLoginActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:434:9-438:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:434:9-438:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:436:13-49
 	android:windowSoftInputMode
@@ -807,7 +822,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:435:13-55
 activity#com.mlxing.chatui.daoyou.ui.MlxSignActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:439:9-443:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:439:9-443:54
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:441:13-49
 	android:windowSoftInputMode
@@ -817,12 +832,200 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:440:13-54
 activity#com.mlxing.chatui.daoyou.ui.MlxForgetActivity
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:444:9-447:55
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:444:9-448:54
 	android:screenOrientation
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:445:13-49
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:446:13-49
 	android:windowSoftInputMode
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:447:13-52
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:448:13-52
 	android:theme
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:446:13-52
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:447:13-52
 	android:name
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:444:19-62
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:445:13-56
+receiver#com.mlxing.chatui.receiver.JpushReceiver
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:450:9-470:20
+	android:enabled
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:452:13-35
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:451:13-51
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE+cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.mlxing.chatui
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:453:13-469:29
+action#cn.jpush.android.intent.REGISTRATION
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:456:17-78
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:456:25-76
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:458:17-82
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:458:25-80
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:460:17-87
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:460:25-85
+action#cn.jpush.android.intent.NOTIFICATION_OPENED
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:462:17-85
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:462:25-83
+action#cn.jpush.android.intent.CONNECTION
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:464:17-76
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:464:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:466:17-78
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:466:25-76
+category#com.mlxing.chatui
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:468:17-61
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:468:27-59
+activity#com.mlxing.chatui.daoyou.ui.JpushActivity
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:472:9-473:20
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:472:19-58
+permission#${JPUSH_PKGNAME}.permission.JPUSH_MESSAGE
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:11:5-13:47
+	android:protectionLevel
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:13:9-44
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:12:9-65
+uses-permission#${JPUSH_PKGNAME}.permission.JPUSH_MESSAGE
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:33:5-89
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:33:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:34:5-79
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:34:22-76
+activity#cn.jpush.android.ui.PopWinActivity
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:39:9-42:52
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:41:13-37
+	android:theme
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:42:13-49
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:40:13-62
+activity#cn.jpush.android.ui.PushActivity
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:45:9-56:20
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:48:13-37
+	android:configChanges
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:47:13-63
+	android:theme
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:49:13-60
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:46:13-60
+intent-filter#${JPUSH_PKGNAME}+android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:50:13-55:29
+action#cn.jpush.android.ui.PushActivity
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:51:17-75
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:51:25-72
+category#android.intent.category.DEFAULT
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:53:17-76
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:53:27-73
+category#${JPUSH_PKGNAME}
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:54:17-61
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:54:27-58
+service#cn.jpush.android.service.DownloadService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:58:9-61:40
+	android:enabled
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:60:13-35
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:59:13-68
+service#cn.jpush.android.service.PushService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:65:9-76:19
+	android:enabled
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:67:13-35
+	android:process
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:69:13-40
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:68:13-37
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:66:13-64
+intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:70:13-75:29
+action#cn.jpush.android.intent.REGISTER
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:71:17-75
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:71:25-72
+action#cn.jpush.android.intent.REPORT
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:72:17-73
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:72:25-70
+action#cn.jpush.android.intent.PushService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:73:17-78
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:73:25-75
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:74:17-76
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:74:25-73
+service#cn.jpush.android.service.DaemonService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:80:9-89:19
+	android:enabled
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:82:13-35
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:83:13-36
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:81:13-66
+intent-filter#${JPUSH_PKGNAME}+cn.jpush.android.intent.DaemonService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:84:13-88:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:85:17-80
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:85:25-77
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:92:9-112:20
+	android:enabled
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:94:13-35
+	android:process
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:96:13-40
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:95:13-37
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:93:13-65
+intent-filter#${JPUSH_PKGNAME}+cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:97:13-100:29
+	android:priority
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:97:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:98:17-94
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:98:25-91
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:101:13-104:29
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:106:13-111:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:107:17-78
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:107:25-75
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:115:9-117:40
+	android:exported
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:117:13-37
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:116:13-66
+meta-data#JPUSH_CHANNEL
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:120:9-122:48
+	android:value
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:122:13-45
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:121:13-41
+meta-data#JPUSH_APPKEY
+ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:123:9-125:47
+	android:value
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:125:13-44
+	android:name
+		ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:124:13-40

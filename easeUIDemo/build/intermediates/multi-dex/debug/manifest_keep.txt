@@ -65,6 +65,15 @@
 -keep class com.mlxing.chatui.daoyou.ui.MlxLoginActivity { <init>(); }
 -keep class com.mlxing.chatui.daoyou.ui.MlxSignActivity { <init>(); }
 -keep class com.mlxing.chatui.daoyou.ui.MlxForgetActivity { <init>(); }
+-keep class com.mlxing.chatui.receiver.JpushReceiver { <init>(); }
+-keep class com.mlxing.chatui.daoyou.ui.JpushActivity { <init>(); }
+-keep class cn.jpush.android.ui.PopWinActivity { <init>(); }
+-keep class cn.jpush.android.ui.PushActivity { <init>(); }
+-keep class cn.jpush.android.service.DownloadService { <init>(); }
+-keep class cn.jpush.android.service.PushService { <init>(); }
+-keep class cn.jpush.android.service.DaemonService { <init>(); }
+-keep class cn.jpush.android.service.PushReceiver { <init>(); }
+-keep class cn.jpush.android.service.AlarmReceiver { <init>(); }
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }

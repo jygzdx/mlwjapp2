@@ -24,20 +24,20 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\delete_expression.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ease_chatting_biaoqing_btn_enable.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\ease_chatting_biaoqing_btn_enable.png"
-    },
-    {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mlx_login_pswd.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\mlx_login_pswd.png"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mlx_header_new_friend.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\mlx_header_new_friend.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\21.0.0\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mlx_header_new_friend.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\mlx_header_new_friend.png"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\mlx_login_pswd.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\mlx_login_pswd.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ease_chatting_biaoqing_btn_enable.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable-xhdpi\\ease_chatting_biaoqing_btn_enable.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",

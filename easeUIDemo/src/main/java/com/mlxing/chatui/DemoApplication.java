@@ -16,12 +16,16 @@ package com.mlxing.chatui;
 import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
+import android.util.Log;
 
 import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
+
+
+import cn.jpush.android.api.JPushInterface;
 
 
 public class DemoApplication extends Application {
@@ -53,6 +57,18 @@ public class DemoApplication extends Application {
 		PlatformConfig.setWeixin("wxbe4d6a747dcf578f", "df0e35026183d0c930e303356e49c7b6");
 		api = WXAPIFactory.createWXAPI(getApplicationContext(), "wxbe4d6a747dcf578f");
 		api.registerApp("wxbe4d6a747dcf578f");
+//初始化
+//		x.Ext.init(this);
+//		x.Ext.setDebug(BuildConfig.DEBUG);
+try{
+	//极光推送初始化
+	JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
+	JPushInterface.init(this);     		// 初始化 JPush
+}catch (Exception e){
+	Log.i("TAG",e.getMessage());
+}
+
+
 	}
 
 	public static DemoApplication getInstance() {

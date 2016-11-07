@@ -16,6 +16,7 @@ import com.mlxing.chatui.ui.LoginActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.jpush.android.api.JPushInterface;
 
 public class MlxVideoActivity extends Activity {
 
@@ -69,6 +70,7 @@ public class MlxVideoActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        JPushInterface.onResume(this);
       /*video.start();
         video.seekTo(position);*/
     }
@@ -76,6 +78,7 @@ public class MlxVideoActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
+        JPushInterface.onPause(this);
         /*position = video.getCurrentPosition();
         video.pause();*/
     }

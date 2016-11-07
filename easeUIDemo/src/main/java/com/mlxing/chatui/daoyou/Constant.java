@@ -78,4 +78,8 @@ public class Constant {
     public static final String Url_TIKU_OLD="http://static.mlxing.com/travelApp/html/exameScore.html";
     public static final String Url_TIKU_NEW="http://static.mlxing.com/travelApp/html/startPratice.html";
     public static final String Url_TIKU_INDEX="http://static.mlxing.com/travelApp/html/index.html";
+
+    //版本号地址
+    public static final String URL_VERSION = "http://weixin.mlxing.com/vers/get_version?class=3";
+
 }

@@ -9,7 +9,7 @@ import com.mlxing.chatui.daoyou.utils.ActivityManager;
 import easeui.ui.EaseChatFragment;
 
 /**
- * 聊天页面，需要fragment的使用{@link #EaseChatFragment}
+ * 聊天页面，需要fragment的使用
  *{@link #}
  */
 public class ChatActivity extends BaseActivity{
