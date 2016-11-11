@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mlxing.chatui"
     android:versionCode="26"
-    android:versionName="2.1.0" >
+    android:versionName="2.1.1" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -124,8 +124,9 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!-- 聊天页面 -->
+        <!-- com.easemob.applib -->
         <activity
-            android:name="com.easemob.applib.ui.ChatActivity"
+            android:name="com.mlxing.chatui.com.easemob.applib.ui.ChatActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"

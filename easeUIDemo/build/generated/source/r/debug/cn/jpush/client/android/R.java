@@ -14,19 +14,19 @@ public final class R {
 		public static final int jpush_richpush_progressbar = 0x7f02018d;
 	}
 	public static final class id {
-		public static final int actionbarLayoutId = 0x7f0c0188;
-		public static final int fullWebView = 0x7f0c018e;
-		public static final int imgRichpushBtnBack = 0x7f0c018a;
-		public static final int imgView = 0x7f0c018b;
-		public static final int popLayoutId = 0x7f0c0186;
-		public static final int pushPrograssBar = 0x7f0c018d;
-		public static final int rlRichpushTitleBar = 0x7f0c0189;
-		public static final int tvRichpushTitle = 0x7f0c018c;
-		public static final int wvPopwin = 0x7f0c0187;
+		public static final int actionbarLayoutId = 0x7f0c0191;
+		public static final int fullWebView = 0x7f0c0197;
+		public static final int imgRichpushBtnBack = 0x7f0c0193;
+		public static final int imgView = 0x7f0c0194;
+		public static final int popLayoutId = 0x7f0c018f;
+		public static final int pushPrograssBar = 0x7f0c0196;
+		public static final int rlRichpushTitleBar = 0x7f0c0192;
+		public static final int tvRichpushTitle = 0x7f0c0195;
+		public static final int wvPopwin = 0x7f0c0190;
 	}
 	public static final class layout {
-		public static final int jpush_popwin_layout = 0x7f030086;
-		public static final int jpush_webview_layout = 0x7f030087;
+		public static final int jpush_popwin_layout = 0x7f030087;
+		public static final int jpush_webview_layout = 0x7f030088;
 	}
 	public static final class style {
 		public static final int MyDialogStyle = 0x7f0a008c;

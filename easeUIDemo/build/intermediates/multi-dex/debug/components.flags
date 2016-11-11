@@ -46,7 +46,7 @@
     <init>();
 }
 
--keep class com.easemob.applib.ui.ChatActivity {
+-keep class com.mlxing.chatui.com.easemob.applib.ui.ChatActivity {
     <init>();
 }
 

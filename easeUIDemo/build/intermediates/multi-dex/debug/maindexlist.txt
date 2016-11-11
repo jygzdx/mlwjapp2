@@ -171,6 +171,7 @@ com/baidu/mapapi/map/MyLocationConfiguration.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
 cn/jpush/android/service/h.class
 com/easemob/chat/EMMonitor.class
+okhttp3/Call$Factory.class
 org/apache/http/conn/EofSensorInputStream.class
 com/mlxing/chatui/DemoHelper.class
 com/mlxing/chatui/daoyou/ui/MainMenuActivity$3.class
@@ -229,6 +230,7 @@ com/umeng/socialize/media/WeiXinShareContent.class
 com/tencent/mm/sdk/modelbase/BaseReq.class
 android/support/v4/media/session/MediaControllerCompat.class
 org/apache/http/impl/cookie/RFC2109SpecFactory.class
+com/mlxing/chatui/daoyou/WebkitActivity$1$2.class
 org/apache/http/impl/conn/tsccm/BasicPoolEntryRef.class
 com/easemob/easeui/R$id.class
 com/baidu/location/BDNotifyListener.class
@@ -348,9 +350,11 @@ org/apache/commons/logging/impl/LogFactoryImpl.class
 com/mlxing/chatui/ui/CallActivity.class
 com/baidu/mapapi/map/MapView.class
 com/mlxing/chatui/daoyou/ui/JpushActivity.class
+okhttp3/OkHttpClient.class
 com/xiaomi/mipush/sdk/MiPushMessage.class
 com/mlxing/chatui/ui/OfflinePushNickActivity$1.class
 com/mlxing/chatui/ui/ForwardMessageActivity$1.class
+com/mlxing/chatui/daoyou/utils/VersionBiz.class
 com/baidu/location/Poi.class
 org/apache/http/cookie/SetCookie2.class
 org/apache/http/impl/client/DefaultTargetAuthenticationHandler.class
@@ -441,6 +445,7 @@ android/support/v4/media/session/PlaybackStateCompat$1.class
 org/apache/http/conn/ManagedClientConnection.class
 cn/jpush/a/a/a/f.class
 android/support/annotation/FloatRange.class
+okhttp3/Request.class
 easeui/choisepictures/ImgCallBack.class
 org/apache/http/conn/routing/HttpRouteDirector.class
 cn/jpush/android/util/ao.class
@@ -516,6 +521,7 @@ butterknife/OnItemSelected.class
 cn/jpush/android/ui/FullScreenView.class
 cn/jpush/android/ui/c.class
 android/support/v4/app/SuperNotCalledException.class
+com/mlxing/chatui/daoyou/WebkitActivity$10.class
 com/mlxing/chatui/ui/LoginActivity$5.class
 android/support/v4/media/VolumeProviderCompat.class
 org/apache/http/impl/cookie/BrowserCompatSpecFactory.class
@@ -765,6 +771,7 @@ org/apache/http/impl/io/AbstractSessionOutputBuffer.class
 com/mlxing/chatui/ui/RegisterActivity.class
 org/apache/http/HttpRequest.class
 org/apache/http/message/BasicHeaderIterator.class
+okhttp3/Request$Builder.class
 com/mlxing/chatui/ui/VideoCallActivity$OppositeCallback.class
 com/easemob/chat/EMGroup.class
 rx/schedulers/NewThreadScheduler.class
@@ -1039,6 +1046,7 @@ android/support/annotation/RequiresPermission$Write.class
 org/apache/commons/codec/Decoder.class
 org/apache/http/impl/cookie/NetscapeDraftHeaderParser.class
 easeui/ui/EaseBaiduMapActivity.class
+com/mlxing/chatui/daoyou/WebkitActivity$1$1.class
 org/apache/http/client/methods/HttpOptions.class
 org/apache/http/entity/FileEntity.class
 android/support/v7/view/ActionMode.class

@@ -2,6 +2,7 @@ package com.mlxing.chatui.daoyou;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +18,7 @@ import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
@@ -27,6 +29,8 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -46,6 +50,7 @@ import com.mlxing.chatui.daoyou.utils.LogTool;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
 import com.mlxing.chatui.daoyou.utils.SPUtils;
 import com.mlxing.chatui.daoyou.utils.UIHelper;
+import com.mlxing.chatui.daoyou.utils.VersionBiz;
 import com.mlxing.chatui.daoyou.utils.zxing.CaptureActivity;
 import com.mlxing.chatui.db.InviteMessgeDao;
 import com.mlxing.chatui.ui.BaseActivity;
@@ -70,8 +75,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import easeui.EaseConstant;
 import easeui.widget.EaseTitleBar;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * webview首页
@@ -107,16 +118,71 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private boolean isShare;
     private boolean isJpush = false;
 
-    Handler handler = new Handler(){
+    private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
-            switch (msg.what){
-                case 1:
-                    Log.i("WebkitActivity", (String) msg.obj);
+            switch(msg.what){
+                case IS_SAME_VERSION:
+                    String serviceAPKVersion = (String)msg.obj;
+
+                    String currVersion = VersionBiz.getVersion(mContext);
+                    boolean isSameVersion = VersionBiz.isSameVersion(mContext,currVersion,serviceAPKVersion);
+                    String versionName = (String) SPUtils.get(mContext,"downapkVersion"," ");
+                    if(!isSameVersion) {
+                        if(!versionName.equals(serviceAPKVersion)){
+                            //下载apk
+                            VersionBiz versionBiz = new VersionBiz();
+                            versionBiz.downApk(serviceAPKVersion,handler,mContext);
+                        }
+
+
+                    }else{
+                        Log.i(TAG,"不用更新版本");
+                    }
+                break;
+                case Constant.HANDLER_DOWNLOAD_SUCCESE:
+                    final String apkSavePath = (String) msg.obj;
+                    Log.i(TAG,"apkSavePath="+apkSavePath);
+
+                    boolean isSelected = (boolean) SPUtils.get(mContext,"isSelected",false);
+                    if(!isSelected){
+                        final AlertDialog dialog = new AlertDialog.Builder(mContext).create();
+
+                        View mView = LayoutInflater.from(mContext).inflate(R.layout.dialog_updata,null);
+                        final CheckBox cb_selected = (CheckBox) mView.findViewById(R.id.dialog_selected);
+                        Button btn_positive = (Button)mView.findViewById(R.id.dialog_Positive);
+                        Button btn_negative = (Button) mView.findViewById(R.id.dialog_Negative);
+
+                        btn_negative.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                boolean isSelected = cb_selected.isSelected();
+                                SPUtils.put(mContext,"isSelected",isSelected);
+                                dialog.dismiss();
+                            }
+                        });
+                        btn_positive.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                SPUtils.put(mContext,"isSelected",false);
+                                //跳转到apk安装页面
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                File file = new File(apkSavePath);
+                                Uri uri = Uri.fromFile(file);
+                                String type = "application/vnd.android.package-archive";
+                                intent.setDataAndType(uri,type);
+                                startActivity(intent);
+                            }
+                        });
+
+                        dialog.setView(mView);
+                        dialog.show();
+                    }
                     break;
             }
         }
     };
+
 
     /**
      * 记录用户首次点击back键时间
@@ -146,26 +212,46 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
         webView.loadUrl(url);
 
-
-//        x.view().inject(this);
-
-        //checkVersion();
-
-
+        checkVersion();
 
         inviteMessgeDao = new InviteMessgeDao(this);
 
         // 注册群组和联系人监听
         DemoHelper.getInstance().registerGroupAndContactListener();
         registerBroadcastReceiver();
-    }
 
-    /**
-     * 查询版本号
-     */
-    public void checkVersion() {
-//        VersionUtils versionUtils = new VersionUtils();
-//        versionUtils.getNewVersion(handler);
+        Log.i(TAG, "RegistrationID="+JPushInterface.getRegistrationID(this));
+    }
+    private static final int IS_SAME_VERSION = 1;
+    private void checkVersion() {
+        OkHttpClient mOkHttpClient = new OkHttpClient();
+        Request request = new Request.Builder().url("http://weixin.mlxing.com/vers/get_version?class=3").build();
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.i("onfailure",e.getMessage());
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body().string();
+                Log.i("body",body);
+                try {
+
+                    JSONObject obj = new JSONObject(body);
+                    String serviceAPKVersion = obj.getString("version");
+
+                    Message message = handler.obtainMessage();
+                    message.what = IS_SAME_VERSION;
+
+                    message.obj = serviceAPKVersion;
+                    handler.sendMessage(message);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
 
@@ -924,6 +1010,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
 
     class InJavaScriptGetBody {
+
+        @JavascriptInterface
+        public void wxPay(){
+            Toast.makeText(WebkitActivity.this,"微信支付",Toast.LENGTH_SHORT).show();
+        }
 
         @JavascriptInterface
         public void getBody(String body) {

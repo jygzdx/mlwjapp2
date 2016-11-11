@@ -46,6 +46,10 @@ public class HttpUtil {
     private static ApiInterface apiInterface;
     private static OkHttpClient okHttpClient;
 
+    private static String getNewVersion(){
+        return "";
+    }
+
     //retrofit
     private static OkHttpClient  getOkClient(){
         OkHttpClient mOkHttpClient = null;

@@ -9,7 +9,7 @@
 -keep class com.mlxing.chatui.ui.RegisterActivity { <init>(); }
 -keep class com.mlxing.chatui.ui.ChatActivity { <init>(); }
 -keep class com.mlxing.chatui.wxapi.WXEntryActivity { <init>(); }
--keep class com.easemob.applib.ui.ChatActivity { <init>(); }
+-keep class com.mlxing.chatui.com.easemob.applib.ui.ChatActivity { <init>(); }
 -keep class com.mlxing.chatui.ui.AddContactActivity { <init>(); }
 -keep class com.mlxing.chatui.ui.GroupDetailsActivity { <init>(); }
 -keep class com.mlxing.chatui.ui.GroupsActivity { <init>(); }

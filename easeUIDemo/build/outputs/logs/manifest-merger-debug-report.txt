@@ -291,7 +291,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:116:13-72
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:112:13-50
-activity#com.easemob.applib.ui.ChatActivity
+activity#com.mlxing.chatui.com.easemob.applib.ui.ChatActivity
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:118:9-123:57
 	android:screenOrientation
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:121:13-49
@@ -302,7 +302,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:theme
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:122:13-52
 	android:name
-		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:119:13-62
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:119:13-63
 activity#com.mlxing.chatui.ui.AddContactActivity
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:125:9-129:57
 	android:screenOrientation

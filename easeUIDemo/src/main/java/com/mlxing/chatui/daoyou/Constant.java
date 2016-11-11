@@ -81,5 +81,7 @@ public class Constant {
 
     //版本号地址
     public static final String URL_VERSION = "http://weixin.mlxing.com/vers/get_version?class=3";
+    //下載apk完成handler的what值
+    public static final int HANDLER_DOWNLOAD_SUCCESE = 2;
 
 }
