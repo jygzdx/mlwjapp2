@@ -2,11 +2,13 @@
 package com.mlxing.chatui.ui;
 
 import android.view.View;
-
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Finder;
 import butterknife.internal.ViewBinder;
+import java.lang.IllegalStateException;
+import java.lang.Object;
+import java.lang.Override;
 
 public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewBinder<T> {
   @Override

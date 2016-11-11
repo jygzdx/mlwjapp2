@@ -245,7 +245,7 @@ public class LoginActivity extends BaseActivity {
                 startActivity(intent);*/
                     SPUtils.put(LoginActivity.this, SPUtils.SP_UNIONID, String.format(Constant.URL_LOGIN, unionId));
 
-                    getUserPhone(unionId);
+                    //getUserPhone(unionId);
 
 
 
