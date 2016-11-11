@@ -1,7 +1,6 @@
 package com.mlxing.chatui.daoyou.ui;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -11,8 +10,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.mlxing.chatui.R;
-import com.mlxing.chatui.daoyou.WebkitActivity;
+import com.mlxing.chatui.daoyou.Constant;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
+import com.mlxing.chatui.daoyou.utils.UIHelper;
 
 import easeui.widget.EaseTitleBar;
 
@@ -89,8 +89,8 @@ public class JpushActivity extends Activity {
         mTitleBar.setLeftLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JpushActivity.this, WebkitActivity.class);
-                startActivity(intent);
+                UIHelper.goToWebView(JpushActivity.this, Constant.URL_HOME);
+                finish();
             }
         });
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {

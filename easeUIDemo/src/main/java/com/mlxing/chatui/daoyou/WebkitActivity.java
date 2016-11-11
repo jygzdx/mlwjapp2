@@ -615,6 +615,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
             }
