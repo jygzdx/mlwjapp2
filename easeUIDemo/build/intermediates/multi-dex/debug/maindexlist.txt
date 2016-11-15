@@ -449,6 +449,7 @@ okhttp3/Request.class
 easeui/choisepictures/ImgCallBack.class
 org/apache/http/conn/routing/HttpRouteDirector.class
 cn/jpush/android/util/ao.class
+okhttp3/FormBody$Builder.class
 com/easemob/EMEventListener.class
 org/apache/http/client/HttpClient.class
 com/easemob/EMGroupChangeListener.class
@@ -681,6 +682,7 @@ com/mlxing/chatui/daoyou/ui/JpushActivity$2.class
 org/apache/http/ParseException.class
 org/apache/http/auth/AuthSchemeRegistry.class
 com/mlxing/chatui/ui/LoginActivity$8.class
+com/mlxing/chatui/DemoApplication$1.class
 org/apache/http/client/protocol/RequestProxyAuthentication.class
 cn/jpush/android/ui/b.class
 android/support/v4/app/FragmentActivity.class
@@ -796,6 +798,7 @@ org/apache/http/impl/conn/DefaultHttpRoutePlanner.class
 android/support/annotation/MenuRes.class
 rx/functions/Function.class
 cn/jpush/android/service/f.class
+okhttp3/FormBody.class
 com/mlxing/chatui/ui/DiagnoseActivity$1.class
 org/apache/http/protocol/DefaultedHttpContext.class
 com/mlxing/chatui/ui/VoiceCallActivity$1.class
@@ -942,6 +945,7 @@ com/bumptech/glide/BitmapRequestBuilder.class
 org/apache/http/auth/NTCredentials.class
 org/apache/http/client/utils/URLEncodedUtils.class
 com/mlxing/chatui/ui/NewGroupActivity.class
+okhttp3/RequestBody.class
 easeui/ui/EaseShowNormalFileActivity$1.class
 android/support/v4/app/FragmentTransitionCompat21.class
 android/support/v4/media/session/PlaybackStateCompatApi21.class

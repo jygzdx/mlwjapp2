@@ -40,8 +40,12 @@ public class SPUtils {
     /**
      * 用户mid
      */
-    public static String MID = "mid";
+    public static final String MID = "mid";
 
+    /**
+     * 用戶RegistrationID
+     */
+    public static final String REGID = "RegistrationID";
 
     public SPUtils() {
         /* cannot be instantiated */

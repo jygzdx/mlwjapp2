@@ -75,7 +75,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import cn.jpush.android.api.JPushInterface;
 import easeui.EaseConstant;
 import easeui.widget.EaseTitleBar;
 import okhttp3.Call;
@@ -231,7 +230,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         DemoHelper.getInstance().registerGroupAndContactListener();
         registerBroadcastReceiver();
 
-        Log.i(TAG, "RegistrationID="+JPushInterface.getRegistrationID(this));
     }
     private static final int IS_SAME_VERSION = 1;
     private void checkVersion() {

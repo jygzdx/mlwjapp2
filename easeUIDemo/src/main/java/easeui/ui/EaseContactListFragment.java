@@ -59,7 +59,7 @@ public class EaseContactListFragment extends EaseBaseFragment {
     protected boolean hidden;
     protected List<String> blackList;
     protected ImageButton clearSearch;
-//    protected EditText query;
+//    protected EditText query;//注释
     protected Handler handler = new Handler();
     protected EaseUser toBeProcessUser;
     protected String toBeProcessUsername;
@@ -90,7 +90,7 @@ public class EaseContactListFragment extends EaseBaseFragment {
         contactListLayout = (EaseContactList) getView().findViewById(R.id.contact_list);        
         listView = contactListLayout.getListView();
         
-        //搜索框
+//        //搜索框//注释
 //        query = (EditText) getView().findViewById(R.id.query);
 //        clearSearch = (ImageButton) getView().findViewById(R.id.search_clear);
     }
@@ -120,7 +120,7 @@ public class EaseContactListFragment extends EaseBaseFragment {
             });
         }
         
-        /*query.addTextChangedListener(new TextWatcher() {
+        /*query.addTextChangedListener(new TextWatcher() {//注释
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 contactListLayout.filter(s);
                 if (s.length() > 0) {
@@ -137,7 +137,7 @@ public class EaseContactListFragment extends EaseBaseFragment {
             public void afterTextChanged(Editable s) {
             }
         });
-        clearSearch.setOnClickListener(new OnClickListener() {
+        clearSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 query.getText().clear();

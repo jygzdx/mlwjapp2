@@ -20,13 +20,7 @@ public class JpushReceiver  extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
         Bundle bundle = intent.getExtras();
-        if(JPushInterface.ACTION_REGISTRATION_ID.equals(intent.getAction())){
-            String registrationID = bundle.getString(JPushInterface.EXTRA_REGISTRATION_ID);
-            String registrationID1 = JPushInterface.getRegistrationID(context);
-
-            Log.i("JpushReceiver","registrationID="+registrationID);
-            Log.i("JpushReceiver","registrationID1="+registrationID1);
-        }else if(JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())){
+        if(JPushInterface.ACTION_NOTIFICATION_OPENED.equals(intent.getAction())){
             String extras = bundle.getString(JPushInterface.EXTRA_EXTRA);
             try {
 
