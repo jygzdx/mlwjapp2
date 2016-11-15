@@ -25,6 +25,16 @@ public class EaseUser extends EMContact {
 	 * 用户头像
 	 */
 	protected String avatar;
+
+	private String mid;
+
+	public void setMid(String mid){
+		this.mid = mid;
+	}
+
+	public String getMid(){
+		return mid;
+	}
 	
 	public EaseUser(String username){
 	    this.username = username;

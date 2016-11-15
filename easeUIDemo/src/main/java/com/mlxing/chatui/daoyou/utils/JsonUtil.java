@@ -33,12 +33,13 @@ public class JsonUtil {
                         String name = obj.getString("huanxinAccount");
                         String nick = obj.getString("nickname");
                         String avatar = obj.getString("headimgurl");
+                        String mid = obj.getString("mid");
                         if (name != null) {
                             EaseUser user = new EaseUser(name);
+                            user.setMid(mid);
                             user.setAvatar(avatar);
                             user.setNick(nick);
                             list.add(user);
-
                         }
                     }
                 }

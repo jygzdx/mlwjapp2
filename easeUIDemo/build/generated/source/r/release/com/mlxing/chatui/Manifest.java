@@ -12,6 +12,7 @@ public final class Manifest {
         /**  使用时把com.easemob.chatuidemo替换成自己的包名 
          */
         public static final String C2D_MESSAGE="com.mlxing.chatui.permission.C2D_MESSAGE";
+        public static final String JPUSH_MESSAGE="com.mlxing.chatui.permission.JPUSH_MESSAGE";
         public static final String MIPUSH_RECEIVE="com.mlxing.chatui.permission.MIPUSH_RECEIVE";
     }
 }

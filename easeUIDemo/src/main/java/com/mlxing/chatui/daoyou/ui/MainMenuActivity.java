@@ -183,6 +183,7 @@ public class MainMenuActivity extends Activity {
 //                                            CacheClearHelper.cleanApplicationData(getApplicationContext());
                                             CacheClearHelper.removeCookie(getApplicationContext());
                                             SPUtils.put(MainMenuActivity.this, SPUtils.SP_UNIONID, "");
+                                            SPUtils.remove(MainMenuActivity.this,SPUtils.MID);
                                             UIHelper.gotoLoginActivity(MainMenuActivity.this);
 
                                             finish();

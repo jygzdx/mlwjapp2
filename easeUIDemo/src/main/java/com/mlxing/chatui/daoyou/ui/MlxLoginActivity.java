@@ -20,7 +20,6 @@ import com.mlxing.chatui.DemoApplication;
 import com.mlxing.chatui.DemoHelper;
 import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.Constant;
-import com.mlxing.chatui.daoyou.entity.LoginEntity;
 import com.mlxing.chatui.daoyou.entity.WxHuanXinEntity;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.JsonUtil;
@@ -113,7 +112,7 @@ public class MlxLoginActivity extends Activity {
     /**
      * 微信一键登陆
      *
-     * @param v
+     * @param
      */
     public void wxLogin() {
         progressShow = true;
@@ -228,6 +227,7 @@ public class MlxLoginActivity extends Activity {
                     @Override
                     public void onResponse(okhttp3.Call call, okhttp3.Response response) throws IOException {
                         String s = response.body().string();
+                        Log.i(TAG,"hxlogin.response="+response.body().string());
                         List<EaseUser> result = JsonUtil.getUserListFromWxJson(s);
                         if (result != null && result.size() > 0) {
                             EaseUser user = result.get(0);

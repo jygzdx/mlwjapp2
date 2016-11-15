@@ -80,6 +80,7 @@ import easeui.EaseConstant;
 import easeui.widget.EaseTitleBar;
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -118,10 +119,20 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private boolean isShare;
     private boolean isJpush = false;
 
+    private int mtype;
+    private String mpartnerid;
+
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             switch(msg.what){
+                case HANDLER_PAY_FAILURE:
+                    //付款失败
+                    webView.loadUrl("javascript:cancelPay("+")");
+                    mpartnerid = "";
+                    mtype = 0;
+                    Toast.makeText(mContext,"无法支付，请查看自己是否有登录！",Toast.LENGTH_SHORT).show();
+                    break;
                 case IS_SAME_VERSION:
                     String serviceAPKVersion = (String)msg.obj;
 
@@ -426,6 +437,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 } else if (url.contains("mlxing.qrcode")) {//拦截进入扫描二维码
                     Intent intent = new Intent(WebkitActivity.this, CaptureActivity.class);
                     startActivityForResult(intent, WebkitActivity.QRCODE_REQUEST);
+                }else if(url.contains("")){
+
                 }
                 return super.shouldOverrideUrlLoading(view, url);
             }
@@ -457,9 +470,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
                 }
-//                if(isJpush){
-//                    mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
-//                }
 
                 if (url.contains("http://weixin.mlxing.com/zf/ddzf/")) {//支付
 //                    String ht = "javascript:window.mlxapp.getBody(document.getElementsByTagName
@@ -615,7 +625,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
             }
@@ -773,6 +782,17 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         if (code == 0 || code == -1 || code == -2) {
             webView.loadUrl("javascript:_jsCallbackForAppPay(" + code + ")");
             SPUtils.put(this, SPUtils.SP_JS, 9);
+        }
+        if(code == 0){
+            //付款成功
+            webView.loadUrl("javascript:beginDraw("+mtype+","+mpartnerid+")");
+            mpartnerid = "";
+            mtype = 0;
+        }else{
+            //付款失败
+            webView.loadUrl("javascript:cancelPay("+")");
+            mpartnerid = "";
+            mtype = 0;
         }
         updateUnreadAddressLable();
         // register the event listener when enter the foreground
@@ -1009,12 +1029,66 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 }).open();
     }
 
-
+    private static final int HANDLER_PAY_FAILURE = 4;
     class InJavaScriptGetBody {
 
         @JavascriptInterface
-        public void wxPay(){
-            Toast.makeText(WebkitActivity.this,"微信支付",Toast.LENGTH_SHORT).show();
+        public void wxPay(int type,String partnerid){
+            mtype = type;
+            mpartnerid = partnerid;
+            String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
+            //没有登录直接返回
+            if(" ".equals(mid)){
+
+                Message msg = handler.obtainMessage();
+                msg.what = HANDLER_PAY_FAILURE;
+                handler.sendMessage(msg);
+                return;
+            }
+            OkHttpClient mOkHttpClient = new OkHttpClient();
+            FormBody formBody = new FormBody.Builder().add("class","2").add("mid",mid).build();
+
+            final Request request = new Request.Builder().url("http://weixin.mlxing" +
+                    ".com/activity/indent?trade_type=APP").post(formBody).build();
+
+            Call call = mOkHttpClient.newCall(request);
+            call.enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    Log.i("MainActivity.wxPay",response.toString());
+                    String content = response.body().string();
+                    Log.i("MainActivity.wxPay",response.body().toString()+"String="+content);
+                    try {
+                        JSONObject obj = new JSONObject(content);
+                        api = DemoApplication.getApi();
+                        if(null!=obj&&!obj.has("return_code")){
+                            PayReq pay = new PayReq();
+                            pay.appId = obj.getString("appid");
+                            pay.partnerId = obj.getString("partnerid");//商户id
+                            pay.prepayId = obj.getString("prepayid");//商品id
+                            pay.nonceStr = obj.getString("noncestr");//随机数
+                            pay.timeStamp = obj.getString("timestamp");//时间戳
+                            pay.packageValue = obj.getString("package");//预支付id
+                            pay.sign = obj.getString("sign");
+
+                            pay.extData = "caipiao";
+                            boolean paymes = api.sendReq(pay);
+                            Log.i("MainActivity","成功发起支付"+paymes);
+
+                        }else{
+                            Log.i("MainActivity","返回错误："+obj.getString("return_msg"));
+                        }
+                    } catch (JSONException e) {
+                        Log.i("MainActivity","异常："+e.getMessage());
+                        Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
         }
 
         @JavascriptInterface

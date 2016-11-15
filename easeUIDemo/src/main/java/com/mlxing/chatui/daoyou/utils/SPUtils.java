@@ -37,6 +37,11 @@ public class SPUtils {
     public static String PASSWORD="password";
     public static String PHONE="phone";
 
+    /**
+     * 用户mid
+     */
+    public static String MID = "mid";
+
 
     public SPUtils() {
         /* cannot be instantiated */

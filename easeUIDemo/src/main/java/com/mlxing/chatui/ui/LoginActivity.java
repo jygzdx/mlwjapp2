@@ -203,9 +203,11 @@ public class LoginActivity extends BaseActivity {
                         @Override
                         public void onResponse(okhttp3.Call call, okhttp3.Response response) throws IOException {
                             String s = response.body().string();
+                            Log.i(TAG,"hxlogin.response="+s);
                             List<EaseUser> result = JsonUtil.getUserListFromWxJson(s);
                             if (result != null && result.size() > 0) {
                                 EaseUser user = result.get(0);
+                                SPUtils.put(context,SPUtils.MID,user.getMid());
                                 DemoHelper.getInstance().setCurrentUserName(user.getUsername());
                                 DemoHelper.getInstance().setCurrentUserAvatar(user.getAvatar());
                                 DemoHelper.getInstance().setCurrentUserNickName(user.getNick());
@@ -309,7 +311,7 @@ public class LoginActivity extends BaseActivity {
                     @Override
                     public void onResponse(Call<LoginEntity> call, Response<LoginEntity> response) {
                         LoginEntity loginEntity = response.body();
-                        LogTool.i(TAG, loginEntity.getCode() + ";" + loginEntity.getUnionid() + ";" + loginEntity.getUsername() + ";" + loginEntity.getUserpw());
+                        LogTool.i(TAG, "login.response="+loginEntity.getCode() + ";" + loginEntity.getUnionid() + ";" + loginEntity.getUsername() + ";" + loginEntity.getUserpw());
                         if ("1".endsWith(loginEntity.getCode())) {
                             SPUtils.put(LoginActivity.this, SPUtils.USERNAME, loginEntity.getUsername());
                             SPUtils.put(LoginActivity.this, SPUtils.PASSWORD, loginEntity.getUserpw());
@@ -430,7 +432,7 @@ public class LoginActivity extends BaseActivity {
                 public void onComplete(SHARE_MEDIA share_media, int i, Map<String, String> map) {
                     wxMap = new HashMap();
                     wxMap = map;
-                    Log.i(TAG, "umeng onComplete:" + wxMap.toString());
+                    Log.i(TAG, "wxlogin.umeng onComplete:" + wxMap.toString());
                     //调用自己的服务器 {unionid=oCIF1s97ZErW5hTyplpCqgqHbpP8,
                     // scope=snsapi_userinfo, expires_in=7200, access_token=OezXcEiiBSKSxW0eoylIeDCsjNdDNbv5N33ac5yG24_
                     // cGLT-5mLItiqDUlmKRNT0srIUo9bMnA2fk-Q4CdMO5purxYekLzlUB2mtNZWGOKw20h4rgFNh1RTPOzP6-QkKv2AX-SDt4yW2_Tff0Ghs9A,
