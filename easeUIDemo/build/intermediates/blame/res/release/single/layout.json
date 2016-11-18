@@ -416,6 +416,10 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\ease_row_contact.xml"
     },
     {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\layout\\customer_layout.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\customer_layout.xml"
+    },
+    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\layout\\em_search_bar_with_padding.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\em_search_bar_with_padding.xml"
     },
@@ -570,6 +574,10 @@
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\layout\\umeng_socialize_bind_select_dialog.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\umeng_socialize_bind_select_dialog.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\layout\\activity_customer.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\layout\\activity_customer.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\release\\layout\\mlx_imgsitem.xml",

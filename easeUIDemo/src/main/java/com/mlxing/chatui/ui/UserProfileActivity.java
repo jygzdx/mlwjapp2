@@ -171,6 +171,7 @@ public class UserProfileActivity extends BaseActivity implements OnClickListener
                 addContact(username);
                 break;
             case R.id.rl_send_msg:
+                Log.i("UserProfileActivity","userId="+username);
                 startActivity(new Intent(this, SChatActivity.class).putExtra("userId", username));
                 break;
             case R.id.rl_delete_chat:

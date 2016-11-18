@@ -15,17 +15,17 @@ public class MlxVideoActivity$$ViewBinder<T extends MlxVideoActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131492960, "field 'imgStart' and method 'onClick'");
-    target.imgStart = finder.castView(view, 2131492960, "field 'imgStart'");
-    unbinder.view2131492960 = view;
+    view = finder.findRequiredView(source, 2131492961, "field 'imgStart' and method 'onClick'");
+    target.imgStart = finder.castView(view, 2131492961, "field 'imgStart'");
+    unbinder.view2131492961 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131492961, "method 'onClick'");
-    unbinder.view2131492961 = view;
+    view = finder.findRequiredView(source, 2131492962, "method 'onClick'");
+    unbinder.view2131492962 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,9 +42,9 @@ public class MlxVideoActivity$$ViewBinder<T extends MlxVideoActivity> implements
   protected static class InnerUnbinder<T extends MlxVideoActivity> implements Unbinder {
     private T target;
 
-    View view2131492960;
-
     View view2131492961;
+
+    View view2131492962;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -58,9 +58,9 @@ public class MlxVideoActivity$$ViewBinder<T extends MlxVideoActivity> implements
     }
 
     protected void unbind(T target) {
-      view2131492960.setOnClickListener(null);
-      target.imgStart = null;
       view2131492961.setOnClickListener(null);
+      target.imgStart = null;
+      view2131492962.setOnClickListener(null);
     }
   }
 }

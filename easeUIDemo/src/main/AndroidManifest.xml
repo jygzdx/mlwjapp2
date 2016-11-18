@@ -114,7 +114,8 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <!-- 聊天页面 --><!-- com.easemob.applib  -->
+        <!-- 聊天页面 -->
+        <!-- com.easemob.applib -->
         <activity
             android:name=".com.easemob.applib.ui.ChatActivity"
             android:launchMode="singleTop"
@@ -470,6 +471,8 @@
         </receiver>
 
         <activity android:name=".daoyou.ui.JpushActivity">
+        </activity>
+        <activity android:name=".daoyou.ui.CustomerActivity">
         </activity>
     </application>
 

@@ -84,4 +84,7 @@ public class Constant {
     //下載apk完成handler的what值
     public static final int HANDLER_DOWNLOAD_SUCCESE = 2;
 
+    //客服列表获取地址
+    public static final String CUSTOMER_URL = "http://weixin.mlxing.com/shop/get_service_list/ROOT_URL/shop/get_service_list";
+
 }

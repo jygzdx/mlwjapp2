@@ -481,6 +481,8 @@
 
         <activity android:name="com.mlxing.chatui.daoyou.ui.JpushActivity" >
         </activity>
+        <activity android:name="com.mlxing.chatui.daoyou.ui.CustomerActivity" >
+        </activity>
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity
             android:name="cn.jpush.android.ui.PopWinActivity"

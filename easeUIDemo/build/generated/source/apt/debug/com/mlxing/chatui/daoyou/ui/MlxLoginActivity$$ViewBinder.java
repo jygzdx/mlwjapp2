@@ -15,44 +15,44 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131493143, "field 'imgWx' and method 'onClick'");
-    target.imgWx = finder.castView(view, 2131493143, "field 'imgWx'");
-    unbinder.view2131493143 = view;
+    view = finder.findRequiredView(source, 2131493146, "field 'imgWx' and method 'onClick'");
+    target.imgWx = finder.castView(view, 2131493146, "field 'imgWx'");
+    unbinder.view2131493146 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131492961, "field 'imgLogin' and method 'onClick'");
-    target.imgLogin = finder.castView(view, 2131492961, "field 'imgLogin'");
-    unbinder.view2131492961 = view;
+    view = finder.findRequiredView(source, 2131492962, "field 'imgLogin' and method 'onClick'");
+    target.imgLogin = finder.castView(view, 2131492962, "field 'imgLogin'");
+    unbinder.view2131492962 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493293, "field 'textSign' and method 'onClick'");
-    target.textSign = finder.castView(view, 2131493293, "field 'textSign'");
-    unbinder.view2131493293 = view;
+    view = finder.findRequiredView(source, 2131493297, "field 'textSign' and method 'onClick'");
+    target.textSign = finder.castView(view, 2131493297, "field 'textSign'");
+    unbinder.view2131493297 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493294, "field 'textFind' and method 'onClick'");
-    target.textFind = finder.castView(view, 2131493294, "field 'textFind'");
-    unbinder.view2131493294 = view;
+    view = finder.findRequiredView(source, 2131493298, "field 'textFind' and method 'onClick'");
+    target.textFind = finder.castView(view, 2131493298, "field 'textFind'");
+    unbinder.view2131493298 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493295, "method 'onClick'");
-    unbinder.view2131493295 = view;
+    view = finder.findRequiredView(source, 2131493299, "method 'onClick'");
+    unbinder.view2131493299 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,15 +69,15 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
   protected static class InnerUnbinder<T extends MlxLoginActivity> implements Unbinder {
     private T target;
 
-    View view2131493143;
+    View view2131493146;
 
-    View view2131492961;
+    View view2131492962;
 
-    View view2131493293;
+    View view2131493297;
 
-    View view2131493294;
+    View view2131493298;
 
-    View view2131493295;
+    View view2131493299;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -91,15 +91,15 @@ public class MlxLoginActivity$$ViewBinder<T extends MlxLoginActivity> implements
     }
 
     protected void unbind(T target) {
-      view2131493143.setOnClickListener(null);
+      view2131493146.setOnClickListener(null);
       target.imgWx = null;
-      view2131492961.setOnClickListener(null);
+      view2131492962.setOnClickListener(null);
       target.imgLogin = null;
-      view2131493293.setOnClickListener(null);
+      view2131493297.setOnClickListener(null);
       target.textSign = null;
-      view2131493294.setOnClickListener(null);
+      view2131493298.setOnClickListener(null);
       target.textFind = null;
-      view2131493295.setOnClickListener(null);
+      view2131493299.setOnClickListener(null);
     }
   }
 }

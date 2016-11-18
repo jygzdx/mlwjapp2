@@ -36,6 +36,18 @@
         android:layout_height="wrap_content"
         app:contactItemImage="@drawable/mlx_header_bloack"
         app:contactItemName="@string/black_item" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_divider"
+        android:background="@color/divider_list"
+        android:layout_marginRight="@dimen/size_right_padding"
+        android:layout_marginLeft="@dimen/size_left_padding"/>
+    <com.mlxing.chatui.widget.ContactItemView
+        android:id="@+id/customer_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/mlx_icon"
+        app:contactItemName="客服" />
 
     <!--<com.mlxing.chatui.widget.ContactItemView
         android:id="@+id/chat_room_item"

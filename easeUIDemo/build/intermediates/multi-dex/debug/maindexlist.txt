@@ -116,6 +116,7 @@ com/mlxing/chatui/ui/ImageGridActivity.class
 com/mlxing/chatui/ui/PickContactNoCheckboxActivity.class
 android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
 com/mlxing/chatui/daoyou/utils/zxing/CreatQrcodeActivity.class
+com/mlxing/chatui/daoyou/ui/CustomerActivity$3.class
 org/apache/http/message/BasicRequestLine.class
 com/mlxing/chatui/ui/RecorderVideoActivity$3.class
 com/mlxing/chatui/daoyou/ui/MlxForgetActivity$3.class
@@ -231,6 +232,7 @@ com/tencent/mm/sdk/modelbase/BaseReq.class
 android/support/v4/media/session/MediaControllerCompat.class
 org/apache/http/impl/cookie/RFC2109SpecFactory.class
 com/mlxing/chatui/daoyou/WebkitActivity$1$2.class
+com/android/volley/toolbox/ImageRequest.class
 org/apache/http/impl/conn/tsccm/BasicPoolEntryRef.class
 com/easemob/easeui/R$id.class
 com/baidu/location/BDNotifyListener.class
@@ -372,6 +374,7 @@ org/apache/http/impl/conn/tsccm/ConnPoolByRoute.class
 com/mlxing/chatui/ui/GroupDetailsActivity$5.class
 com/mlxing/chatui/ui/ForwardMessageActivity.class
 com/easemob/easeui/R$string.class
+com/mlxing/chatui/adapter/CustomerAdapter.class
 com/mlxing/chatui/ui/GroupFragment$3.class
 com/easemob/chat/EMGCMBroadcastReceiver.class
 okhttp3/Call.class
@@ -434,6 +437,7 @@ retrofit2/http/DELETE.class
 org/apache/http/impl/conn/IdleConnectionHandler.class
 org/apache/http/entity/BasicHttpEntity.class
 org/apache/http/impl/client/AbstractHttpClient.class
+com/mlxing/chatui/daoyou/ui/CustomerActivity$1.class
 org/apache/http/protocol/HttpResponseInterceptorList.class
 cn/jpush/android/b/a/a.class
 com/mlxing/chatui/ui/RecorderVideoActivity$1.class
@@ -828,6 +832,7 @@ butterknife/OnItemLongClick.class
 com/mlxing/chatui/daoyou/WebkitActivity$8.class
 cn/jpush/android/data/s.class
 cn/jpush/android/data/c.class
+com/mlxing/chatui/daoyou/ui/CustomerActivity.class
 org/apache/http/StatusLine.class
 com/mlxing/chatui/db/InviteMessgeDao.class
 org/apache/http/HttpException.class
@@ -1013,6 +1018,7 @@ butterknife/OnTextChanged.class
 com/mlxing/chatui/daoyou/utils/CacheClearHelper.class
 com/mlxing/chatui/ui/AddContactActivity$1.class
 easeui/ui/EaseBaiduMapActivity$BaiduSDKReceiver.class
+com/mlxing/chatui/daoyou/ui/CustomerActivity$4.class
 org/apache/http/ReasonPhraseCatalog.class
 org/apache/http/impl/entity/StrictContentLengthStrategy.class
 org/apache/http/impl/cookie/RFC2965SpecFactory.class
@@ -1166,6 +1172,7 @@ com/mlxing/chatui/ui/LoginActivity$9.class
 cn/jpush/a/a/a/e.class
 org/apache/http/cookie/CookieSpec.class
 com/mlxing/chatui/adapter/GroupAdapter.class
+com/android/volley/Request.class
 android/support/annotation/IntRange.class
 org/apache/http/protocol/BasicHttpProcessor.class
 org/apache/http/HttpRequestFactory.class
@@ -1239,6 +1246,7 @@ org/apache/http/HttpConnectionMetrics.class
 org/apache/commons/codec/StringEncoderComparator.class
 android/support/v4/content/PermissionChecker$PermissionResult.class
 com/baidu/location/e/p$a.class
+com/mlxing/chatui/daoyou/ui/CustomerActivity$2.class
 cn/jpush/android/helpers/ConnectingHelper.class
 com/mlxing/chatui/ui/RecorderVideoActivity$2.class
 org/apache/http/conn/ClientConnectionRequest.class

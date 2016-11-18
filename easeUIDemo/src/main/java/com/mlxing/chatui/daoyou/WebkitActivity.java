@@ -125,12 +125,19 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         @Override
         public void handleMessage(Message msg) {
             switch(msg.what){
+                case 20:
+                    Bundle bundle = msg.getData();
+                    String a = bundle.getString("a");
+                    String b = bundle.getString("b");
+                    String fangfaming = bundle.getString("fangfaming");
+                    webView.loadUrl("javascript:"+fangfaming+"("+a+","+b+")");
+                    Log.i(TAG,"fangfaming= "+fangfaming);
+                    break;
                 case HANDLER_PAY_FAILURE:
                     //付款失败
-                    webView.loadUrl("javascript:cancelPay("+")");
+                    webView.loadUrl("javascript:cancelPay(2"+")");
                     mpartnerid = "";
                     mtype = 0;
-                    Toast.makeText(mContext,"无法支付，请查看自己是否有登录！",Toast.LENGTH_SHORT).show();
                     break;
                 case IS_SAME_VERSION:
                     String serviceAPKVersion = (String)msg.obj;
@@ -144,8 +151,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                             VersionBiz versionBiz = new VersionBiz();
                             versionBiz.downApk(serviceAPKVersion,handler,mContext);
                         }
-
-
                     }else{
                         Log.i(TAG,"不用更新版本");
                     }
@@ -623,6 +628,9 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+//                //测试
+//                webView.loadUrl("http://192.168.1.17:3000/text_pay/index.html");
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
             }
@@ -788,7 +796,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             mtype = 0;
         }else{
             //付款失败
-            webView.loadUrl("javascript:cancelPay("+")");
+            webView.loadUrl("javascript:cancelPay(1"+")");
             mpartnerid = "";
             mtype = 0;
         }
@@ -1029,6 +1037,26 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     private static final int HANDLER_PAY_FAILURE = 4;
     class InJavaScriptGetBody {
+        @JavascriptInterface
+        public void test( String json, String fangfaming){
+            try {
+                JSONObject jsonObject  = new JSONObject(json);
+                String a = jsonObject.getString("a");
+                String b = jsonObject.getString("b");
+                Log.i(TAG,a+"-----"+b);
+                Message msg = handler.obtainMessage();
+                msg.what = 20;
+                Bundle bundle = new Bundle();
+                bundle.putString("a",a);
+                bundle.putString("b",b);
+                bundle.putString("fangfaming",fangfaming);
+                msg.setData(bundle);
+                handler.sendMessage(msg);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
 
         @JavascriptInterface
         public void wxPay(int type,String partnerid){
@@ -1037,7 +1065,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
             //没有登录直接返回
             if(" ".equals(mid)){
-
                 Message msg = handler.obtainMessage();
                 msg.what = HANDLER_PAY_FAILURE;
                 handler.sendMessage(msg);

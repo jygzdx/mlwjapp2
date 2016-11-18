@@ -33,6 +33,7 @@ import com.easemob.chat.EMContactManager;
 import com.easemob.util.EMLog;
 import com.mlxing.chatui.DemoHelper;
 import com.mlxing.chatui.R;
+import com.mlxing.chatui.daoyou.ui.CustomerActivity;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
 import com.mlxing.chatui.daoyou.utils.SPUtils;
 import com.mlxing.chatui.db.InviteMessgeDao;
@@ -43,8 +44,8 @@ import easeui.domain.EaseUser;
 import easeui.ui.EaseContactListFragment;
 
 /**
- * 联系人列表页
- *
+ * 联系人列表页-----通讯录2016/11/16
+ * 添加客服功能
  */
 public class ContactListFragment extends EaseContactListFragment {
 
@@ -65,6 +66,8 @@ public class ContactListFragment extends EaseContactListFragment {
         applicationItem.setOnClickListener(clickListener);
         headerView.findViewById(R.id.group_item).setOnClickListener(clickListener);
         headerView.findViewById(R.id.black_item).setOnClickListener(clickListener);
+        //设置客服点击监听
+        headerView.findViewById(R.id.customer_item).setOnClickListener(clickListener);
 //        headerView.findViewById(R.id.chat_room_item).setOnClickListener(clickListener);
 //        headerView.findViewById(R.id.robot_item).setOnClickListener(clickListener);
         //添加headerview
@@ -95,7 +98,7 @@ public class ContactListFragment extends EaseContactListFragment {
     @Override
     protected void setUpView() {
 
-        titleBar.setRightImageResource(R.drawable.mlx_more);
+        titleBar.setRightImageResource(R.drawable.em_add);
         titleBar.setLeftTextVisiable(View.INVISIBLE);
         titleBar.setLeftImageResource(R.drawable.mlx_back);
         titleBar.setLeftLayoutClickListener(new View.OnClickListener() {
@@ -105,13 +108,13 @@ public class ContactListFragment extends EaseContactListFragment {
             }
         });
         // 菜单页
-        titleBar.setRightLayoutVisibility(View.INVISIBLE);
+        titleBar.setRightLayoutVisibility(View.VISIBLE);
         titleBar.getRightLayout().setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(getActivity(), AddContactActivity.class));
-                openMenu();
+                startActivity(new Intent(getActivity(), AddContactActivity.class));
+                //openMenu();注释
             }
         });
 
@@ -154,6 +157,7 @@ public class ContactListFragment extends EaseContactListFragment {
                 // demo中直接进入聊天页面，实际一般是进入用户详情页
 //                startActivity(new Intent(getActivity(), ChatActivity.class).putExtra("userId", username));
                 //进入用户详情
+                Log.i("ContactListFragment","username="+username);
                 startActivity(new Intent(getActivity(), UserProfileActivity.class).putExtra("username", username));
             }
         });
@@ -218,6 +222,10 @@ public class ContactListFragment extends EaseContactListFragment {
                 case R.id.black_item:
                     // 进入黑名单列表页面
                     startActivity(new Intent(getActivity(), BlacklistActivity.class));
+                    break;
+                case R.id.customer_item:
+                    //进入客服界面
+                    startActivity(new Intent(getActivity(), CustomerActivity.class));
                     break;
 //            case R.id.chat_room_item:
 //                //进入聊天室列表页面

@@ -278,6 +278,10 @@
     <init>();
 }
 
+-keep class com.mlxing.chatui.daoyou.ui.CustomerActivity {
+    <init>();
+}
+
 -keep class cn.jpush.android.ui.PopWinActivity {
     <init>();
 }

@@ -15,38 +15,6 @@ public class PopupUtils$$ViewBinder<T extends PopupUtils> implements ViewBinder<
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131493314, "method 'onClick'");
-    unbinder.view2131493314 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131493315, "method 'onClick'");
-    unbinder.view2131493315 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131493316, "method 'onClick'");
-    unbinder.view2131493316 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131493317, "method 'onClick'");
-    unbinder.view2131493317 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
     view = finder.findRequiredView(source, 2131493318, "method 'onClick'");
     unbinder.view2131493318 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -79,8 +47,40 @@ public class PopupUtils$$ViewBinder<T extends PopupUtils> implements ViewBinder<
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493313, "method 'onClick'");
-    unbinder.view2131493313 = view;
+    view = finder.findRequiredView(source, 2131493322, "method 'onClick'");
+    unbinder.view2131493322 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493323, "method 'onClick'");
+    unbinder.view2131493323 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493324, "method 'onClick'");
+    unbinder.view2131493324 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493325, "method 'onClick'");
+    unbinder.view2131493325 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493317, "method 'onClick'");
+    unbinder.view2131493317 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,14 +97,6 @@ public class PopupUtils$$ViewBinder<T extends PopupUtils> implements ViewBinder<
   protected static class InnerUnbinder<T extends PopupUtils> implements Unbinder {
     private T target;
 
-    View view2131493314;
-
-    View view2131493315;
-
-    View view2131493316;
-
-    View view2131493317;
-
     View view2131493318;
 
     View view2131493319;
@@ -113,7 +105,15 @@ public class PopupUtils$$ViewBinder<T extends PopupUtils> implements ViewBinder<
 
     View view2131493321;
 
-    View view2131493313;
+    View view2131493322;
+
+    View view2131493323;
+
+    View view2131493324;
+
+    View view2131493325;
+
+    View view2131493317;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -127,15 +127,15 @@ public class PopupUtils$$ViewBinder<T extends PopupUtils> implements ViewBinder<
     }
 
     protected void unbind(T target) {
-      view2131493314.setOnClickListener(null);
-      view2131493315.setOnClickListener(null);
-      view2131493316.setOnClickListener(null);
-      view2131493317.setOnClickListener(null);
       view2131493318.setOnClickListener(null);
       view2131493319.setOnClickListener(null);
       view2131493320.setOnClickListener(null);
       view2131493321.setOnClickListener(null);
-      view2131493313.setOnClickListener(null);
+      view2131493322.setOnClickListener(null);
+      view2131493323.setOnClickListener(null);
+      view2131493324.setOnClickListener(null);
+      view2131493325.setOnClickListener(null);
+      view2131493317.setOnClickListener(null);
     }
   }
 }

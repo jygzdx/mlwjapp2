@@ -49,6 +49,9 @@ import com.mlxing.chatui.domain.InviteMessage;
 
 import easeui.utils.EaseCommonUtils;
 
+/**
+ * 聊天主界面
+ */
 public class MainActivity extends BaseActivity implements EMEventListener {
 
     protected static final String TAG = "MainActivity";
