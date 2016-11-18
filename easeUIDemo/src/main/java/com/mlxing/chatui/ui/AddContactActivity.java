@@ -60,14 +60,22 @@ public class AddContactActivity extends BaseActivity{
 	private CustomerAdapter adapter;
 	private static final int HANDLER_GET_FRIEND = 1;
 	private static final int HANDLER_GET_FRIEND_FAILURE = 2;
+	private static final int HANDLER_CONNECTION_FAILURE = 3;
+
 	private Handler handler = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what){
+				case HANDLER_CONNECTION_FAILURE:
+					searchBtn.setClickable(true);
+					Toast.makeText(AddContactActivity.this,"获取朋友信息失败，请检查自己的网络是否有信号！",Toast.LENGTH_SHORT).show();
+					break;
 				case HANDLER_GET_FRIEND:
+					searchBtn.setClickable(true);
 					adapter.notifyDataSetChanged();
 					break;
 				case HANDLER_GET_FRIEND_FAILURE:
+					searchBtn.setClickable(true);
 					Toast.makeText(AddContactActivity.this,"无法找到该用户，请重新输入！",Toast.LENGTH_SHORT).show();
 					break;
 			}
@@ -120,10 +128,13 @@ public class AddContactActivity extends BaseActivity{
 	public void searchContact(View v) {
 		final String name = editText.getText().toString();
 		String saveText = searchBtn.getText().toString();
-		
+
+		searchBtn.setClickable(false);
+
 		if (getString(R.string.button_search).equals(saveText)) {
 			toAddUsername = name;
 			if(TextUtils.isEmpty(name)) {
+				searchBtn.setClickable(true);
 				new EaseAlertDialog(this, R.string.Please_enter_a_username).show();
 				return;
 			}
@@ -139,6 +150,9 @@ public class AddContactActivity extends BaseActivity{
 			HttpUtil.getFriendInfo(name).enqueue(new Callback() {
 				@Override
 				public void onFailure(Call call, IOException e) {
+					Message msg = handler.obtainMessage();
+					msg.what = HANDLER_CONNECTION_FAILURE;
+					handler.sendMessage(msg);
 					Log.i(TAG, "获取朋友信息失败，请检查自己的网络是否有信号！");
 				}
 

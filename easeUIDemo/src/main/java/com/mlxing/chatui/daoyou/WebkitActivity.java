@@ -1060,6 +1060,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         @JavascriptInterface
         public void chargeMoney(String json){
             Log.i(TAG,"nihao !!!");
+            Log.i(TAG,json);
 //            try {
 //                JSONObject jsonObject = new JSONObject(json);
 //                String total = jsonObject.getString("total_fee");//金额
