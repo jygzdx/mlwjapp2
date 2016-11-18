@@ -2,6 +2,7 @@ package com.mlxing.chatui.daoyou.utils;
 
 import com.mlxing.chatui.DemoApplication;
 import com.mlxing.chatui.R;
+import com.mlxing.chatui.daoyou.Constant;
 import com.mlxing.chatui.daoyou.entity.ForgetEntity;
 import com.mlxing.chatui.daoyou.entity.LoginEntity;
 import com.mlxing.chatui.daoyou.entity.SendMsgEntity;
@@ -163,6 +164,35 @@ public class HttpUtil {
     }
 
     /**
+     * 获取添加朋友的数据
+     * @param friendname
+     * @return
+     */
+    public static okhttp3.Call getFriendInfo(String friendname){
+        if (okHttpClient == null) {
+            okHttpClient = new OkHttpClient();
+        }
+        if (friendname==null){
+            friendname="0";
+        }
+        RequestBody body = new FormBody.Builder().add("nickname", friendname).build();
+
+        Request request = new Request.Builder().url(Constant.SHOW_FRIEND_URL).post(body).build();
+        return okHttpClient.newCall(request);
+    }
+
+    public static okhttp3.Call getChargeInfo(String total,String mid){
+        if (okHttpClient == null) {
+            okHttpClient = new OkHttpClient();
+        }
+
+        RequestBody body = new FormBody.Builder().add("total_fee", total).add("mid",mid).build();
+
+        Request request = new Request.Builder().url(Constant.WEIXIN_CHARGE_URL).post(body).build();
+        return okHttpClient.newCall(request);
+    }
+
+    /**
      * \get获取字符串
      *
      * @param url
@@ -176,6 +206,7 @@ public class HttpUtil {
         return okHttpClient.newCall(request);
 
     }
+
 }
 
 

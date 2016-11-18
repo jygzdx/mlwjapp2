@@ -1,8 +1,6 @@
 package com.mlxing.chatui.daoyou.utils;
 
 
-import android.util.Log;
-
 import com.mlxing.chatui.daoyou.entity.Customer;
 
 import org.json.JSONArray;
@@ -40,8 +38,6 @@ public class JsonUtil {
                             list.add(customer);
                         }
                     }
-
-                    Log.i("jsonutil",customer.toString());
                 }
             }
 

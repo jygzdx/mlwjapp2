@@ -279,6 +279,7 @@ com/umeng/socialize/bean/HandlerRequestCode.class
 org/apache/http/impl/auth/DigestScheme.class
 retrofit2/http/Field.class
 org/apache/http/impl/cookie/BasicClientCookie.class
+com/mlxing/chatui/ui/AddContactActivity$2.class
 org/apache/http/util/ExceptionUtils.class
 com/mlxing/chatui/daoyou/ui/MlxVideoActivity.class
 butterknife/BindArray.class
@@ -778,6 +779,7 @@ com/mlxing/chatui/ui/RegisterActivity.class
 org/apache/http/HttpRequest.class
 org/apache/http/message/BasicHeaderIterator.class
 okhttp3/Request$Builder.class
+com/mlxing/chatui/ui/AddContactActivity$3.class
 com/mlxing/chatui/ui/VideoCallActivity$OppositeCallback.class
 com/easemob/chat/EMGroup.class
 rx/schedulers/NewThreadScheduler.class

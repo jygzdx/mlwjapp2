@@ -56,6 +56,7 @@ public class CustomerActivity extends Activity {
         setListener();
         //配置adapter
         initAdapter();
+        //获取数据
         getData();
     }
 

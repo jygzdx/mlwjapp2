@@ -120,11 +120,18 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     private int mtype;
     private String mpartnerid;
+    //js传过来的方法名
+    private String handle;
 
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             switch(msg.what){
+
+                case HANDLER_CHARGE_MONEY_FAILURE:
+                    //充值失败
+                    webView.loadUrl("javascript:"+handle+"(false"+")");
+                    break;
                 case 20:
                     Bundle bundle = msg.getData();
                     String a = bundle.getString("a");
@@ -792,13 +799,26 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         if(code == 0){
             //付款成功
             webView.loadUrl("javascript:beginDraw("+mtype+","+mpartnerid+")");
+            SPUtils.put(this, SPUtils.SP_JS, 9);
             mpartnerid = "";
             mtype = 0;
         }else{
             //付款失败
             webView.loadUrl("javascript:cancelPay(1"+")");
+            SPUtils.put(this, SPUtils.SP_JS, 9);
             mpartnerid = "";
             mtype = 0;
+        }
+        if(code == 0){
+            //充值成功
+            webView.loadUrl("javascript:"+handle+"(true)");
+            handle = "";
+            SPUtils.put(this, SPUtils.SP_JS, 9);
+        }else{
+            //充值失败
+            webView.loadUrl("javascript:"+handle+"(false)");
+            handle = "";
+            SPUtils.put(this, SPUtils.SP_JS, 9);
         }
         updateUnreadAddressLable();
         // register the event listener when enter the foreground
@@ -1034,9 +1054,65 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     }
                 }).open();
     }
-
+    private static final int HANDLER_CHARGE_MONEY_FAILURE = 5;
     private static final int HANDLER_PAY_FAILURE = 4;
     class InJavaScriptGetBody {
+        @JavascriptInterface
+        public void chargeMoney(String json){
+            Log.i(TAG,"nihao !!!");
+//            try {
+//                JSONObject jsonObject = new JSONObject(json);
+//                String total = jsonObject.getString("total_fee");//金额
+//                handle = jsonObject.getString("handle");//回调方法名
+//                String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
+//                Log.i(TAG,"handle="+handle);
+//                //没有登录直接返回
+//                if(" ".equals(mid)){
+//                    Message msg = handler.obtainMessage();
+//                    msg.what = HANDLER_CHARGE_MONEY_FAILURE;
+//                    Log.i(TAG,"没有登录");
+//                    handler.sendMessage(msg);
+//                    return;
+//                }
+//                //发送充值请求
+//                HttpUtil.getChargeInfo(total,mid).enqueue(new Callback() {
+//                    @Override
+//                    public void onFailure(Call call, IOException e) {
+//                        Log.i(TAG,"充值支付失败");
+//                    }
+//
+//                    @Override
+//                    public void onResponse(Call call, Response response) throws IOException {
+//                        String content = response.body().string();
+//                        try {
+//                            JSONObject obj = new JSONObject(content);
+//                            api = DemoApplication.getApi();
+//                            if(null!=obj&&!obj.has("return_code")){
+//                                PayReq pay = new PayReq();
+//                                pay.appId = obj.getString("appid");
+//                                pay.partnerId = obj.getString("partnerid");//商户id
+//                                pay.prepayId = obj.getString("prepayid");//商品id
+//                                pay.nonceStr = obj.getString("noncestr");//随机数
+//                                pay.timeStamp = obj.getString("timestamp");//时间戳
+//                                pay.packageValue = obj.getString("package");//预支付id
+//                                pay.sign = obj.getString("sign");
+//
+//                                pay.extData = "caipiao";
+//                                boolean paymes = api.sendReq(pay);
+//                                Log.i("MainActivity","充值成功发起支付"+paymes);
+//                            }else{
+//                                Log.i("MainActivity","充值返回错误："+obj.getString("return_msg"));
+//                            }
+//                        } catch (JSONException e) {
+//                            Log.i("MainActivity","异常："+e.getMessage());
+//                            Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//                });
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+        }
         @JavascriptInterface
         public void test( String json, String fangfaming){
             try {
@@ -1080,14 +1156,12 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             call.enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-
+                    Log.i(TAG,"一元夺宝支付失败");
                 }
 
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
-                    Log.i("MainActivity.wxPay",response.toString());
                     String content = response.body().string();
-                    Log.i("MainActivity.wxPay",response.body().toString()+"String="+content);
                     try {
                         JSONObject obj = new JSONObject(content);
                         api = DemoApplication.getApi();

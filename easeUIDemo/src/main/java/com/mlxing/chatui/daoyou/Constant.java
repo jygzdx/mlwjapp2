@@ -86,5 +86,8 @@ public class Constant {
 
     //客服列表获取地址
     public static final String CUSTOMER_URL = "http://weixin.mlxing.com/shop/get_service_list/ROOT_URL/shop/get_service_list";
-
+    //查找朋友接口
+    public static final String SHOW_FRIEND_URL = "http://weixin.mlxing.com/shop/find_hx_id";
+    //微信充值接口
+    public static final String WEIXIN_CHARGE_URL = "http://weixin.mlxing.com/wechat/indent?trade_type=APP";
 }

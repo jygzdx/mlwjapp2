@@ -98,7 +98,7 @@ public class CustomerAdapter extends BaseAdapter{
                 map.put(url,softbitmap);
                 viewHolder.civCustomer.setImageBitmap(bitmap);
             }
-        }, 40, 40, Bitmap.Config.RGB_565, new Response.ErrorListener() {
+        }, 60, 60, Bitmap.Config.RGB_565, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 viewHolder.civCustomer.setImageResource(R.drawable.ease_default_avatar);
