@@ -52,12 +52,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_chat_primary_menu.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_showvideo_activity.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_showvideo_activity.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_picture.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_picture.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_showvideo_activity.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_showvideo_activity.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_alert_dialog.xml",
@@ -92,20 +92,20 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_fragment_conversation_list.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_file.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_file.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_voice_call.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_voice_call.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_message.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_message.xml"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_file.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_file.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_video.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_video.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_message.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_message.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_message.xml",
@@ -152,12 +152,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_file.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_video_call.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_video_call.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_fragment_contact_list.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_fragment_contact_list.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_video_call.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_video_call.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_chat_message_list.xml",
@@ -176,12 +176,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_emojicon_tab_bar.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_expression.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_expression.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_activity_baidumap.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_activity_baidumap.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_expression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_expression.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_voice.xml",

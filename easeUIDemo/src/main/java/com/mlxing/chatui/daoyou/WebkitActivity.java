@@ -46,7 +46,9 @@ import com.mlxing.chatui.DemoApplication;
 import com.mlxing.chatui.DemoHelper;
 import com.mlxing.chatui.R;
 import com.mlxing.chatui.daoyou.utils.ActivityManager;
+import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.LogTool;
+import com.mlxing.chatui.daoyou.utils.NetworkUtil;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
 import com.mlxing.chatui.daoyou.utils.SPUtils;
 import com.mlxing.chatui.daoyou.utils.UIHelper;
@@ -154,9 +156,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     String versionName = (String) SPUtils.get(mContext,"downapkVersion"," ");
                     if(!isSameVersion) {
                         if(!versionName.equals(serviceAPKVersion)){
-                            //下载apk
-                            VersionBiz versionBiz = new VersionBiz();
-                            versionBiz.downApk(serviceAPKVersion,handler,mContext);
+                            if(NetworkUtil.isWifi(mContext)){
+                                Log.i(TAG,"wifi下载");
+                                //下载apk
+                                VersionBiz versionBiz = new VersionBiz();
+                                versionBiz.downApk(serviceAPKVersion,handler,mContext);
+                            }else{
+                                Log.i(TAG,"不是WiFi状态");
+                            }
                         }
                     }else{
                         Log.i(TAG,"不用更新版本");
@@ -1061,58 +1068,58 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         public void chargeMoney(String json){
             Log.i(TAG,"nihao !!!");
             Log.i(TAG,json);
-//            try {
-//                JSONObject jsonObject = new JSONObject(json);
-//                String total = jsonObject.getString("total_fee");//金额
-//                handle = jsonObject.getString("handle");//回调方法名
-//                String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
-//                Log.i(TAG,"handle="+handle);
-//                //没有登录直接返回
-//                if(" ".equals(mid)){
-//                    Message msg = handler.obtainMessage();
-//                    msg.what = HANDLER_CHARGE_MONEY_FAILURE;
-//                    Log.i(TAG,"没有登录");
-//                    handler.sendMessage(msg);
-//                    return;
-//                }
-//                //发送充值请求
-//                HttpUtil.getChargeInfo(total,mid).enqueue(new Callback() {
-//                    @Override
-//                    public void onFailure(Call call, IOException e) {
-//                        Log.i(TAG,"充值支付失败");
-//                    }
-//
-//                    @Override
-//                    public void onResponse(Call call, Response response) throws IOException {
-//                        String content = response.body().string();
-//                        try {
-//                            JSONObject obj = new JSONObject(content);
-//                            api = DemoApplication.getApi();
-//                            if(null!=obj&&!obj.has("return_code")){
-//                                PayReq pay = new PayReq();
-//                                pay.appId = obj.getString("appid");
-//                                pay.partnerId = obj.getString("partnerid");//商户id
-//                                pay.prepayId = obj.getString("prepayid");//商品id
-//                                pay.nonceStr = obj.getString("noncestr");//随机数
-//                                pay.timeStamp = obj.getString("timestamp");//时间戳
-//                                pay.packageValue = obj.getString("package");//预支付id
-//                                pay.sign = obj.getString("sign");
-//
-//                                pay.extData = "caipiao";
-//                                boolean paymes = api.sendReq(pay);
-//                                Log.i("MainActivity","充值成功发起支付"+paymes);
-//                            }else{
-//                                Log.i("MainActivity","充值返回错误："+obj.getString("return_msg"));
-//                            }
-//                        } catch (JSONException e) {
-//                            Log.i("MainActivity","异常："+e.getMessage());
-//                            Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
-//                        }
-//                    }
-//                });
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                JSONObject jsonObject = new JSONObject(json);
+                String total = jsonObject.getString("total_fee");//金额
+                handle = jsonObject.getString("handle");//回调方法名
+                String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
+                Log.i(TAG,"handle="+handle);
+                //没有登录直接返回
+                if(" ".equals(mid)){
+                    Message msg = handler.obtainMessage();
+                    msg.what = HANDLER_CHARGE_MONEY_FAILURE;
+                    Log.i(TAG,"没有登录");
+                    handler.sendMessage(msg);
+                    return;
+                }
+                //发送充值请求
+                HttpUtil.getChargeInfo(total,mid).enqueue(new Callback() {
+                    @Override
+                    public void onFailure(Call call, IOException e) {
+                        Log.i(TAG,"充值支付失败");
+                    }
+
+                    @Override
+                    public void onResponse(Call call, Response response) throws IOException {
+                        String content = response.body().string();
+                        try {
+                            JSONObject obj = new JSONObject(content);
+                            api = DemoApplication.getApi();
+                            if(null!=obj&&!obj.has("return_code")){
+                                PayReq pay = new PayReq();
+                                pay.appId = obj.getString("appid");
+                                pay.partnerId = obj.getString("partnerid");//商户id
+                                pay.prepayId = obj.getString("prepayid");//商品id
+                                pay.nonceStr = obj.getString("noncestr");//随机数
+                                pay.timeStamp = obj.getString("timestamp");//时间戳
+                                pay.packageValue = obj.getString("package");//预支付id
+                                pay.sign = obj.getString("sign");
+
+                                pay.extData = "caipiao";
+                                boolean paymes = api.sendReq(pay);
+                                Log.i("MainActivity","充值成功发起支付"+paymes);
+                            }else{
+                                Log.i("MainActivity","充值返回错误："+obj.getString("return_msg"));
+                            }
+                        } catch (JSONException e) {
+                            Log.i("MainActivity","异常："+e.getMessage());
+                            Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
         @JavascriptInterface
         public void test( String json, String fangfaming){

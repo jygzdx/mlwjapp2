@@ -1,27 +1,27 @@
 [
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\hold.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\hold.xml"
-    },
-    {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\fade_in.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_out.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\hold.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\hold.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\voice_to_icon.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\voice_to_icon.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\push_top_in2.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\push_top_in2.xml"
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\push_top_in.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\push_top_in.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\push_top_in2.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\push_top_in2.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\voice_from_icon.xml",
@@ -44,12 +44,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\push_bottom_in.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\head_in.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\head_in.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_right.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\slide_in_from_right.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\head_in.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\head_in.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_right.xml",

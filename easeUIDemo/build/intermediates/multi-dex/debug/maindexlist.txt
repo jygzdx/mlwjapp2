@@ -258,6 +258,7 @@ easeui/choisepictures/ImgsAdapter$OnItemClickClass.class
 org/apache/http/cookie/CookieSpecRegistry.class
 cn/jpush/android/util/ac.class
 org/apache/http/message/AbstractHttpMessage.class
+com/mlxing/chatui/daoyou/utils/NetworkUtil.class
 butterknife/internal/ListenerClass.class
 com/easemob/util/NetUtils.class
 android/support/v4/widget/MaterialProgressDrawable$3.class
