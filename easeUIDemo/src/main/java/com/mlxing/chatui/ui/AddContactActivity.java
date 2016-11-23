@@ -30,7 +30,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mlxing.chatui.R;
-import com.mlxing.chatui.adapter.CustomerAdapter;
+import com.mlxing.chatui.adapter.AddFriendAdapter;
 import com.mlxing.chatui.daoyou.entity.Customer;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.JsonUtil;
@@ -57,7 +57,7 @@ public class AddContactActivity extends BaseActivity{
 	private ListView lvShowFriend;
 	private List<Customer> customers = new ArrayList<>();
 
-	private CustomerAdapter adapter;
+	private AddFriendAdapter adapter;
 	private static final int HANDLER_GET_FRIEND = 1;
 	private static final int HANDLER_GET_FRIEND_FAILURE = 2;
 	private static final int HANDLER_CONNECTION_FAILURE = 3;
@@ -101,7 +101,7 @@ public class AddContactActivity extends BaseActivity{
 //		avatar = (ImageView) findViewById(R.id.avatar);
 		inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 
-		adapter = new CustomerAdapter(this,customers);
+		adapter = new AddFriendAdapter(this,customers);
 		lvShowFriend.setAdapter(adapter);
 		//设置监听器
 		setlistener();
