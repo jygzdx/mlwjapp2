@@ -759,6 +759,7 @@ org/apache/http/NoHttpResponseException.class
 com/google/zxing/LuminanceSource.class
 com/mlxing/chatui/daoyou/utils/zxing/CaptureActivity$2.class
 com/mlxing/chatui/ui/NewFriendsMsgActivity.class
+com/mlxing/chatui/adapter/AddFriendAdapter.class
 com/mlxing/chatui/ui/LoginActivity$3.class
 android/support/v4/app/ActionBarDrawerToggle.class
 android/support/v4/app/ActivityCompatHoneycomb.class

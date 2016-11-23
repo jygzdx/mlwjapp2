@@ -7,7 +7,15 @@ public class Customer {
     private String huanxin_account;
     private String nickname;
     private String headimgurl;
+    private int id;
 
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
     public String getHuanxin_account() {
         return huanxin_account;
     }

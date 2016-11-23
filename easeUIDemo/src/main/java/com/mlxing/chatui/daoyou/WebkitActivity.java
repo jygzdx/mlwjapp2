@@ -45,8 +45,10 @@ import com.easemob.util.NetUtils;
 import com.mlxing.chatui.DemoApplication;
 import com.mlxing.chatui.DemoHelper;
 import com.mlxing.chatui.R;
+import com.mlxing.chatui.daoyou.entity.LocationVO;
 import com.mlxing.chatui.daoyou.utils.ActivityManager;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
+import com.mlxing.chatui.daoyou.utils.LocationUtil;
 import com.mlxing.chatui.daoyou.utils.LogTool;
 import com.mlxing.chatui.daoyou.utils.NetworkUtil;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
@@ -116,6 +118,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private String mCameraPhotoPath;
     private String title;
     private String tikuUrl;
+//    private LocationUtil locationUtil;
     private int code;
     private boolean isShare;
     private boolean isJpush = false;
@@ -130,18 +133,26 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         public void handleMessage(Message msg) {
             switch(msg.what){
 
+                case HANDLER_GET_LOCATION:
+                    Bundle bundle = msg.getData();
+                    String locHandle = bundle.getString("handle");
+                    String backJson = bundle.getString("json");
+                    Log.i(TAG,"locHandle="+locHandle+"backJson="+backJson+"==="+"javascript:"+locHandle+"("+backJson+")");
+                    webView.loadUrl("javascript:"+locHandle+"("+backJson+")");
+                    break;
+
                 case HANDLER_CHARGE_MONEY_FAILURE:
                     //充值失败
                     webView.loadUrl("javascript:"+handle+"(false"+")");
                     break;
-                case 20:
-                    Bundle bundle = msg.getData();
-                    String a = bundle.getString("a");
-                    String b = bundle.getString("b");
-                    String fangfaming = bundle.getString("fangfaming");
-                    webView.loadUrl("javascript:"+fangfaming+"("+a+","+b+")");
-                    Log.i(TAG,"fangfaming= "+fangfaming);
-                    break;
+//                case 20:
+//                    Bundle bundle = msg.getData();
+//                    String a = bundle.getString("a");
+//                    String b = bundle.getString("b");
+//                    String fangfaming = bundle.getString("fangfaming");
+//                    webView.loadUrl("javascript:"+fangfaming+"("+a+","+b+")");
+//                    Log.i(TAG,"fangfaming= "+fangfaming);
+//                    break;
                 case HANDLER_PAY_FAILURE:
                     //付款失败
                     webView.loadUrl("javascript:cancelPay(2"+")");
@@ -232,8 +243,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         Log.i(TAG,"onCreate");
         ActivityManager.getInstance().addActivity(this);
         initView();
+
+        //初始化百度地图
+        initBaiDuMap();
+
         initTitle();
         initWebView();
+
+
         mContext = this;
         isShare = getIntent().getBooleanExtra("isShare", false);
         String url = getIntent().getStringExtra("startUrl");
@@ -250,6 +267,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         registerBroadcastReceiver();
 
     }
+
+    private void initBaiDuMap() {
+
+    }
+
     private static final int IS_SAME_VERSION = 1;
     private void checkVersion() {
         OkHttpClient mOkHttpClient = new OkHttpClient();
@@ -643,8 +665,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onClick(View v) {
 
-//                //测试
-//                webView.loadUrl("http://192.168.1.17:3000/text_pay/index.html");
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
             }
@@ -1036,15 +1056,17 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                                 new ShareAction((Activity) mContext)
                                         .setPlatform(share_media)
                                         .withText("你要的大咖导游，都在这里，戳")
-                                        .withTargetUrl(Constant.POP_SHARE)
+                                        .withTargetUrl(Constant.URL_HOME)
                                         .withMedia(image)
+                                        .withTitle("美丽行")
                                         .share();
                             } else if (share_media == SHARE_MEDIA.WEIXIN_CIRCLE) {
                                 new ShareAction((Activity) mContext)
                                         .setPlatform(share_media)
                                         .withText("你要的大咖导游，都在这里，戳")
-                                        .withTargetUrl(Constant.POP_SHARE)
+                                        .withTargetUrl(Constant.URL_HOME)
                                         .withMedia(image)
+                                        .withTitle("美丽行")
                                         .share();
                             }
 
@@ -1063,7 +1085,47 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     }
     private static final int HANDLER_CHARGE_MONEY_FAILURE = 5;
     private static final int HANDLER_PAY_FAILURE = 4;
+    private static final int HANDLER_GET_LOCATION = 6;
     class InJavaScriptGetBody {
+        @JavascriptInterface
+        public void getLocationInfo(String json){
+            try {
+                JSONObject jsonObject = new JSONObject(json);
+                final String handle = jsonObject.getString("handle");
+                LocationUtil.getInstance(mContext).setLocationListener(new LocationUtil.OnLocationListener() {
+                    @Override
+                    public void onLocationResult(LocationVO locationResult) {
+                        Log.i(TAG,"locationVo="+locationResult);
+                        String city = locationResult.getCity();
+                        double latitude = locationResult.getLatitude();
+                        double lontitude = locationResult.getLontitude();
+                        String backJson = null;
+                        if(city!=null){
+                            backJson = "city:"+city+",latitude:"+latitude+",lontitude:"+lontitude;
+                            SPUtils.put(mContext,SPUtils.SP_LOCATION,backJson);
+                        }else{
+                            backJson = (String) SPUtils.get(mContext,SPUtils.SP_LOCATION,-1);
+                        }
+                        Message msg = handler.obtainMessage();
+                        msg.what = HANDLER_GET_LOCATION;
+                        Bundle bundle = new Bundle();
+                        bundle.putString("handle",handle);
+                        bundle.putString("json",backJson);
+                        msg.setData(bundle);
+                        handler.sendMessage(msg);
+                    }
+                });
+                LocationUtil.getInstance(mContext).startLocation(false);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        //调起客服界面
+        @JavascriptInterface
+        public void showCustomer(String number){
+            UIHelper.goToCustomer(mContext);
+        }
         @JavascriptInterface
         public void chargeMoney(String json){
             Log.i(TAG,"nihao !!!");
@@ -1121,26 +1183,26 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 e.printStackTrace();
             }
         }
-        @JavascriptInterface
-        public void test( String json, String fangfaming){
-            try {
-                JSONObject jsonObject  = new JSONObject(json);
-                String a = jsonObject.getString("a");
-                String b = jsonObject.getString("b");
-                Log.i(TAG,a+"-----"+b);
-                Message msg = handler.obtainMessage();
-                msg.what = 20;
-                Bundle bundle = new Bundle();
-                bundle.putString("a",a);
-                bundle.putString("b",b);
-                bundle.putString("fangfaming",fangfaming);
-                msg.setData(bundle);
-                handler.sendMessage(msg);
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
+//        @JavascriptInterface
+//        public void test( String json, String fangfaming){
+//            try {
+//                JSONObject jsonObject  = new JSONObject(json);
+//                String a = jsonObject.getString("a");
+//                String b = jsonObject.getString("b");
+//                Log.i(TAG,a+"-----"+b);
+//                Message msg = handler.obtainMessage();
+//                msg.what = 20;
+//                Bundle bundle = new Bundle();
+//                bundle.putString("a",a);
+//                bundle.putString("b",b);
+//                bundle.putString("fangfaming",fangfaming);
+//                msg.setData(bundle);
+//                handler.sendMessage(msg);
+//
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
         @JavascriptInterface
         public void wxPay(int type,String partnerid){
@@ -1295,6 +1357,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                                             .withText(content)
                                             .withTargetUrl(Constant.POP_SHARE)
                                             .withMedia(image)
+                                            .withTitle("美丽行")
                                             .share();
                                 } else if (share_media == SHARE_MEDIA.WEIXIN_CIRCLE) {
                                     new ShareAction((Activity) mContext)
@@ -1302,6 +1365,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                                             .withText(content)
                                             .withTargetUrl(Constant.POP_SHARE)
                                             .withMedia(image)
+                                            .withTitle("美丽行")
                                             .share();
                                 }
 

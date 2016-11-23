@@ -10,7 +10,6 @@ import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
-import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,11 +26,6 @@ import com.mlxing.chatui.daoyou.Constant;
 import com.mlxing.chatui.daoyou.WebkitActivity;
 import com.mlxing.chatui.daoyou.utils.zxing.CaptureActivity;
 import com.mlxing.chatui.db.InviteMessgeDao;
-import com.umeng.socialize.ShareAction;
-import com.umeng.socialize.bean.SHARE_MEDIA;
-import com.umeng.socialize.media.UMImage;
-import com.umeng.socialize.shareboard.SnsPlatform;
-import com.umeng.socialize.utils.ShareBoardlistener;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -183,9 +177,10 @@ public class PopupUtils {
                 popupWindow.dismiss();
                 break;
             case R.id.pop_qq:
-//                UIHelper.goToWebView(mcontext, Constant.POP_QQ);
-                String url = "mqqwpa://im/chat?chat_type=wpa&uin=3307713966";
-                mcontext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+////                UIHelper.goToWebView(mcontext, Constant.POP_QQ);
+//                String url = "mqqwpa://im/chat?chat_type=wpa&uin=3307713966";
+//                mcontext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                UIHelper.goToCustomer(mcontext);
                 popupWindow.dismiss();
                 break;
             case R.id.img_cancel:

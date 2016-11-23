@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.mlxing.chatui.daoyou.WebkitActivity;
+import com.mlxing.chatui.daoyou.ui.CustomerActivity;
 import com.mlxing.chatui.daoyou.ui.MainMenuActivity;
 import com.mlxing.chatui.daoyou.ui.MlxForgetActivity;
 import com.mlxing.chatui.daoyou.ui.MlxSignActivity;
@@ -125,5 +126,10 @@ public class UIHelper {
         Intent intent=new Intent(context, GroupsActivity.class);
         intent.putExtra(EaseConstant.MESSAGE_ATTR_IS_SHARE,true);
         context.startActivity(intent);
+    }
+
+    public static void goToCustomer(Context mcontext) {
+        Intent intent = new Intent(mcontext, CustomerActivity.class);
+        mcontext.startActivity(intent);
     }
 }

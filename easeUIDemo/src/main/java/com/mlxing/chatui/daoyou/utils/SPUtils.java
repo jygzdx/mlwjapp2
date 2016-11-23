@@ -22,6 +22,8 @@ public class SPUtils {
     public static String SP_MY_REFRESH="myfresh";
     public static String SP_THEIR_REFRESH="their";
 
+    public static String SP_LOCATION = "location";
+
     public static String SP_JS="js";
     /**
      * 是否隐藏小点点

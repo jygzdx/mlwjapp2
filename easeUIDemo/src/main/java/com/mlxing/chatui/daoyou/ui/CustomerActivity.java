@@ -16,7 +16,7 @@ import com.mlxing.chatui.daoyou.Constant;
 import com.mlxing.chatui.daoyou.entity.Customer;
 import com.mlxing.chatui.daoyou.utils.HttpUtil;
 import com.mlxing.chatui.daoyou.utils.JsonUtil;
-import com.mlxing.chatui.ui.UserProfileActivity;
+import com.mlxing.chatui.ui.SChatActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -76,7 +76,11 @@ public class CustomerActivity extends Activity {
             public void onResponse(Call call, Response response) throws IOException {
                 String jsonInfo = response.body().string();
                 customers.clear();
-                customers.addAll(JsonUtil.getCustomerList(jsonInfo));
+                List<Customer> allCustomer = JsonUtil.getCustomerList(jsonInfo);
+                for(int i= 0;i<allCustomer.size();i++){
+                    allCustomer.get(i).setId(i+1);
+                }
+                customers.addAll(allCustomer);
                 Message msg = handler.obtainMessage();
                 msg.what = LOAD_CUSTOMER_INFO;
                 handler.sendMessage(msg);
@@ -97,6 +101,7 @@ public class CustomerActivity extends Activity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
             }
         });
         //监听客服列表点击事件
@@ -104,8 +109,8 @@ public class CustomerActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String acound = ((Customer) lvCustomer.getItemAtPosition(position)).getHuanxin_account();
-                Intent intent = new Intent(CustomerActivity.this, UserProfileActivity.class);
-                intent.putExtra("username",acound);
+                Intent intent = new Intent(CustomerActivity.this, SChatActivity.class);
+                intent.putExtra("userId",acound);
                 startActivity(intent);
             }
         });
