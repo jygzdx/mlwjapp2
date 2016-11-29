@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.text.ClipboardManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -117,6 +118,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
     private EMChatRoomChangeListener chatRoomChangeListener;
     private boolean isMessageListInited;
     protected MyItemClickListener extendMenuItemClickListener;
+    private String content;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle
@@ -133,7 +135,8 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         // 会话人或群组id
         toChatUsername = fragmentArgs.getString(EaseConstant.EXTRA_USER_ID);
         isShare = fragmentArgs.getBoolean(EaseConstant.MESSAGE_ATTR_IS_SHARE, false);
-
+        //相约导游自动发出聊天文字
+        content = fragmentArgs.getString("content");
         super.onActivityCreated(savedInstanceState);
     }
 
@@ -267,6 +270,11 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         if (forward_msg_id != null) {
             // 发送要转发的消息
             forwardMessage(forward_msg_id);
+        }
+        //打开聊天界面是发送
+        if(content!=null){
+
+            sendTextMessage(content);
         }
     }
 

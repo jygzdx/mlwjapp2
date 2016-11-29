@@ -29,6 +29,21 @@ import java.util.regex.Pattern;
 public class StringUtil {
 
     /**
+     *
+     */
+    public static String getValueByName(String url ,String name){
+        String result= "";
+        String temp = url.substring(url.lastIndexOf("?")+1);
+        String str[] = temp.split("&");
+        for (String s :str){
+            if(s.contains(name)){
+                result = s.replace(name+"=","");
+                break;
+            }
+        }
+        return result;
+    }
+    /**
      * 按长度分割字符串
      *
      * @param content

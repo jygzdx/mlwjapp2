@@ -116,12 +116,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ease_dot_emojicon_unselected.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ease_default_expression.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ease_default_expression.png"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ease_chat_location_pressed.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ease_chat_location_pressed.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ease_default_expression.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ease_default_expression.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ease_group_icon.png",

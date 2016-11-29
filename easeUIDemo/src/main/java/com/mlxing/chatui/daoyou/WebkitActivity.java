@@ -53,6 +53,7 @@ import com.mlxing.chatui.daoyou.utils.LogTool;
 import com.mlxing.chatui.daoyou.utils.NetworkUtil;
 import com.mlxing.chatui.daoyou.utils.PopupUtils;
 import com.mlxing.chatui.daoyou.utils.SPUtils;
+import com.mlxing.chatui.daoyou.utils.StringUtil;
 import com.mlxing.chatui.daoyou.utils.UIHelper;
 import com.mlxing.chatui.daoyou.utils.VersionBiz;
 import com.mlxing.chatui.daoyou.utils.zxing.CaptureActivity;
@@ -137,11 +138,43 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private TimerTask timerTask;
 
     private static final int HANDLER_TIME = 7;
+    private static final int HANDLER_SHARE = 8;
     private int timeCode;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
+                case HANDLER_SHARE:
+                    try {
+                        String json = (String) msg.obj;
+                        Log.i(TAG, "mlxShare1: json= " + json);
+                        JSONObject obj = new JSONObject(json);
+                        String title = obj.getString("title");
+                        int id = obj.getInt("id");
+                        String desc = obj.getString("desc");
+                        String url = obj.getString("url");
+                        UMImage image = new UMImage(mContext, R.drawable.mlx_icon);
+                        if (id == 0) {
+                            new ShareAction((Activity) mContext)
+                                    .setPlatform(SHARE_MEDIA.WEIXIN)
+                                    .withTitle(title)
+                                    .withText(desc)
+                                    .withTargetUrl(url)
+                                    .withMedia(image)
+                                    .share();
+                        } else if (id == 1) {
+                            new ShareAction((Activity) mContext)
+                                    .setPlatform(SHARE_MEDIA.WEIXIN_CIRCLE)
+                                    .withTitle(title)
+                                    .withText(desc)
+                                    .withTargetUrl(url)
+                                    .withMedia(image)
+                                    .share();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    break;
                 case HANDLER_TIME:
                     if (timeCode % 2 == 1) {
 //                        btn_chat_dot.setVisibility(View.GONE);
@@ -289,6 +322,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         registerBroadcastReceiver();
 
     }
+
     private static final int IS_SAME_VERSION = 1;
 
     private void checkVersion() {
@@ -431,9 +465,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     Intent intent = new Intent(WebkitActivity.this, SChatActivity.class);
                     // it is group chat
                     intent.putExtra("chatType", com.mlxing.chatui.Constant.CHATTYPE_SINGLE);
-                    String u = url.substring(url.lastIndexOf("=") + 1);
+                    String u = StringUtil.getValueByName(url, "username");
                     intent.putExtra("userId", u);
-                    Log.i(TAG, "url="+url+"shouldOverrideUrlLoading: ID:" + u);
+                    intent.putExtra("count", StringUtil.getValueByName(url, "count"));
+                    intent.putExtra("content", StringUtil.getValueByName(url, "content"));
+                    Log.i(TAG, "url=" + url + "shouldOverrideUrlLoading: ID:" + u);
                     startActivity(intent);
                     return true;
                 } else if (url.contains(Constant.LOGIN_URL)) {//拦截登陆
@@ -1230,26 +1266,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 e.printStackTrace();
             }
         }
-//        @JavascriptInterface
-//        public void test( String json, String fangfaming){
-//            try {
-//                JSONObject jsonObject  = new JSONObject(json);
-//                String a = jsonObject.getString("a");
-//                String b = jsonObject.getString("b");
-//                Log.i(TAG,a+"-----"+b);
-//                Message msg = handler.obtainMessage();
-//                msg.what = 20;
-//                Bundle bundle = new Bundle();
-//                bundle.putString("a",a);
-//                bundle.putString("b",b);
-//                bundle.putString("fangfaming",fangfaming);
-//                msg.setData(bundle);
-//                handler.sendMessage(msg);
-//
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
-//        }
 
         @JavascriptInterface
         public void wxPay(int type, String partnerid) {
@@ -1378,6 +1394,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         @JavascriptInterface
         public void gotoNewWebView(String url) {
             UIHelper.goToNewWebView(WebkitActivity.this, url, false);
+        }
+
+        @JavascriptInterface
+        public void share(String json) {
+            Message msg = handler.obtainMessage();
+            msg.what = HANDLER_SHARE;
+            msg.obj = json;
+            handler.sendMessage(msg);
         }
 
         @JavascriptInterface
