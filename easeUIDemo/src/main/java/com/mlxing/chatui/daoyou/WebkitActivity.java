@@ -78,6 +78,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import easeui.EaseConstant;
 import easeui.widget.EaseTitleBar;
@@ -118,32 +120,51 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private String mCameraPhotoPath;
     private String title;
     private String tikuUrl;
-//    private LocationUtil locationUtil;
+    //    private LocationUtil locationUtil;
     private int code;
     private boolean isShare;
     private boolean isJpush = false;
 
     private int mtype;
+
+    private boolean shanshuo;
     private String mpartnerid;
     //js传过来的方法名
     private String handle;
 
-    private Handler handler = new Handler(){
+    //计时器
+    private Timer timer;
+    private TimerTask timerTask;
+
+    private static final int HANDLER_TIME = 7;
+    private int timeCode;
+    private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            switch(msg.what){
+            switch (msg.what) {
+                case HANDLER_TIME:
+                    if (timeCode % 2 == 1) {
+//                        btn_chat_dot.setVisibility(View.GONE);
+                        btn_chat_nodot.setVisibility(View.VISIBLE);
+                    } else {
+//                        btn_chat_dot.setVisibility(View.VISIBLE);
+                        btn_chat_nodot.setVisibility(View.GONE);
+                    }
+
+                    break;
 
                 case HANDLER_GET_LOCATION:
                     Bundle bundle = msg.getData();
                     String locHandle = bundle.getString("handle");
                     String backJson = bundle.getString("json");
-                    Log.i(TAG,"locHandle="+locHandle+"backJson="+backJson+"==="+"javascript:"+locHandle+"("+backJson+")");
-                    webView.loadUrl("javascript:"+locHandle+"("+backJson+")");
+                    Log.i(TAG, "locHandle=" + locHandle + "backJson=" + backJson + "===" +
+                            "javascript:" + locHandle + "(" + backJson + ")");
+                    webView.loadUrl("javascript:" + locHandle + "(nihao)");//("+backJson+"//)
                     break;
 
                 case HANDLER_CHARGE_MONEY_FAILURE:
                     //充值失败
-                    webView.loadUrl("javascript:"+handle+"(false"+")");
+                    webView.loadUrl("javascript:" + handle + "(false" + ")");
                     break;
 //                case 20:
 //                    Bundle bundle = msg.getData();
@@ -155,62 +176,65 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 //                    break;
                 case HANDLER_PAY_FAILURE:
                     //付款失败
-                    webView.loadUrl("javascript:cancelPay(2"+")");
+                    webView.loadUrl("javascript:cancelPay(2" + ")");
                     mpartnerid = "";
                     mtype = 0;
                     break;
                 case IS_SAME_VERSION:
-                    String serviceAPKVersion = (String)msg.obj;
+                    String serviceAPKVersion = (String) msg.obj;
 
                     String currVersion = VersionBiz.getVersion(mContext);
-                    boolean isSameVersion = VersionBiz.isSameVersion(mContext,currVersion,serviceAPKVersion);
-                    String versionName = (String) SPUtils.get(mContext,"downapkVersion"," ");
-                    if(!isSameVersion) {
-                        if(!versionName.equals(serviceAPKVersion)){
-                            if(NetworkUtil.isWifi(mContext)){
-                                Log.i(TAG,"wifi下载");
+                    boolean isSameVersion = VersionBiz.isSameVersion(mContext, currVersion,
+                            serviceAPKVersion);
+                    String versionName = (String) SPUtils.get(mContext, "downapkVersion", " ");
+                    if (!isSameVersion) {
+                        if (!versionName.equals(serviceAPKVersion)) {
+                            if (NetworkUtil.isWifi(mContext)) {
+                                Log.i(TAG, "wifi下载");
                                 //下载apk
                                 VersionBiz versionBiz = new VersionBiz();
-                                versionBiz.downApk(serviceAPKVersion,handler,mContext);
-                            }else{
-                                Log.i(TAG,"不是WiFi状态");
+                                versionBiz.downApk(serviceAPKVersion, handler, mContext);
+                            } else {
+                                Log.i(TAG, "不是WiFi状态");
                             }
                         }
-                    }else{
-                        Log.i(TAG,"不用更新版本");
+                    } else {
+                        Log.i(TAG, "不用更新版本");
                     }
-                break;
+                    break;
                 case Constant.HANDLER_DOWNLOAD_SUCCESE:
                     final String apkSavePath = (String) msg.obj;
-                    Log.i(TAG,"apkSavePath="+apkSavePath);
+                    Log.i(TAG, "apkSavePath=" + apkSavePath);
 
-                    boolean isSelected = (boolean) SPUtils.get(mContext,"isSelected",false);
-                    if(!isSelected){
+                    boolean isSelected = (boolean) SPUtils.get(mContext, "isSelected", false);
+                    if (!isSelected) {
                         final AlertDialog dialog = new AlertDialog.Builder(mContext).create();
 
-                        View mView = LayoutInflater.from(mContext).inflate(R.layout.dialog_updata,null);
-                        final CheckBox cb_selected = (CheckBox) mView.findViewById(R.id.dialog_selected);
-                        Button btn_positive = (Button)mView.findViewById(R.id.dialog_Positive);
+                        View mView = LayoutInflater.from(mContext).inflate(R.layout
+                                .dialog_updata, null);
+                        final CheckBox cb_selected = (CheckBox) mView.findViewById(R.id
+                                .dialog_selected);
+                        Button btn_positive = (Button) mView.findViewById(R.id.dialog_Positive);
                         Button btn_negative = (Button) mView.findViewById(R.id.dialog_Negative);
 
                         btn_negative.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 boolean isSelected = cb_selected.isSelected();
-                                SPUtils.put(mContext,"isSelected",isSelected);
+                                SPUtils.put(mContext, "isSelected", isSelected);
                                 dialog.dismiss();
                             }
                         });
                         btn_positive.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                SPUtils.put(mContext,"isSelected",false);
+                                SPUtils.put(mContext, "isSelected", false);
                                 //跳转到apk安装页面
                                 Intent intent = new Intent(Intent.ACTION_VIEW);
                                 File file = new File(apkSavePath);
                                 Uri uri = Uri.fromFile(file);
                                 String type = "application/vnd.android.package-archive";
-                                intent.setDataAndType(uri,type);
+                                intent.setDataAndType(uri, type);
                                 startActivity(intent);
                             }
                         });
@@ -240,12 +264,10 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.mlx_activity_webkit);
-        Log.i(TAG,"onCreate");
+        Log.i(TAG, "onCreate");
         ActivityManager.getInstance().addActivity(this);
         initView();
 
-        //初始化百度地图
-        initBaiDuMap();
 
         initTitle();
         initWebView();
@@ -254,7 +276,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         mContext = this;
         isShare = getIntent().getBooleanExtra("isShare", false);
         String url = getIntent().getStringExtra("startUrl");
-        LogTool.i(TAG, "oncreate:"+url);
+        LogTool.i(TAG, "oncreate:" + url);
 
         webView.loadUrl(url);
 
@@ -267,26 +289,23 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         registerBroadcastReceiver();
 
     }
-
-    private void initBaiDuMap() {
-
-    }
-
     private static final int IS_SAME_VERSION = 1;
+
     private void checkVersion() {
         OkHttpClient mOkHttpClient = new OkHttpClient();
-        Request request = new Request.Builder().url("http://weixin.mlxing.com/vers/get_version?class=3").build();
+        Request request = new Request.Builder().url("http://weixin.mlxing" +
+                ".com/vers/get_version?class=3").build();
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.i("onfailure",e.getMessage());
+                Log.i("onfailure", e.getMessage());
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String body = response.body().string();
-                Log.i("body",body);
+                Log.i("body", body);
                 try {
 
                     JSONObject obj = new JSONObject(body);
@@ -309,7 +328,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         webView = (WebView) findViewById(R.id.webView);
         mTitleBar = (EaseTitleBar) findViewById(R.id.title_bar);
         pgWv = (ProgressBar) findViewById(R.id.pg_wv);
-        btn_chat_dot = (ImageView) findViewById(R.id.btn_chat_dot);
+//        btn_chat_dot = (ImageView) findViewById(R.id.btn_chat_dot);
         btn_chat_nodot = (ImageView) findViewById(R.id.btn_chat_nodot);
         imgError = (ImageView) findViewById(R.id.img_error);
     }
@@ -359,7 +378,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 checkShowError();
                 tikuUrl = url;
                 Log.i(TAG, "shouldOverrideUrlLoading: " + url);
-                Log.i(TAG,"shouldOverrideUrlLoading");
+                Log.i(TAG, "shouldOverrideUrlLoading");
                 if (url.contains("mlxing.group")) {
                     //http://mlxing.group/?group_id=XXX
                     // 进入群聊
@@ -414,7 +433,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     intent.putExtra("chatType", com.mlxing.chatui.Constant.CHATTYPE_SINGLE);
                     String u = url.substring(url.lastIndexOf("=") + 1);
                     intent.putExtra("userId", u);
-                    Log.i(TAG, "shouldOverrideUrlLoading: ID:" + u);
+                    Log.i(TAG, "url="+url+"shouldOverrideUrlLoading: ID:" + u);
                     startActivity(intent);
                     return true;
                 } else if (url.contains(Constant.LOGIN_URL)) {//拦截登陆
@@ -476,7 +495,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 } else if (url.contains("mlxing.qrcode")) {//拦截进入扫描二维码
                     Intent intent = new Intent(WebkitActivity.this, CaptureActivity.class);
                     startActivityForResult(intent, WebkitActivity.QRCODE_REQUEST);
-                }else if(url.contains("")){
+                } else if (url.contains("")) {
 
                 }
                 return super.shouldOverrideUrlLoading(view, url);
@@ -486,7 +505,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 //handler.cancel(); 默认的处理方式，WebView变成空白页
                 handler.proceed();//接受证书
-                Log.i(TAG,"onReceivedSslError");
+                Log.i(TAG, "onReceivedSslError");
                 //handleMessage(Message msg); 其他处理
             }
 
@@ -494,7 +513,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 checkShowError();
-                Log.i(TAG,"onPageFinished");
+                Log.i(TAG, "onPageFinished");
 //                mTitleBar.setTitle(getaTitle());
                 code = (int) SPUtils.get(WebkitActivity.this, "js", 9);
                 Log.i(TAG, "onPageFinished: " + code);
@@ -503,8 +522,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
-                        .equals(url) || isShare ) {
-                        Log.i(TAG,"onPageFinished.visible");
+                        .equals(url) || isShare) {
+                    Log.i(TAG, "onPageFinished.visible");
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -528,14 +547,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onReceivedError(WebView view, int errorCode, String description, String
                     failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
-                Log.i(TAG,"onReceivedError");
+                Log.i(TAG, "onReceivedError");
                 imgError.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
 //                super.onPageStarted(view, url, favicon);
-                Log.i(TAG,"onPageStarted");
+                Log.i(TAG, "onPageStarted");
                 checkShowError();
             }
         });
@@ -544,7 +563,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 pgWv.setProgress(newProgress);
-                Log.i(TAG,"setWebChromeClient.onProgressChanged");
+                Log.i(TAG, "setWebChromeClient.onProgressChanged");
                 if (newProgress >= 80) {
                     pgWv.setVisibility(View.GONE);
 
@@ -558,14 +577,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onReceivedTitle(WebView view, String tit) {
                 super.onReceivedTitle(view, tit);
-                Log.i(TAG,"setWebChromeClient.onReceivedTitle");
+                Log.i(TAG, "setWebChromeClient.onReceivedTitle");
                 title = tit;
-                    titles.add(title);
-                    mTitleBar.setTitle(getaTitle());
+                titles.add(title);
+                mTitleBar.setTitle(getaTitle());
 
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant
                         .SET_ABOUT.equals(view.getUrl())) {
-                    Log.i(TAG,"onReceivedTitle.visible");
+                    Log.i(TAG, "onReceivedTitle.visible");
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
                     mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
@@ -576,7 +595,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public boolean onShowFileChooser(
                     WebView webView, ValueCallback<Uri[]> filePathCallback,
                     WebChromeClient.FileChooserParams fileChooserParams) {
-                Log.i(TAG,"setWebChromeClient.onShowFileChooser");
+                Log.i(TAG, "setWebChromeClient.onShowFileChooser");
                 if (mFilePathCallback != null) {
                     mFilePathCallback.onReceiveValue(null);
                 }
@@ -659,7 +678,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     }
 
     private void initTitle() {
-        Log.i(TAG,"initTitle");
+        Log.i(TAG, "initTitle");
 //        mTitleBar.setTitle("美丽行");
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
@@ -681,50 +700,50 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     }
 
-    public void goBack(){
+    public void goBack() {
 
-            Log.i(TAG,"onBackPressed");
+        Log.i(TAG, "onBackPressed");
 
-            if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
+        if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
 
-                webView.goBackOrForward(-2);
-                return;
-            }
+            webView.goBackOrForward(-2);
+            return;
+        }
 
-            if (webView.canGoBack()) {
+        if (webView.canGoBack()) {
 
-                if (titles.size() > 0) {
+            if (titles.size() > 0) {
 
-                    if (title != titles.get(titles.size() - 1)) {
+                if (title != titles.get(titles.size() - 1)) {
 
-                        title = titles.get(titles.size() - 1);
-                        mTitleBar.setTitle(getaTitle());
-                    }
-                    titles.remove(titles.size() - 1);
-                }
-                if (titles.size() > 1) {
-                    titles.remove(titles.size() - 1);
                     title = titles.get(titles.size() - 1);
                     mTitleBar.setTitle(getaTitle());
                 }
-                LogTool.i(TAG, titles.toString());
-                webView.goBack();
-            } else {
-                if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
-                    super.onBackPressed();
-                } else {
-
-                    moveTaskToBack(true);
-                }
+                titles.remove(titles.size() - 1);
             }
+            if (titles.size() > 1) {
+                titles.remove(titles.size() - 1);
+                title = titles.get(titles.size() - 1);
+                mTitleBar.setTitle(getaTitle());
+            }
+            LogTool.i(TAG, titles.toString());
+            webView.goBack();
+        } else {
+            if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
+                super.onBackPressed();
+            } else {
+
+                moveTaskToBack(true);
+            }
+        }
     }
 
     @Override
     public void onBackPressed() {
-        if(System.currentTimeMillis()-firstTime>2000){
+        if (System.currentTimeMillis() - firstTime > 2000) {
             firstTime = System.currentTimeMillis();
-            Toast.makeText(this,"再按一次返回键退出程序",Toast.LENGTH_SHORT).show();
-        }else {
+            Toast.makeText(this, "再按一次返回键退出程序", Toast.LENGTH_SHORT).show();
+        } else {
             finish();
             System.exit(0);
         }
@@ -823,27 +842,27 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             webView.loadUrl("javascript:_jsCallbackForAppPay(" + code + ")");
             SPUtils.put(this, SPUtils.SP_JS, 9);
         }
-        if(code == 0){
+        if (code == 0) {
             //付款成功
-            webView.loadUrl("javascript:beginDraw("+mtype+","+mpartnerid+")");
+            webView.loadUrl("javascript:beginDraw(" + mtype + "," + mpartnerid + ")");
             SPUtils.put(this, SPUtils.SP_JS, 9);
             mpartnerid = "";
             mtype = 0;
-        }else{
+        } else {
             //付款失败
-            webView.loadUrl("javascript:cancelPay(1"+")");
+            webView.loadUrl("javascript:cancelPay(1" + ")");
             SPUtils.put(this, SPUtils.SP_JS, 9);
             mpartnerid = "";
             mtype = 0;
         }
-        if(code == 0){
+        if (code == 0) {
             //充值成功
-            webView.loadUrl("javascript:"+handle+"(true)");
+            webView.loadUrl("javascript:" + handle + "(true)");
             handle = "";
             SPUtils.put(this, SPUtils.SP_JS, 9);
-        }else{
+        } else {
             //充值失败
-            webView.loadUrl("javascript:"+handle+"(false)");
+            webView.loadUrl("javascript:" + handle + "(false)");
             handle = "";
             SPUtils.put(this, SPUtils.SP_JS, 9);
         }
@@ -896,15 +915,37 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void run() {
                 int count1 = getUnreadMsgCountTotal();
                 int count2 = getUnreadAddressCountTotal();
+                Log.i(TAG, "updateUnreadAddressLable");
                 if ((count1 + count2) > 0) {
 //                    mTitleBar.setRightDotVisiable(View.VISIBLE);
-                    btn_chat_dot.setVisibility(View.VISIBLE);
-                    btn_chat_nodot.setVisibility(View.GONE);
+//                    btn_chat_dot.setVisibility(View.VISIBLE);
+//                    btn_chat_nodot.setVisibility(View.GONE);
+                    if (timer != null) {
+                        timer.cancel();
+                    }
+                    timer = new Timer();
+                    timerTask = new TimerTask() {
+                        @Override
+                        public void run() {
+                            Message msg = handler.obtainMessage();
+                            msg.what = HANDLER_TIME;
+                            timeCode++;
+                            handler.sendMessage(msg);
+                            Log.i(TAG, "run: handler");
+                        }
+                    };
+                    Log.i(TAG, "timer=" + timer);
+                    timer.schedule(timerTask, 500, 500);
+                    Log.i(TAG, "run");
                     SPUtils.put(WebkitActivity.this, SPUtils.SP_DOT, SPUtils.isDot);
                 } else {
 //                    mTitleBar.setRightDotVisiable(View.GONE);
-                    btn_chat_dot.setVisibility(View.GONE);
+//                    btn_chat_dot.setVisibility(View.GONE);
                     btn_chat_nodot.setVisibility(View.VISIBLE);
+                    Log.i(TAG, "run===next");
+                    if (timer != null) {
+                        timer.cancel();
+                    }
                     SPUtils.put(WebkitActivity.this, SPUtils.SP_DOT, SPUtils.noDot);
 
                 }
@@ -1083,34 +1124,38 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     }
                 }).open();
     }
+
     private static final int HANDLER_CHARGE_MONEY_FAILURE = 5;
     private static final int HANDLER_PAY_FAILURE = 4;
     private static final int HANDLER_GET_LOCATION = 6;
+
     class InJavaScriptGetBody {
         @JavascriptInterface
-        public void getLocationInfo(String json){
+        public void getLocationInfo(String json) {
             try {
                 JSONObject jsonObject = new JSONObject(json);
                 final String handle = jsonObject.getString("handle");
-                LocationUtil.getInstance(mContext).setLocationListener(new LocationUtil.OnLocationListener() {
+                LocationUtil.getInstance(mContext).setLocationListener(new LocationUtil
+                        .OnLocationListener() {
                     @Override
                     public void onLocationResult(LocationVO locationResult) {
-                        Log.i(TAG,"locationVo="+locationResult);
+                        Log.i(TAG, "locationVo=" + locationResult);
                         String city = locationResult.getCity();
                         double latitude = locationResult.getLatitude();
                         double lontitude = locationResult.getLontitude();
                         String backJson = null;
-                        if(city!=null){
-                            backJson = "city:"+city+",latitude:"+latitude+",lontitude:"+lontitude;
-                            SPUtils.put(mContext,SPUtils.SP_LOCATION,backJson);
-                        }else{
-                            backJson = (String) SPUtils.get(mContext,SPUtils.SP_LOCATION,-1);
+                        if (city != null) {
+                            backJson = "city:" + city + ",latitude:" + latitude + ",lontitude:" +
+                                    lontitude;
+                            SPUtils.put(mContext, SPUtils.SP_LOCATION, backJson);
+                        } else {
+                            backJson = (String) SPUtils.get(mContext, SPUtils.SP_LOCATION, -1);
                         }
                         Message msg = handler.obtainMessage();
                         msg.what = HANDLER_GET_LOCATION;
                         Bundle bundle = new Bundle();
-                        bundle.putString("handle",handle);
-                        bundle.putString("json",backJson);
+                        bundle.putString("handle", handle);
+                        bundle.putString("json", backJson);
                         msg.setData(bundle);
                         handler.sendMessage(msg);
                     }
@@ -1123,32 +1168,33 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
         //调起客服界面
         @JavascriptInterface
-        public void showCustomer(String number){
+        public void showCustomer(String number) {
             UIHelper.goToCustomer(mContext);
         }
+
         @JavascriptInterface
-        public void chargeMoney(String json){
-            Log.i(TAG,"nihao !!!");
-            Log.i(TAG,json);
+        public void chargeMoney(String json) {
+            Log.i(TAG, "nihao !!!");
+            Log.i(TAG, json);
             try {
                 JSONObject jsonObject = new JSONObject(json);
                 String total = jsonObject.getString("total_fee");//金额
                 handle = jsonObject.getString("handle");//回调方法名
-                String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
-                Log.i(TAG,"handle="+handle);
+                String mid = (String) SPUtils.get(mContext, SPUtils.MID, " ");
+                Log.i(TAG, "handle=" + handle);
                 //没有登录直接返回
-                if(" ".equals(mid)){
+                if (" ".equals(mid)) {
                     Message msg = handler.obtainMessage();
                     msg.what = HANDLER_CHARGE_MONEY_FAILURE;
-                    Log.i(TAG,"没有登录");
+                    Log.i(TAG, "没有登录");
                     handler.sendMessage(msg);
                     return;
                 }
                 //发送充值请求
-                HttpUtil.getChargeInfo(total,mid).enqueue(new Callback() {
+                HttpUtil.getChargeInfo(total, mid).enqueue(new Callback() {
                     @Override
                     public void onFailure(Call call, IOException e) {
-                        Log.i(TAG,"充值支付失败");
+                        Log.i(TAG, "充值支付失败");
                     }
 
                     @Override
@@ -1157,7 +1203,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                         try {
                             JSONObject obj = new JSONObject(content);
                             api = DemoApplication.getApi();
-                            if(null!=obj&&!obj.has("return_code")){
+                            if (null != obj && !obj.has("return_code")) {
                                 PayReq pay = new PayReq();
                                 pay.appId = obj.getString("appid");
                                 pay.partnerId = obj.getString("partnerid");//商户id
@@ -1169,13 +1215,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
                                 pay.extData = "caipiao";
                                 boolean paymes = api.sendReq(pay);
-                                Log.i("MainActivity","充值成功发起支付"+paymes);
-                            }else{
-                                Log.i("MainActivity","充值返回错误："+obj.getString("return_msg"));
+                                Log.i("MainActivity", "充值成功发起支付" + paymes);
+                            } else {
+                                Log.i("MainActivity", "充值返回错误：" + obj.getString("return_msg"));
                             }
                         } catch (JSONException e) {
-                            Log.i("MainActivity","异常："+e.getMessage());
-                            Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
+                            Log.i("MainActivity", "异常：" + e.getMessage());
+                            Toast.makeText(mContext, "异常：" + e.getMessage(), Toast.LENGTH_SHORT)
+                                    .show();
                         }
                     }
                 });
@@ -1205,19 +1252,19 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 //        }
 
         @JavascriptInterface
-        public void wxPay(int type,String partnerid){
+        public void wxPay(int type, String partnerid) {
             mtype = type;
             mpartnerid = partnerid;
-            String mid = (String) SPUtils.get(mContext,SPUtils.MID," ");
+            String mid = (String) SPUtils.get(mContext, SPUtils.MID, " ");
             //没有登录直接返回
-            if(" ".equals(mid)){
+            if (" ".equals(mid)) {
                 Message msg = handler.obtainMessage();
                 msg.what = HANDLER_PAY_FAILURE;
                 handler.sendMessage(msg);
                 return;
             }
             OkHttpClient mOkHttpClient = new OkHttpClient();
-            FormBody formBody = new FormBody.Builder().add("class","2").add("mid",mid).build();
+            FormBody formBody = new FormBody.Builder().add("class", "2").add("mid", mid).build();
 
             final Request request = new Request.Builder().url("http://weixin.mlxing" +
                     ".com/activity/indent?trade_type=APP").post(formBody).build();
@@ -1226,7 +1273,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             call.enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.i(TAG,"一元夺宝支付失败");
+                    Log.i(TAG, "一元夺宝支付失败");
                 }
 
                 @Override
@@ -1235,7 +1282,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     try {
                         JSONObject obj = new JSONObject(content);
                         api = DemoApplication.getApi();
-                        if(null!=obj&&!obj.has("return_code")){
+                        if (null != obj && !obj.has("return_code")) {
                             PayReq pay = new PayReq();
                             pay.appId = obj.getString("appid");
                             pay.partnerId = obj.getString("partnerid");//商户id
@@ -1247,14 +1294,14 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
                             pay.extData = "caipiao";
                             boolean paymes = api.sendReq(pay);
-                            Log.i("MainActivity","成功发起支付"+paymes);
+                            Log.i("MainActivity", "成功发起支付" + paymes);
 
-                        }else{
-                            Log.i("MainActivity","返回错误："+obj.getString("return_msg"));
+                        } else {
+                            Log.i("MainActivity", "返回错误：" + obj.getString("return_msg"));
                         }
                     } catch (JSONException e) {
-                        Log.i("MainActivity","异常："+e.getMessage());
-                        Toast.makeText(mContext,"异常："+e.getMessage(),Toast.LENGTH_SHORT).show();
+                        Log.i("MainActivity", "异常：" + e.getMessage());
+                        Toast.makeText(mContext, "异常：" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -1292,6 +1339,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
 
         }
+
         @JavascriptInterface
         public void setTitle(String title) {
             SPUtils.put(getApplicationContext(), EaseConstant.SHARE_TITLE, title);

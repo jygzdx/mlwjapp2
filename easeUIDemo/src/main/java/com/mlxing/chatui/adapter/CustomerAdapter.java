@@ -68,7 +68,9 @@ public class CustomerAdapter extends BaseAdapter{
         Customer customer = getItem(position);
         String nickname = customer.getNickname();
         if(nickname!=null&&!"null".equals(nickname)){
-            viewHolder.tvCustomerNickname.setText("客服"+customer.getId());
+            viewHolder.tvCustomerNickname.setText(nickname);
+        }else{
+            viewHolder.tvCustomerNickname.setText("客服");
         }
 
         //加载图片

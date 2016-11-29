@@ -144,12 +144,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\layout\\ease_commom_back_btn.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\layout\\ease_row_expression.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\layout\\ease_row_expression.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\layout\\ease_layout_chat_primary_menu.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\layout\\ease_layout_chat_primary_menu.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\layout\\ease_row_expression.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\layout\\ease_row_expression.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\layout\\mlx_imgfilelist.xml",

@@ -77,9 +77,6 @@ public class CustomerActivity extends Activity {
                 String jsonInfo = response.body().string();
                 customers.clear();
                 List<Customer> allCustomer = JsonUtil.getCustomerList(jsonInfo);
-                for(int i= 0;i<allCustomer.size();i++){
-                    allCustomer.get(i).setId(i+1);
-                }
                 customers.addAll(allCustomer);
                 Message msg = handler.obtainMessage();
                 msg.what = LOAD_CUSTOMER_INFO;

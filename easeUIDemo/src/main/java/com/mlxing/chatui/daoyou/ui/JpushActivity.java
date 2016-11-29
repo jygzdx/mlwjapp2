@@ -81,7 +81,7 @@ public class JpushActivity extends Activity {
         webView = (WebView) findViewById(R.id.webView);
         mTitleBar = (EaseTitleBar) findViewById(R.id.title_bar);
         pgWv = (ProgressBar) findViewById(R.id.pg_wv);
-        btn_chat_dot = (ImageView) findViewById(R.id.btn_chat_dot);
+//        btn_chat_dot = (ImageView) findViewById(R.id.btn_chat_dot);
         btn_chat_nodot = (ImageView) findViewById(R.id.btn_chat_nodot);
         imgError = (ImageView) findViewById(R.id.img_error);
     }

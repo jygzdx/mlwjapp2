@@ -24,12 +24,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\drawable\\ease_chat_press_speak_btn.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem_grey.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\drawable\\ease_mm_listitem_grey.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\drawable\\ease_msg_state_failed_resend.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\drawable\\ease_msg_state_failed_resend.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\drawable\\ease_mm_listitem_grey.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\drawable\\ease_mm_listitem_grey.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\drawable\\ease_chat_send_btn_selector.xml",
