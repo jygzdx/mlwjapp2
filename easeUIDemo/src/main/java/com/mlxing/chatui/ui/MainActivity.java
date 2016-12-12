@@ -229,7 +229,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             case R.id.btn_home:
                 index = 2;
                 Intent intent3 = new Intent(MainActivity.this, WebkitActivity.class);
-                intent3.putExtra("startUrl", com.mlxing.chatui.daoyou.Constant.URL_SHOUYE);
+                intent3.putExtra("startUrl", com.mlxing.chatui.daoyou.Constant.URL_HOME);
                 startActivity(intent3);
                 finish();
                 break;

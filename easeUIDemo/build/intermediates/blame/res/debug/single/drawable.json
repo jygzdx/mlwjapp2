@@ -36,12 +36,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable\\btn_selector.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_cancel_bj.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable\\ease_btn_cancel_bj.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\src\\main\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUIDemo\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_default_avatar.png",

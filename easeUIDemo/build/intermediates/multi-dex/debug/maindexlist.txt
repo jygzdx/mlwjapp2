@@ -389,6 +389,7 @@ easeui/ui/EaseGroupRemoveListener.class
 org/apache/commons/codec/binary/BinaryCodec.class
 android/support/annotation/ColorRes.class
 com/mlxing/chatui/daoyou/DaoYouMainActivity$1.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$InJavaScriptGetBody.class
 com/mlxing/chatui/ui/UserProfileActivity$1.class
 butterknife/BindDrawable.class
 easeui/ui/EaseBaiduMapActivity$1.class
@@ -446,6 +447,7 @@ com/mlxing/chatui/ui/RecorderVideoActivity$1.class
 com/mlxing/chatui/daoyou/ui/MlxForgetActivity$1.class
 android/support/v4/app/Fragment$SavedState.class
 android/support/v4/media/session/MediaSessionCompat$1.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$4.class
 easeui/ui/EaseBaseFragment.class
 android/support/v4/media/session/PlaybackStateCompat$1.class
 org/apache/http/conn/ManagedClientConnection.class
@@ -1227,6 +1229,7 @@ com/mlxing/chatui/daoyou/utils/ToastTool.class
 android/support/v4/media/session/PlaybackStateCompat.class
 android/support/v4/media/RatingCompat.class
 com/tencent/bugly/crashreport/CrashReport.class
+com/mlxing/chatui/daoyou/ui/JpushActivity$5.class
 org/apache/http/ConnectionClosedException.class
 com/mlxing/chatui/R$id.class
 org/apache/commons/codec/Encoder.class

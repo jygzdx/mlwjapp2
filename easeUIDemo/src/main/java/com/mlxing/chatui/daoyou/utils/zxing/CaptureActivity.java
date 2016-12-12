@@ -16,6 +16,7 @@ import android.os.Message;
 import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
@@ -112,9 +113,11 @@ public class CaptureActivity extends BaseActivity implements Callback {
 			switch (msg.what) {
 			case PARSE_BARCODE_SUC:
 				onResultHandler((String) msg.obj, scanBitmap);
+				Log.i("CaptureActivity", "handleMessage: succese");
 				break;
 			case PARSE_BARCODE_FAIL:
 				Toast.makeText(CaptureActivity.this, (String) msg.obj, Toast.LENGTH_LONG).show();
+				Log.i("CaptureActivity", "handleMessage: erro");
 				break;
 
 			}

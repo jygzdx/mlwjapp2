@@ -22,7 +22,10 @@ public class SPUtils {
     public static String SP_MY_REFRESH="myfresh";
     public static String SP_THEIR_REFRESH="their";
 
-    public static String SP_LOCATION = "location";
+    //保存地址信息
+    public static String SP_CITY = "city";
+    public static String SP_LONTITUDE = "lontitude";
+    public static String SP_LATITUDE = "latitude";
 
     public static String SP_JS="js";
     /**

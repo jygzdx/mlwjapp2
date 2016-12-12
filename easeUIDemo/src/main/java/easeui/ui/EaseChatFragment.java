@@ -272,7 +272,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
             forwardMessage(forward_msg_id);
         }
         //打开聊天界面是发送
-        if(content!=null){
+        if(content!=""&&content!=null){
 
             sendTextMessage(content);
         }

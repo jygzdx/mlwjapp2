@@ -101,7 +101,7 @@ public class HttpUtil {
 
 
 
-            Retrofit client = new Retrofit.Builder().baseUrl("https://weixin.mlxing.com/shop/getAppUserInfo/")
+            Retrofit client = new Retrofit.Builder().baseUrl("http://weixin.mlxing.com/shop/getAppUserInfo/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .client(getOkClient())
@@ -114,22 +114,22 @@ public class HttpUtil {
     public interface ApiInterface {
         //微信
         @FormUrlEncoded
-        @POST("https://weixin.mlxing.com/shop/getAppUserInfo")
+        @POST("http://weixin.mlxing.com/shop/getAppUserInfo")
         Call<WxHuanXinEntity> getHuanXin(@Field("openid") String openid, @Field("access_token") String access_token);
 
         //注册
         @FormUrlEncoded
-        @POST("https://weixin.mlxing.com/login/register")
+        @POST("http://weixin.mlxing.com/login/register")
         Call<LoginEntity> sign(@Field("username") String username, @Field("password") String password,@Field("verify") String verify);
 
         //登录
         @FormUrlEncoded
-        @POST("https://weixin.mlxing.com/shop/app_login")
+        @POST("http://weixin.mlxing.com/shop/app_login")
         Call<LoginEntity> login(@Field("username") String username, @Field("password") String password);
 
         //忘记密码
         @FormUrlEncoded
-        @POST("https://weixin.mlxing.com/login/resetPwd")
+        @POST("http://weixin.mlxing.com/login/resetPwd")
         Call<ForgetEntity> forget(@Field("username") String username,@Field("password") String password,@Field("verify") String verify);
 
         //发送验证码

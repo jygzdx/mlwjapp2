@@ -123,7 +123,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     private String tikuUrl;
     //    private LocationUtil locationUtil;
     private int code;
-    private boolean isShare;
     private boolean isJpush = false;
 
     private int mtype;
@@ -136,14 +135,22 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     //计时器
     private Timer timer;
     private TimerTask timerTask;
+    //极光推送url
+    private String jpushUrl;
 
     private static final int HANDLER_TIME = 7;
     private static final int HANDLER_SHARE = 8;
+    private static final int HANDLER_PUSH = 9;
     private int timeCode;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
+                case HANDLER_PUSH:
+                    Log.i(TAG, "handleMessage: jpushUrl = " + jpushUrl);
+                    webView.loadUrl(jpushUrl);
+                    isJpush = true;
+                    break;
                 case HANDLER_SHARE:
                     try {
                         String json = (String) msg.obj;
@@ -177,10 +184,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     break;
                 case HANDLER_TIME:
                     if (timeCode % 2 == 1) {
-//                        btn_chat_dot.setVisibility(View.GONE);
                         btn_chat_nodot.setVisibility(View.VISIBLE);
                     } else {
-//                        btn_chat_dot.setVisibility(View.VISIBLE);
                         btn_chat_nodot.setVisibility(View.GONE);
                     }
 
@@ -189,24 +194,20 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 case HANDLER_GET_LOCATION:
                     Bundle bundle = msg.getData();
                     String locHandle = bundle.getString("handle");
-                    String backJson = bundle.getString("json");
-                    Log.i(TAG, "locHandle=" + locHandle + "backJson=" + backJson + "===" +
-                            "javascript:" + locHandle + "(" + backJson + ")");
-                    webView.loadUrl("javascript:" + locHandle + "(nihao)");//("+backJson+"//)
+                    String city = bundle.getString("city");
+                    double lontitude = bundle.getDouble("lontitude");
+                    double latitude = bundle.getDouble("latitude");
+                    Log.i(TAG, locHandle + "(" + city + "," + lontitude + "," +
+                            "" + latitude + ")");
+                    webView.loadUrl("javascript:" + locHandle + "('" + city + "','" + lontitude +
+                            "','" +
+                            "" + latitude + "')");
                     break;
 
                 case HANDLER_CHARGE_MONEY_FAILURE:
                     //充值失败
                     webView.loadUrl("javascript:" + handle + "(false" + ")");
                     break;
-//                case 20:
-//                    Bundle bundle = msg.getData();
-//                    String a = bundle.getString("a");
-//                    String b = bundle.getString("b");
-//                    String fangfaming = bundle.getString("fangfaming");
-//                    webView.loadUrl("javascript:"+fangfaming+"("+a+","+b+")");
-//                    Log.i(TAG,"fangfaming= "+fangfaming);
-//                    break;
                 case HANDLER_PAY_FAILURE:
                     //付款失败
                     webView.loadUrl("javascript:cancelPay(2" + ")");
@@ -307,20 +308,23 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
 
         mContext = this;
-        isShare = getIntent().getBooleanExtra("isShare", false);
         String url = getIntent().getStringExtra("startUrl");
+
         LogTool.i(TAG, "oncreate:" + url);
 
-        webView.loadUrl(url);
-
         checkVersion();
+
+        webView.loadUrl(url);
 
         inviteMessgeDao = new InviteMessgeDao(this);
 
         // 注册群组和联系人监听
         DemoHelper.getInstance().registerGroupAndContactListener();
         registerBroadcastReceiver();
-
+        jpushUrl = getIntent().getStringExtra("jpushUrl");
+        if (jpushUrl != null) {
+            handler.sendEmptyMessageDelayed(HANDLER_PUSH, 2000);
+        }
     }
 
     private static final int IS_SAME_VERSION = 1;
@@ -424,51 +428,17 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     Log.i(TAG, "shouldOverrideUrlLoading: ID:" + u);
                     startActivity(intent);
                     return true;
-                } else if (url.contains("http://weixin.mlxing.com/zf/ddzf/")) {//支付
-                   /* {"appid":"wxbe4d6a747dcf578f","noncestr":"c6wh33rcqasr3r0vfrz6vk3v2iq5cgvg",
- "package":"Sign=WXPay","partnerid":"1318904101","prepayid":"wx20160518150825e1533904db0277480426",
- "timestamp":"1463555305","sign":"2596ED0F62FFD05ADEA54D1379614734"}*/
-
-                   /* final PayReq req = new PayReq();
-                    //支付
-                    api = DemoApplication.getApi();
-                    HttpUtil.getString(url).enqueue(new Callback() {
-                        @Override
-                        public void onFailure(Call call, IOException e) {
-
-                        }
-
-                        @Override
-                        public void onResponse(Call call, Response response) throws IOException {
-                            String s = response.body().string();
-                            LogTool.i(TAG, s);
-                            if (s != null) {
-                                try {
-                                    JSONObject json = new JSONObject(s);
-                                    req.appId = json.getString("appid");
-                                    req.partnerId = json.getString("partnerid");
-                                    req.prepayId = json.getString("prepayid");
-                                    req.nonceStr = json.getString("noncestr");
-                                    req.timeStamp = json.getString("timestamp");
-                                    req.packageValue = json.getString("package");
-                                    req.sign = json.getString("sign");
-                                    api.sendReq(req);
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        }
-                    });
-
-                    return true;*/
                 } else if (url.contains("mlxing.chat")) {//进入单聊
                     Intent intent = new Intent(WebkitActivity.this, SChatActivity.class);
                     // it is group chat
                     intent.putExtra("chatType", com.mlxing.chatui.Constant.CHATTYPE_SINGLE);
                     String u = StringUtil.getValueByName(url, "username");
                     intent.putExtra("userId", u);
-                    intent.putExtra("count", StringUtil.getValueByName(url, "count"));
-                    intent.putExtra("content", StringUtil.getValueByName(url, "content"));
+                    String content = StringUtil.getValueByName(url, "content");
+                    if (content != "" && content != null) {
+                        intent.putExtra("content", content);
+
+                    }
                     Log.i(TAG, "url=" + url + "shouldOverrideUrlLoading: ID:" + u);
                     startActivity(intent);
                     return true;
@@ -531,8 +501,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 } else if (url.contains("mlxing.qrcode")) {//拦截进入扫描二维码
                     Intent intent = new Intent(WebkitActivity.this, CaptureActivity.class);
                     startActivityForResult(intent, WebkitActivity.QRCODE_REQUEST);
-                } else if (url.contains("")) {
-
                 }
                 return super.shouldOverrideUrlLoading(view, url);
             }
@@ -549,7 +517,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 checkShowError();
-                Log.i(TAG, "onPageFinished");
+                Log.i(TAG, "onPageFinished  jpush = " + jpushUrl);
 //                mTitleBar.setTitle(getaTitle());
                 code = (int) SPUtils.get(WebkitActivity.this, "js", 9);
                 Log.i(TAG, "onPageFinished: " + code);
@@ -558,7 +526,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     SPUtils.put(WebkitActivity.this, "js", 9);
                 }
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(url) || Constant.SET_ABOUT
-                        .equals(url) || isShare) {
+                        .equals(url)) {
                     Log.i(TAG, "onPageFinished.visible");
                     mTitleBar.setLeftLayoutVisibility(View.VISIBLE);
                 } else {
@@ -566,16 +534,12 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 }
 
                 if (url.contains("http://weixin.mlxing.com/zf/ddzf/")) {//支付
-//                    String ht = "javascript:window.mlxapp.getBody(document.getElementsByTagName
-// ('html')[0].innerHTML);";
                     String ht = "javascript:window.mlxapp.getBody(getPayJson());";
                     webView.loadUrl(ht);
                     onBackPressed();
                 }
 
                 webView.loadUrl("javascript:window.mlxapp.getTitle(document.title);");
-                //webView.loadUrl("javascript:window.mlxapp.getUserMobile();");
-
 
             }
 
@@ -613,10 +577,12 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             @Override
             public void onReceivedTitle(WebView view, String tit) {
                 super.onReceivedTitle(view, tit);
-                Log.i(TAG, "setWebChromeClient.onReceivedTitle");
+                Log.i(TAG, "setWebChromeClient.onReceivedTitle+jpush = " + jpushUrl);
                 title = tit;
+                getaTitle();
                 titles.add(title);
-                mTitleBar.setTitle(getaTitle());
+                Log.i(TAG, "onReceivedTitle: titles= "+titles.toArray());
+                mTitleBar.setTitle(title);
 
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant
                         .SET_ABOUT.equals(view.getUrl())) {
@@ -738,7 +704,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     public void goBack() {
 
-        Log.i(TAG, "onBackPressed");
+        Log.i(TAG, "goBack()");
 
         if (Constant.Url_TIKU_OLD.equals(tikuUrl)) {
 
@@ -765,7 +731,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             LogTool.i(TAG, titles.toString());
             webView.goBack();
         } else {
-            if ("帮助中心".equals(title) || "功能介绍".equals(title) || isShare) {
+            if ("帮助中心".equals(title) || "功能介绍".equals(title)) {
                 super.onBackPressed();
             } else {
 
@@ -798,13 +764,13 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         //接收二维码返回的消息，判断是否加入群聊天
         if (requestCode == QRCODE_REQUEST && resultCode == QRCODE_RESULT) {
             String url = data.getStringExtra("qr");
+            Log.i(TAG, "onActivityResult.url=" + url);
             String id = url.substring(url.lastIndexOf("=") + 1);
             if (isInGroup(id)) {
                 Intent intent = new Intent(WebkitActivity.this, ChatActivity.class);
                 // it is group chat
                 intent.putExtra("chatType", com.mlxing.chatui.Constant.CHATTYPE_GROUP);
                 intent.putExtra("userId", id);
-                Log.i(TAG, "shouldOverrideUrlLoading: ID:" + id);
                 startActivity(intent);
             } else {
                 webView.loadUrl(url);
@@ -1167,7 +1133,20 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     class InJavaScriptGetBody {
         @JavascriptInterface
+        public void sendChatInfo(String username, String content) {
+            Log.i(TAG, "sendChatInfo: username=" + username + "  content = " + content);
+            Intent intent = new Intent(WebkitActivity.this, SChatActivity.class);
+            intent.putExtra("chatType", com.mlxing.chatui.Constant.CHATTYPE_SINGLE);
+            intent.putExtra("userId", username);
+            if (content != "" && content != null) {
+                intent.putExtra("content", content);
+            }
+            startActivity(intent);
+        }
+
+        @JavascriptInterface
         public void getLocationInfo(String json) {
+            Log.i(TAG, "getLocationInfo: json=" + json);
             try {
                 JSONObject jsonObject = new JSONObject(json);
                 final String handle = jsonObject.getString("handle");
@@ -1181,17 +1160,21 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                         double lontitude = locationResult.getLontitude();
                         String backJson = null;
                         if (city != null) {
-                            backJson = "city:" + city + ",latitude:" + latitude + ",lontitude:" +
-                                    lontitude;
-                            SPUtils.put(mContext, SPUtils.SP_LOCATION, backJson);
+                            SPUtils.put(mContext, SPUtils.SP_CITY, city);
+                            SPUtils.put(mContext, SPUtils.SP_LONTITUDE, lontitude);
+                            SPUtils.put(mContext, SPUtils.SP_LATITUDE, latitude);
                         } else {
-                            backJson = (String) SPUtils.get(mContext, SPUtils.SP_LOCATION, -1);
+                            city = (String) SPUtils.get(mContext, SPUtils.SP_CITY, -1);
+                            lontitude = (double) SPUtils.get(mContext, SPUtils.SP_LONTITUDE, -1);
+                            latitude = (double) SPUtils.get(mContext, SPUtils.SP_LATITUDE, -1);
                         }
                         Message msg = handler.obtainMessage();
                         msg.what = HANDLER_GET_LOCATION;
                         Bundle bundle = new Bundle();
                         bundle.putString("handle", handle);
-                        bundle.putString("json", backJson);
+                        bundle.putString("city", city);
+                        bundle.putDouble("lontitude", lontitude);
+                        bundle.putDouble("latitude", latitude);
                         msg.setData(bundle);
                         handler.sendMessage(msg);
                     }
@@ -1210,7 +1193,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
         @JavascriptInterface
         public void chargeMoney(String json) {
-            Log.i(TAG, "nihao !!!");
             Log.i(TAG, json);
             try {
                 JSONObject jsonObject = new JSONObject(json);
@@ -1351,7 +1333,15 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
         @JavascriptInterface
         public void getTitle(String title) {
-            mTitleBar.setTitle(title);
+            Log.i(TAG, "getTitle: javascreptInterface");
+            if(isJpush){
+                mTitleBar.setTitle("美丽行");
+                Log.i(TAG, "getTitle: isjpush");
+                isJpush=false;
+            }else{
+                Log.i(TAG, "getTitle: notisjpush");
+                mTitleBar.setTitle(title);
+            }
 
 
         }

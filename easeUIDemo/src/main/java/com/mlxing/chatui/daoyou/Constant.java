@@ -11,20 +11,20 @@ public class Constant {
     /**
      * 微信授权后登陆接口
      */
-    public static String URL_LOGIN = "https://weixin.mlxing.com/shop/wx_login?unionid=%s&channel=app";
+    public static String URL_LOGIN = "http://weixin.mlxing.com/shop/wx_login?unionid=%s&channel=app";
 
 
     //首页API 玩家 玩群 首页
     public static String URL_WANJIA = "http://static.mlxing.com/index.html#/players_list";
     public static String URL_WNQUN = "http://static.mlxing.com/index.html#/player_crowd";
-    public static String URL_SHOUYE = "http://static.mlxing.com/index.html#/home";
+//    public static String URL_SHOUYE = "http://static.mlxing.com/index.html#/home";
 
     //从自己服务器获取环信登陆账号和密码
 //    public static String wxPost="http://124.173.70.55:11001/guide/v1/weixin/account/mobileClient/mobileLogin";
    // public static String wxPost = "http://wjapi.mlxing.com/guide/v1/weixin/account/mobileClient/mobileLogin";
     //    public static String wxPost="http://guide.chineseml.com/guide/v1/weixin/account/mobileClient/mobileLogin";
 //    public static String wxPost="http://static.mlxing.com/guide/v1/weixin/account/mobileClient/mobileLogin";
-    public static String wxPost2 = "https://weixin.mlxing.com/shop/getAppUserInfo";
+    public static String wxPost2 = "http://weixin.mlxing.com/shop/getAppUserInfo";
 
     //返回成功值
     public static String API_RESPONSE_OK = "200";

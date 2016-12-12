@@ -59,14 +59,15 @@ public class PopupUtils {
         LinearLayout ll = (LinearLayout) view.findViewById(R.id.popwindow);
 //        ll.setBackground(new BitmapDrawable(bitmap));
 
-        popupWindow = new PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, true);
+        popupWindow = new PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout
+                .LayoutParams.WRAP_CONTENT, true);
         popupWindow.setBackgroundDrawable(new ColorDrawable(0xfff));
         popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         popupWindow.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
 
         popupWindow.showAsDropDown(v, 0, -v.getHeight());
 
-        ButterKnife.bind(this,view);
+        ButterKnife.bind(this, view);
         /*inviteMessgeDao = new InviteMessgeDao(context);
 
 
@@ -82,7 +83,6 @@ public class PopupUtils {
             tv_dot.setVisibility(View.INVISIBLE);
 //            SPUtils.put(WebkitActivity.this, SPUtils.SP_DOT, SPUtils.noDot);
         }*/
-
 
 
     }
@@ -119,7 +119,8 @@ public class PopupUtils {
         return bmp;
     }
 
-    @OnClick({R.id.pop_chart,R.id.pop_share,R.id.pop_sao,R.id.pop_set,R.id.pop_shou,R.id.pop_kefu,R.id.pop_qq,R.id.img_cancel,R.id.popwindow})
+    @OnClick({R.id.pop_chart, R.id.pop_share, R.id.pop_sao, R.id.pop_set, R.id.pop_shou, R.id
+            .pop_kefu, R.id.pop_qq, R.id.img_cancel, R.id.popwindow})
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.pop_chart:
@@ -127,36 +128,39 @@ public class PopupUtils {
 
                 if (!DemoHelper.getInstance().isLoggedIn()) {
 
-                    EMChatManager.getInstance().login(SPUtils.get(mcontext, SPUtils.USERNAME, "").toString(), SPUtils.get(mcontext, SPUtils.PASSWORD, "").toString(), new EMCallBack() {
-                        @Override
-                        public void onSuccess() {
-                            UIHelper.goToMainActivity(mcontext, 4);
-                            popupWindow.dismiss();
-                        }
+                    EMChatManager.getInstance().login(SPUtils.get(mcontext, SPUtils.USERNAME, "")
+                                    .toString(), SPUtils.get(mcontext, SPUtils.PASSWORD, "")
+                            .toString(),
+                            new EMCallBack() {
+                                @Override
+                                public void onSuccess() {
+                                    UIHelper.goToMainActivity(mcontext, 4);
+                                    popupWindow.dismiss();
+                                }
 
-                        @Override
-                        public void onError(int i, String s) {
+                                @Override
+                                public void onError(int i, String s) {
 
-                        }
+                                }
 
-                        @Override
-                        public void onProgress(int i, String s) {
+                                @Override
+                                public void onProgress(int i, String s) {
 
-                        }
-                    });
+                                }
+                            });
                 } else {
                     UIHelper.goToMainActivity(mcontext, 4);
                     popupWindow.dismiss();
                 }
                 break;
             case R.id.pop_share:
-                ( (WebkitActivity)((Activity) mcontext)).share();
+                ((WebkitActivity) ((Activity) mcontext)).share();
 
                 popupWindow.dismiss();
                 break;
             case R.id.pop_sao:
                 intent = new Intent(mcontext, CaptureActivity.class);
-                ((Activity)mcontext).startActivityForResult(intent, WebkitActivity.QRCODE_REQUEST);
+                ((Activity) mcontext).startActivityForResult(intent, WebkitActivity.QRCODE_REQUEST);
                 popupWindow.dismiss();
                 break;
             case R.id.pop_set:
@@ -164,9 +168,7 @@ public class PopupUtils {
                 popupWindow.dismiss();
                 break;
             case R.id.pop_shou:
-//                UIHelper.goToWebView(mcontext, (String) SPUtils.get(mcontext, SPUtils.SP_UNIONID, ""));
-                UIHelper.goToWebView(mcontext, Constant.URL_SHOUYE);
-
+                UIHelper.goToWebView(mcontext, Constant.URL_WANJIA);
                 ((Activity) mcontext).finish();
                 popupWindow.dismiss();
                 break;
@@ -177,9 +179,6 @@ public class PopupUtils {
                 popupWindow.dismiss();
                 break;
             case R.id.pop_qq:
-////                UIHelper.goToWebView(mcontext, Constant.POP_QQ);
-//                String url = "mqqwpa://im/chat?chat_type=wpa&uin=3307713966";
-//                mcontext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
                 UIHelper.goToCustomer(mcontext);
                 popupWindow.dismiss();
                 break;

@@ -37,7 +37,7 @@ import okhttp3.Response;
 
 
 public class DemoApplication extends Application {
-
+    private static final String TAG = "DemoApplication";
     public static String regId;
     public static Context applicationContext;
     private static DemoApplication instance;
@@ -74,6 +74,7 @@ public class DemoApplication extends Application {
         JPushInterface.init(this);            // 初始化 JPush
         String mid = (String) SPUtils.get(getApplicationContext(),SPUtils.MID," ");
         String regId = (String) SPUtils.get(getApplicationContext(),SPUtils.REGID," ");
+        Log.i(TAG, "onCreate: regId = "+regId);
         if(!" ".equals(mid)&&" ".equals(regId)){
             regId = JPushInterface.getRegistrationID(this);
             SPUtils.put(getApplicationContext(),SPUtils.REGID,regId);
