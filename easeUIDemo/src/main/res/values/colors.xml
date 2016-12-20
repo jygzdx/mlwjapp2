@@ -11,4 +11,7 @@
     <color name="item_false">#ffffff</color>
 
     <color name="text_hint">#a5ffffff</color>
+    <color name="deal_disagree">#FE2600</color>
+    <color name="deal_agree">#01F700</color>
+    <color name="deal_text_color">#ffffff</color>
 </resources>

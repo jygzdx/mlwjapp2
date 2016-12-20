@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:1-479:12
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:1-481:12
 	package
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:2:11-38
 		INJECTED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml
@@ -184,7 +184,7 @@ ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:52:22-80
 application
-ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:54:5-477:19
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:54:5-479:19
 MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:21.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.0\AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:23.0.0] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
@@ -885,6 +885,10 @@ activity#com.mlxing.chatui.daoyou.ui.CustomerActivity
 ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:475:9-476:20
 	android:name
 		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:475:19-61
+activity#com.mlxing.chatui.daoyou.ui.DealActivity
+ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:477:9-478:20
+	android:name
+		ADDED from G:\AndroidStudioProject\mlwjapp2\easeUIDemo\src\main\AndroidManifest.xml:477:19-57
 permission#${JPUSH_PKGNAME}.permission.JPUSH_MESSAGE
 ADDED from [cn.jiguang:jpush:2.1.8] G:\AndroidStudioProject\mlwjapp2\easeUIDemo\build\intermediates\exploded-aar\cn.jiguang\jpush\2.1.8\AndroidManifest.xml:11:5-13:47
 	android:protectionLevel

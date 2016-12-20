@@ -5,6 +5,7 @@ import android.content.Intent;
 
 import com.mlxing.chatui.daoyou.WebkitActivity;
 import com.mlxing.chatui.daoyou.ui.CustomerActivity;
+import com.mlxing.chatui.daoyou.ui.DealActivity;
 import com.mlxing.chatui.daoyou.ui.MainMenuActivity;
 import com.mlxing.chatui.daoyou.ui.MlxForgetActivity;
 import com.mlxing.chatui.daoyou.ui.MlxSignActivity;
@@ -30,6 +31,11 @@ public class UIHelper {
         intent.putExtra("startUrl",url);
         context.startActivity(intent);
 
+    }
+
+    public static void goToDealActivity(Context context){
+        Intent intent = new Intent(context , DealActivity.class);
+        context.startActivity(intent);
     }
 
     /**

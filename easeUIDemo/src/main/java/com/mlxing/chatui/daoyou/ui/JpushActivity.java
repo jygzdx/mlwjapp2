@@ -43,6 +43,9 @@ import java.util.Date;
 
 import easeui.widget.EaseTitleBar;
 
+/**
+ * 2016/12/13  弃用，直接传到webkitActivity中接收
+ */
 public class JpushActivity extends Activity {
     private static final String TAG = "JpushActivity";
     private WebView webView;

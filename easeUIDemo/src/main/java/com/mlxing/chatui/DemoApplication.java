@@ -18,6 +18,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.mlxing.chatui.daoyou.utils.SPUtils;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.tencent.mm.sdk.openapi.IWXAPI;
@@ -56,7 +57,7 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
         CrashReport.initCrashReport(getApplicationContext(), "900026186", false);
-
+        SDKInitializer.initialize(getApplicationContext());
         applicationContext = this;
         instance = this;
 //        APICloud.initialize(this);

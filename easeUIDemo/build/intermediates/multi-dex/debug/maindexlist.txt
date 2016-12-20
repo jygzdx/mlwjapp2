@@ -637,6 +637,7 @@ org/apache/http/protocol/HttpContext.class
 org/apache/http/impl/io/HttpTransportMetricsImpl.class
 android/support/v4/app/ActivityCompat.class
 com/mlxing/chatui/daoyou/utils/UIHelper.class
+com/mlxing/chatui/R$anim.class
 org/apache/http/conn/ConnectionPoolTimeoutException.class
 easeui/widget/EaseSidebar.class
 android/support/v4/app/FragmentActivity$1.class
@@ -762,6 +763,7 @@ com/google/zxing/LuminanceSource.class
 com/mlxing/chatui/daoyou/utils/zxing/CaptureActivity$2.class
 com/mlxing/chatui/ui/NewFriendsMsgActivity.class
 com/mlxing/chatui/adapter/AddFriendAdapter.class
+com/mlxing/chatui/daoyou/ui/DealActivity.class
 com/mlxing/chatui/ui/LoginActivity$3.class
 android/support/v4/app/ActionBarDrawerToggle.class
 android/support/v4/app/ActivityCompatHoneycomb.class
@@ -978,7 +980,6 @@ org/apache/http/conn/routing/HttpRoute.class
 com/mlxing/chatui/R$layout.class
 com/mlxing/chatui/ui/PublicChatRoomsActivity$5.class
 android/support/v4/media/MediaMetadataCompat$1.class
-com/easemob/easeui/R$anim.class
 com/baidu/location/b/e.class
 android/support/v4/view/MenuCompat.class
 android/support/v7/app/ActionBar$DisplayOptions.class

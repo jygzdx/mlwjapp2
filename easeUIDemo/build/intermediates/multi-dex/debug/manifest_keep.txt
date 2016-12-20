@@ -68,6 +68,7 @@
 -keep class com.mlxing.chatui.receiver.JpushReceiver { <init>(); }
 -keep class com.mlxing.chatui.daoyou.ui.JpushActivity { <init>(); }
 -keep class com.mlxing.chatui.daoyou.ui.CustomerActivity { <init>(); }
+-keep class com.mlxing.chatui.daoyou.ui.DealActivity { <init>(); }
 -keep class cn.jpush.android.ui.PopWinActivity { <init>(); }
 -keep class cn.jpush.android.ui.PushActivity { <init>(); }
 -keep class cn.jpush.android.service.DownloadService { <init>(); }

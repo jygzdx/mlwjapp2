@@ -88,12 +88,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ease_chatto_bg.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable\\ease_chatto_bg.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ease_btn_blue_pressed_shape.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable\\ease_btn_blue_pressed_shape.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ease_chatto_bg.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable\\ease_chatto_bg.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ease_chat_image_selector.xml",

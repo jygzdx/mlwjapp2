@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mlxing.chatui"
-    android:versionCode="29"
-    android:versionName="3.1.3" >
+    android:versionCode="30"
+    android:versionName="3.1.4" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -482,6 +482,8 @@
         <activity android:name="com.mlxing.chatui.daoyou.ui.JpushActivity" >
         </activity>
         <activity android:name="com.mlxing.chatui.daoyou.ui.CustomerActivity" >
+        </activity>
+        <activity android:name="com.mlxing.chatui.daoyou.ui.DealActivity" >
         </activity>
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity

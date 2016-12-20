@@ -43,6 +43,11 @@ public class SPUtils {
     public static String PHONE="phone";
 
     /**
+     * 协议状态
+     */
+    public static String SP_DEAL_STATE = "deal_state";
+
+    /**
      * 用户mid
      */
     public static final String MID = "mid";

@@ -76,7 +76,6 @@ public class LoginActivity extends BaseActivity {
     private UMShareAPI mShareAPI = ((DemoApplication) getApplication()).getUmShareAPI();
     private String unionId, nickname, headImg;
 
-
     private Map<String, String> wxMap;
     private WxHuanXinEntity wxHuanXinEntity;
 
@@ -108,7 +107,7 @@ public class LoginActivity extends BaseActivity {
 
         ButterKnife.bind(this);
         titleBar.setLeftImageResource(R.drawable.mlx_back);
-        context=this;
+        context = this;
         titleBar.setTitle("登录");
         titleBar.setRightLayoutVisibility(View.INVISIBLE);
         titleBar.setLeftLayoutClickListener(new View.OnClickListener() {
@@ -119,7 +118,7 @@ public class LoginActivity extends BaseActivity {
         });
 
         LoginEntity login = (LoginEntity) getIntent().getSerializableExtra("user");
-        ForgetEntity forget= (ForgetEntity) getIntent().getSerializableExtra("forget");
+        ForgetEntity forget = (ForgetEntity) getIntent().getSerializableExtra("forget");
         if (login != null) {
             LogTool.i(TAG, login.getUsername() + ";" + login.getUserpw());
             unionId = login.getUnionid();
@@ -139,7 +138,7 @@ public class LoginActivity extends BaseActivity {
             pd.show();
             hxLogin(login.getUsername(), login.getUserpw());
         }
-        if (forget!=null){
+        if (forget != null) {
             LogTool.i(TAG, forget.getUsername() + ";" + forget.getUserpw());
             unionId = forget.getUnionid();
             nickname = forget.getNickName();
@@ -181,7 +180,7 @@ public class LoginActivity extends BaseActivity {
      * @param userpw
      */
     private void hxLogin(final String username, String userpw) {
-        try{
+        try {
 
             // 调用sdk登陆方法登陆聊天服务器
             DemoHelper.getInstance().init(getApplicationContext());
@@ -196,18 +195,19 @@ public class LoginActivity extends BaseActivity {
                     HttpUtil.getUserInfo(username).enqueue(new okhttp3.Callback() {
                         @Override
                         public void onFailure(okhttp3.Call call, IOException e) {
-                            Log.i(TAG,"onFailure");
+                            Log.i(TAG, "onFailure");
 
                         }
 
                         @Override
-                        public void onResponse(okhttp3.Call call, okhttp3.Response response) throws IOException {
+                        public void onResponse(okhttp3.Call call, okhttp3.Response response)
+                                throws IOException {
                             String s = response.body().string();
-                            Log.i(TAG,"hxlogin.response="+s);
+                            Log.i(TAG, "hxlogin.response=" + s);
                             List<EaseUser> result = JsonUtil.getUserListFromWxJson(s);
                             if (result != null && result.size() > 0) {
                                 EaseUser user = result.get(0);
-                                SPUtils.put(context,SPUtils.MID,user.getMid());
+                                SPUtils.put(context, SPUtils.MID, user.getMid());
                                 DemoHelper.getInstance().setCurrentUserName(user.getUsername());
                                 DemoHelper.getInstance().setCurrentUserAvatar(user.getAvatar());
                                 DemoHelper.getInstance().setCurrentUserNickName(user.getNick());
@@ -215,7 +215,8 @@ public class LoginActivity extends BaseActivity {
                         }
                     });
 
-                    SPUtils.put(getApplicationContext(), SPUtils.SP_MY_REFRESH, new Date().getTime());
+                    SPUtils.put(getApplicationContext(), SPUtils.SP_MY_REFRESH, new Date()
+                            .getTime());
                     // 注册群组和联系人监听
                     DemoHelper.getInstance().registerGroupAndContactListener();
 
@@ -245,13 +246,14 @@ public class LoginActivity extends BaseActivity {
                 /*Intent intent = new Intent(LoginActivity.this,
                         DaoYouMainActivity.class);
                 startActivity(intent);*/
-                    SPUtils.put(LoginActivity.this, SPUtils.SP_UNIONID, String.format(Constant.URL_LOGIN, unionId));
+                    SPUtils.put(LoginActivity.this, SPUtils.SP_UNIONID, String.format(Constant
+                            .URL_LOGIN, unionId));
 
                     //getUserPhone(unionId);
 
 
-
-                    UIHelper.goToWebView(LoginActivity.this, (String) SPUtils.get(LoginActivity.this, SPUtils.SP_UNIONID, ""));
+                    UIHelper.goToWebView(LoginActivity.this, (String) SPUtils.get(LoginActivity
+                            .this, SPUtils.SP_UNIONID, ""));
                     finish();
                 }
 
@@ -275,7 +277,7 @@ public class LoginActivity extends BaseActivity {
                     });
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -285,8 +287,9 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onResponse(Call<UserInfoEntity> call, Response<UserInfoEntity> response) {
                 UserInfoEntity userInfoEntity = response.body();
-                if("200".equals(userInfoEntity.getCode())){
-                    SPUtils.put(getApplicationContext(),SPUtils.PHONE,userInfoEntity.getResult().getPhone());
+                if ("200".equals(userInfoEntity.getCode())) {
+                    SPUtils.put(getApplicationContext(), SPUtils.PHONE, userInfoEntity.getResult
+                            ().getPhone());
                 }
             }
 
@@ -303,7 +306,7 @@ public class LoginActivity extends BaseActivity {
      */
     public void login() {
 
-        try{
+        try {
             inUsername = editUsername.getText().toString();
             inPswd = editPswd1.getText().toString();
             if (isCanLogin(inUsername, inPswd)) {
@@ -311,10 +314,14 @@ public class LoginActivity extends BaseActivity {
                     @Override
                     public void onResponse(Call<LoginEntity> call, Response<LoginEntity> response) {
                         LoginEntity loginEntity = response.body();
-                        LogTool.i(TAG, "login.response="+loginEntity.getCode() + ";" + loginEntity.getUnionid() + ";" + loginEntity.getUsername() + ";" + loginEntity.getUserpw());
+                        LogTool.i(TAG, "login.response=" + loginEntity.getCode() + ";" +
+                                loginEntity.getUnionid() + ";" + loginEntity.getUsername() + ";"
+                                + loginEntity.getUserpw());
                         if ("1".endsWith(loginEntity.getCode())) {
-                            SPUtils.put(LoginActivity.this, SPUtils.USERNAME, loginEntity.getUsername());
-                            SPUtils.put(LoginActivity.this, SPUtils.PASSWORD, loginEntity.getUserpw());
+                            SPUtils.put(LoginActivity.this, SPUtils.USERNAME, loginEntity
+                                    .getUsername());
+                            SPUtils.put(LoginActivity.this, SPUtils.PASSWORD, loginEntity
+                                    .getUserpw());
                             unionId = loginEntity.getUnionid();
                             headImg = loginEntity.getHeadImg();
                             nickname = loginEntity.getNickName();
@@ -342,7 +349,7 @@ public class LoginActivity extends BaseActivity {
                     }
                 });
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -389,14 +396,14 @@ public class LoginActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.img_login, R.id.img_sign,R.id.img_forget,R.id.img_wx})
+    @OnClick({R.id.img_login, R.id.img_sign, R.id.img_forget, R.id.img_wx})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.img_login:
                 login();
                 break;
             case R.id.img_sign:
-                UIHelper.gotoSignActivity(this);
+                UIHelper.goToDealActivity(this);
                 break;
             case R.id.img_forget:
                 UIHelper.gotoForgetActivity(this);
@@ -413,7 +420,7 @@ public class LoginActivity extends BaseActivity {
      * @param
      */
     public void wxLogin() {
-        try{
+        try {
             progressShow = true;
             pd = new ProgressDialog(context);
             pd.setCanceledOnTouchOutside(false);
@@ -434,13 +441,17 @@ public class LoginActivity extends BaseActivity {
                     wxMap = map;
                     Log.i(TAG, "wxlogin.umeng onComplete:" + wxMap.toString());
                     //调用自己的服务器 {unionid=oCIF1s97ZErW5hTyplpCqgqHbpP8,
-                    // scope=snsapi_userinfo, expires_in=7200, access_token=OezXcEiiBSKSxW0eoylIeDCsjNdDNbv5N33ac5yG24_
+                    // scope=snsapi_userinfo, expires_in=7200,
+                    // access_token=OezXcEiiBSKSxW0eoylIeDCsjNdDNbv5N33ac5yG24_
                     // cGLT-5mLItiqDUlmKRNT0srIUo9bMnA2fk-Q4CdMO5purxYekLzlUB2mtNZWGOKw20h4rgFNh1RTPOzP6-QkKv2AX-SDt4yW2_Tff0Ghs9A,
-                    // openid=o_XtIv6zF7RiHffxc7U_ECf0e2NE, refresh_token=OezXcEiiBSKSxW0eoylIeDCsjNdDNbv5N33ac5yG24_cGLT-5mLItiqDUlmKRNT03Voz
+                    // openid=o_XtIv6zF7RiHffxc7U_ECf0e2NE,
+                    // refresh_token=OezXcEiiBSKSxW0eoylIeDCsjNdDNbv5N33ac5yG24_cGLT
+                    // -5mLItiqDUlmKRNT03Voz
                     // lk4eVsEofW0Tu9sOspxFKCRC0gu6XEg8DiznZdWXzkC2MMqRUBqVJtOnvmKjG2XUcgSvWDmqSUqPMZJgZg}
                     //username='y1hk3j8dgtm3796', userpw='aairpbgnkq'
 
-                    Log.i(TAG, "unioid: " + wxMap.get("unionid") + "    openid:" + wxMap.get("openid"));
+                    Log.i(TAG, "unioid: " + wxMap.get("unionid") + "    openid:" + wxMap.get
+                            ("openid"));
 
                     unionId = wxMap.get("unionid");
                     nickname = wxMap.get("nickname");
@@ -460,12 +471,11 @@ public class LoginActivity extends BaseActivity {
                     Log.i(TAG, "umengonCancel: 取消" + i);
                 }
             });
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
-
 
 
     /**
@@ -485,8 +495,10 @@ public class LoginActivity extends BaseActivity {
                 headImg = wxHuanXinEntity.getHeadImg();
                 Log.i(TAG, "onSuccess: wxhuanxin:" + wxHuanXinEntity.toString());
 
-                if (StringUtil.empty(wxHuanXinEntity.getUsername()) || StringUtil.empty(wxHuanXinEntity.getUserpw())) {
-                    Toast.makeText(context, "获得的登录名或密码为空\r\nname：" + wxHuanXinEntity.getUsername() + "  pw：" + wxHuanXinEntity.getUserpw(), Toast.LENGTH_SHORT).show();
+                if (StringUtil.empty(wxHuanXinEntity.getUsername()) || StringUtil.empty
+                        (wxHuanXinEntity.getUserpw())) {
+                    Toast.makeText(context, "获得的登录名或密码为空\r\nname：" + wxHuanXinEntity.getUsername
+                            () + "  pw：" + wxHuanXinEntity.getUserpw(), Toast.LENGTH_SHORT).show();
                     return;
                 } else {
                     SPUtils.put(context, SPUtils.USERNAME, wxHuanXinEntity.getUsername());

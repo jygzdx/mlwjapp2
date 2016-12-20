@@ -17,7 +17,6 @@ import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.DialogInterface.OnCancelListener;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -47,7 +46,7 @@ import com.baidu.mapapi.map.MyLocationConfiguration.LocationMode;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.CoordinateConverter;
-import com.easemob.easeui.R;
+import com.mlxing.chatui.R;
 
 public class EaseBaiduMapActivity extends easeui.ui.EaseBaseActivity {
 
@@ -68,9 +67,9 @@ public class EaseBaiduMapActivity extends easeui.ui.EaseBaseActivity {
 	public static EaseBaiduMapActivity instance = null;
 	ProgressDialog progressDialog;
 	private BaiduMap mBaiduMap;
-	
+
 	private LocationMode mCurrentMode;
-	
+
 	/**
 	 * 构造广播监听类，监听 SDK key 验证以及网络异常广播
 	 */
@@ -79,7 +78,7 @@ public class EaseBaiduMapActivity extends easeui.ui.EaseBaseActivity {
 			String s = intent.getAction();
 			String st1 = getResources().getString(R.string.Network_error);
 			if (s.equals(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR)) {
-				
+
 				String st2 = getResources().getString(R.string.please_check);
 				Toast.makeText(instance, st2, Toast.LENGTH_SHORT).show();
 			} else if (s.equals(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR)) {
@@ -89,15 +88,15 @@ public class EaseBaiduMapActivity extends easeui.ui.EaseBaseActivity {
 	}
 
 	private BaiduSDKReceiver mBaiduReceiver;
-	
-	
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		instance = this;
-		//在使用SDK各组件之前初始化context信息，传入ApplicationContext  
-        //注意该方法要再setContentView方法之前实现  
-        SDKInitializer.initialize(getApplicationContext());  
+		//在使用SDK各组件之前初始化context信息，传入ApplicationContext
+        //注意该方法要再setContentView方法之前实现
+        SDKInitializer.initialize(getApplicationContext());
 		setContentView(R.layout.ease_activity_baidumap);
 		mMapView = (MapView) findViewById(R.id.bmapView);
 		sendButton = (Button) findViewById(R.id.btn_location_send);
@@ -160,7 +159,7 @@ public class EaseBaiduMapActivity extends easeui.ui.EaseBaseActivity {
 		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 		progressDialog.setMessage(str1);
 
-		progressDialog.setOnCancelListener(new OnCancelListener() {
+		progressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
 
 			public void onCancel(DialogInterface arg0) {
 				if (progressDialog.isShowing()) {

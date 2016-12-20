@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.mlxing.chatui"
           xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="29"
-          android:versionName="3.1.3">
+          android:versionCode="31"
+          android:versionName="3.1.5">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -473,6 +473,8 @@
         <activity android:name=".daoyou.ui.JpushActivity">
         </activity>
         <activity android:name=".daoyou.ui.CustomerActivity">
+        </activity>
+        <activity android:name=".daoyou.ui.DealActivity">
         </activity>
     </application>
 

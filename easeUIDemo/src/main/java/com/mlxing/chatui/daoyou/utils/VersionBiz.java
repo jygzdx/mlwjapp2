@@ -24,6 +24,12 @@ import okhttp3.Response;
  */
 public class VersionBiz {
 
+    private String url;
+
+    public VersionBiz(String url) {
+        this.url = url;
+    }
+
     public static String getVersion(Context context){
         String nowVersion = "";
         try{
@@ -68,9 +74,17 @@ public class VersionBiz {
         }
     }
 
+    /**
+     * 下载apk
+     * @param serviceAPKVersion  版本号
+     * @param handler
+     * @param context
+     * 废除url  -->"http://www.mlxing.com/static/app/mlxing_v3.apk"
+     *
+     */
     public void downApk(final String serviceAPKVersion,final Handler handler,final Context context){
         OkHttpClient mOkHttpClient = new OkHttpClient();
-        Request request = new Request.Builder().url("http://www.mlxing.com/static/app/mlxing_v3.apk").build();
+        Request request = new Request.Builder().url(url).build();
 
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {

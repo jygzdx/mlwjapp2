@@ -27,5 +27,4 @@ dependencies {
     compile files('libs/google-play-services.jar')
     compile files('libs/MiPush_SDK_Client_2_2_19.jar')
     compile files('libs/org.apache.http.legacy.jar')
-
 }

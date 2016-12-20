@@ -93,9 +93,11 @@ import okhttp3.Response;
 
 /**
  * webview首页
+ * 友盟sdk为完整版sdk
  */
 public class WebkitActivity extends BaseActivity implements EMEventListener {
     private static final String TAG = "WebkitActivity";
+
     private Context mContext;
     private WebView webView;
     private EaseTitleBar mTitleBar;
@@ -114,7 +116,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
     public static final int INPUT_FILE_REQUEST_CODE = 1;
     public static final int QRCODE_REQUEST = 5;
     public static final int QRCODE_RESULT = 6;
-
 
     private ValueCallback<Uri[]> mFilePathCallback;
     public ValueCallback<Uri> mUploadMessage;
@@ -215,7 +216,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                     mtype = 0;
                     break;
                 case IS_SAME_VERSION:
-                    String serviceAPKVersion = (String) msg.obj;
+                    String serviceAPKVersion = msg.getData().getString("serviceAPKVersion");
+                    String url = msg.getData().getString("url");
 
                     String currVersion = VersionBiz.getVersion(mContext);
                     boolean isSameVersion = VersionBiz.isSameVersion(mContext, currVersion,
@@ -226,7 +228,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                             if (NetworkUtil.isWifi(mContext)) {
                                 Log.i(TAG, "wifi下载");
                                 //下载apk
-                                VersionBiz versionBiz = new VersionBiz();
+                                VersionBiz versionBiz = new VersionBiz(url);
                                 versionBiz.downApk(serviceAPKVersion, handler, mContext);
                             } else {
                                 Log.i(TAG, "不是WiFi状态");
@@ -345,14 +347,16 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 String body = response.body().string();
                 Log.i("body", body);
                 try {
-
                     JSONObject obj = new JSONObject(body);
                     String serviceAPKVersion = obj.getString("version");
+                    String url = obj.getString("url");
 
                     Message message = handler.obtainMessage();
                     message.what = IS_SAME_VERSION;
-
-                    message.obj = serviceAPKVersion;
+                    Bundle bundle = new Bundle();
+                    bundle.putString("url", url);
+                    bundle.putString("serviceAPKVersion", serviceAPKVersion);
+                    message.setData(bundle);
                     handler.sendMessage(message);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -581,7 +585,7 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
                 title = tit;
                 getaTitle();
                 titles.add(title);
-                Log.i(TAG, "onReceivedTitle: titles= "+titles.toArray());
+                Log.i(TAG, "onReceivedTitle: titles= " + titles.toArray());
                 mTitleBar.setTitle(title);
 
                 if (webView.canGoBack() || Constant.SET_HRLP.equals(view.getUrl()) || Constant
@@ -688,6 +692,34 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
+//                poiSearch = PoiSearch.newInstance();
+//                OnGetPoiSearchResultListener getPoiSearchResultListener = new
+// OnGetPoiSearchResultListener() {
+//
+//                    @Override
+//                    public void onGetPoiResult(PoiResult poiResult) {
+//                        Log.i(TAG, "onGetPoiResult: poiresult = "+ poiResult.getSuggestCityList
+// ());
+//                    }
+//
+//                    @Override
+//                    public void onGetPoiDetailResult(PoiDetailResult poiDetailResult) {
+//                        Log.i(TAG, "onGetPoiDetailResult: poiDetailResult = "+poiDetailResult
+// .getName());
+//                    }
+//
+//                    @Override
+//                    public void onGetPoiIndoorResult(PoiIndoorResult poiIndoorResult) {
+//
+//                    }
+//                };
+//
+//                poiSearch.setOnGetPoiSearchResultListener(getPoiSearchResultListener);
+//
+//                poiSearch.searchInCity(new PoiCitySearchOption()
+//                        .city("广州")
+//                        .keyword("美食")
+//                        .pageNum(10));
             }
         });
         mTitleBar.setLeftTextVisiable(View.INVISIBLE);
@@ -1334,11 +1366,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         @JavascriptInterface
         public void getTitle(String title) {
             Log.i(TAG, "getTitle: javascreptInterface");
-            if(isJpush){
+            if (isJpush) {
                 mTitleBar.setTitle("美丽行");
                 Log.i(TAG, "getTitle: isjpush");
-                isJpush=false;
-            }else{
+                isJpush = false;
+            } else {
                 Log.i(TAG, "getTitle: notisjpush");
                 mTitleBar.setTitle(title);
             }
