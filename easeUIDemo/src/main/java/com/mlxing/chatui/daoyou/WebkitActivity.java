@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.net.http.SslError;
 import android.os.Build;
@@ -303,12 +304,8 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
         Log.i(TAG, "onCreate");
         ActivityManager.getInstance().addActivity(this);
         initView();
-
-
         initTitle();
         initWebView();
-
-
         mContext = this;
         String url = getIntent().getStringExtra("startUrl");
 
@@ -685,41 +682,12 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
 
     private void initTitle() {
         Log.i(TAG, "initTitle");
-//        mTitleBar.setTitle("美丽行");
         mTitleBar.setRightLayoutClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 PopupUtils.getInstance().creatRightPop(WebkitActivity.this, mTitleBar
                         .getRightLayout(), WebkitActivity.this);
-//                poiSearch = PoiSearch.newInstance();
-//                OnGetPoiSearchResultListener getPoiSearchResultListener = new
-// OnGetPoiSearchResultListener() {
-//
-//                    @Override
-//                    public void onGetPoiResult(PoiResult poiResult) {
-//                        Log.i(TAG, "onGetPoiResult: poiresult = "+ poiResult.getSuggestCityList
-// ());
-//                    }
-//
-//                    @Override
-//                    public void onGetPoiDetailResult(PoiDetailResult poiDetailResult) {
-//                        Log.i(TAG, "onGetPoiDetailResult: poiDetailResult = "+poiDetailResult
-// .getName());
-//                    }
-//
-//                    @Override
-//                    public void onGetPoiIndoorResult(PoiIndoorResult poiIndoorResult) {
-//
-//                    }
-//                };
-//
-//                poiSearch.setOnGetPoiSearchResultListener(getPoiSearchResultListener);
-//
-//                poiSearch.searchInCity(new PoiCitySearchOption()
-//                        .city("广州")
-//                        .keyword("美食")
-//                        .pageNum(10));
             }
         });
         mTitleBar.setLeftTextVisiable(View.INVISIBLE);
@@ -731,7 +699,6 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             }
         });
         mTitleBar.setLeftLayoutVisibility(View.INVISIBLE);
-
     }
 
     public void goBack() {
@@ -1376,6 +1343,11 @@ public class WebkitActivity extends BaseActivity implements EMEventListener {
             }
 
 
+        }
+
+        @JavascriptInterface
+        public void setBackgroundColor() {
+            mTitleBar.setTextBackgroundColor(Color.parseColor("#6D6D6D"));
         }
 
         @JavascriptInterface

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mlxing.chatui"
-    android:versionCode="30"
-    android:versionName="3.1.4" >
+    android:versionCode="31"
+    android:versionName="3.1.5" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -84,11 +84,6 @@
             android:name="com.mlxing.chatui.ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.mlxing.chatui.daoyou.DaoYouMainActivity"
@@ -389,6 +384,11 @@
         <!-- xiaomi push end -->
 
 
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="95a488fa0b10e7c7f4b3b561724db3ed" />
+
         <!-- 百度地图所需的service -->
         <service
             android:name="com.baidu.location.f"
@@ -484,6 +484,13 @@
         <activity android:name="com.mlxing.chatui.daoyou.ui.CustomerActivity" >
         </activity>
         <activity android:name="com.mlxing.chatui.daoyou.ui.DealActivity" >
+        </activity>
+        <activity android:name="com.mlxing.chatui.daoyou.ui.NearbyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- Rich push 核心功能 since 2.0.6 -->
         <activity

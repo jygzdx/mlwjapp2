@@ -3,6 +3,7 @@ package com.mlxing.chatui.daoyou.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -19,7 +20,7 @@ import butterknife.OnClick;
 import cn.jpush.android.api.JPushInterface;
 
 public class MlxVideoActivity extends Activity {
-
+    private static final String TAG = "MlxVideoActivity";
     /*@BindView(R.id.video)
     VideoView video;*/
 
@@ -32,7 +33,7 @@ public class MlxVideoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mlx_video);
-
+        Log.i(TAG, "onCreate: -->MlxVideoActivity");
         //如果有unionid，直接进入主界面
         String unionid = (String) SPUtils.get(this, SPUtils.SP_UNIONID, "");
         if (!unionid.equals("")) {

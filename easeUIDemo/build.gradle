@@ -89,6 +89,7 @@ android {
 
 dependencies {
     compile project(':easeUI')
+    compile files('libs/AMap_Search_V3.6.1_20161122.jar')
     compile files('libs/bolts-android-1.2.0.jar')
     compile files('libs/umeng-analytics-v5.2.4.jar')
     compile 'com.android.support:appcompat-v7:21.0.0'

@@ -179,7 +179,7 @@
 -keep class vi.com.** {*;}
 -dontwarn com.baidu.**
 
-
+-keep   class com.amap.api.services.**{*;}
 
 ################### region for xUtils
 -keepattributes Signature,*Annotation*

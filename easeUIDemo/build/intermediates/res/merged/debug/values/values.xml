@@ -51,6 +51,7 @@
     <color name="btn_white_pressed">#b5b5b6</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <color name="cancel_location">#ff4e4e</color>
     <color name="common_bg">#fcfcfc</color>
     <color name="common_bottom_bar_normal_bg">#2d2f31</color>
     <color name="common_bottom_bar_selected_bg">#161718</color>
@@ -87,6 +88,10 @@
     <color name="list_itease_secondary_color">#888888</color>
     <color name="list_item_primary_color">#000</color>
     <color name="list_item_secondary_color">#888888</color>
+    <color name="location_fengexian">#e8e8e8</color>
+    <color name="location_search_back">#636363</color>
+    <color name="location_snippet">#b2b2b2</color>
+    <color name="location_title">#67666b</color>
     <color name="login_line">#66ffffff</color>
     <color name="login_text">#fff</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -115,6 +120,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tb_munion_item_force">#e3e3e3</color>
     <color name="text_hint">#a5ffffff</color>
+    <color name="title_background_js">#6D6D6D</color>
     <color name="title_bar_background">#c4391f</color>
     <color name="title_bar_font">#fff</color>
     <color name="top_bar_normal_bg">#00acff</color>

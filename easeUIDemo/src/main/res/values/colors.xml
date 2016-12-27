@@ -14,4 +14,11 @@
     <color name="deal_disagree">#FE2600</color>
     <color name="deal_agree">#01F700</color>
     <color name="deal_text_color">#ffffff</color>
+    <color name="title_background_js">#6D6D6D</color>
+    <color name="cancel_location">#ff4e4e</color>
+    <color name="location_search_back">#636363</color>
+    <color name="location_title">#67666b</color>
+    <color name="location_fengexian">#e8e8e8</color>
+    <color name="location_snippet">#b2b2b2</color>
+
 </resources>

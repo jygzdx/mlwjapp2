@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mlx_login_back"
+    tools:context="com.mlxing.chatui.daoyou.ui.DealActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_disagree"
+        android:layerType="software"
+    >
+
+    </WebView>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="不同意"
+        android:padding="12dp"
+        android:textColor="@color/deal_text_color"
+        android:layout_marginLeft="80dp"
+        android:background="@color/deal_disagree"
+        android:id="@+id/id_disagree"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="同意"
+        android:padding="12dp"
+        android:textColor="@color/deal_text_color"
+        android:layout_marginRight="80dp"
+        android:background="@color/deal_agree"
+        android:id="@+id/id_agree"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

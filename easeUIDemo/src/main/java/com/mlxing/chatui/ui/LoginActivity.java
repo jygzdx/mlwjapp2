@@ -97,7 +97,7 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.em_activity_login);
-
+        Log.i(TAG, "onCreate: -->LoginActivity");
         //如果有unionid，直接进入主界面
         String unionid = (String) SPUtils.get(this, SPUtils.SP_UNIONID, "");
         if (!unionid.equals("")) {

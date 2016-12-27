@@ -48,7 +48,6 @@ public class EaseTitleBar extends RelativeLayout{
         titleLayout = (RelativeLayout) findViewById(R.id.root);
         leftText= (TextView) findViewById(R.id.left_text);
         rightDot= (TextView) findViewById(R.id.right_dot);
-
         parseStyle(context, attrs);
     }
     
@@ -108,6 +107,10 @@ public class EaseTitleBar extends RelativeLayout{
         titleLayout.setBackgroundColor(color);
     }
     
+    public void setTextBackgroundColor(int color){
+        titleView.setBackgroundColor(color);
+    }
+
     public RelativeLayout getLeftLayout(){
         return leftLayout;
     }

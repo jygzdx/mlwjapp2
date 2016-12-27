@@ -8,12 +8,12 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\hold.xml"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\voice_to_icon.xml",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\voice_to_icon.xml"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\voice_to_icon.xml",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\src\\main\\res\\anim\\voice_to_icon.xml"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\release\\anim\\push_top_in.xml",

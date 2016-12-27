@@ -28,8 +28,13 @@ import java.util.regex.Pattern;
  */
 public class StringUtil {
 
+    public static String getUrlByString(String url){
+        url = url.substring(url.indexOf("(")+1,url.indexOf(")"));
+        return url;
+    }
+
     /**
-     *
+     *截取url中的字段
      */
     public static String getValueByName(String url ,String name){
         String result= "";

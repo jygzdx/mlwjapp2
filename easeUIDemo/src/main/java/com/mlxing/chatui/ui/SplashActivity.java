@@ -5,6 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.RelativeLayout;
 
 import com.easemob.chat.EMChatManager;
@@ -19,6 +20,7 @@ import com.mlxing.chatui.daoyou.utils.UIHelper;
  *
  */
 public class SplashActivity extends BaseActivity {
+	private static final String TAG = "SplashActivity";
 	private RelativeLayout rootLayout;
 	private static final int sleepTime = 1000;
 
@@ -28,7 +30,7 @@ public class SplashActivity extends BaseActivity {
 		super.onCreate(arg0);
 
 		rootLayout = (RelativeLayout) findViewById(R.id.splash_root);
-
+		Log.i(TAG, "onCreate:-->SplashActivity");
 //		versionText.setText(getVersion());
 
 //		AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);

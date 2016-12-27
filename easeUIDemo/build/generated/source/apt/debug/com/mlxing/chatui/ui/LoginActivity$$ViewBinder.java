@@ -17,10 +17,10 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
     View view;
     view = finder.findRequiredView(source, 2131492947, "field 'titleBar'");
     target.titleBar = finder.castView(view, 2131492947, "field 'titleBar'");
-    view = finder.findRequiredView(source, 2131493138, "field 'editUsername'");
-    target.editUsername = finder.castView(view, 2131493138, "field 'editUsername'");
-    view = finder.findRequiredView(source, 2131493141, "field 'editPswd1'");
-    target.editPswd1 = finder.castView(view, 2131493141, "field 'editPswd1'");
+    view = finder.findRequiredView(source, 2131493142, "field 'editUsername'");
+    target.editUsername = finder.castView(view, 2131493142, "field 'editUsername'");
+    view = finder.findRequiredView(source, 2131493145, "field 'editPswd1'");
+    target.editPswd1 = finder.castView(view, 2131493145, "field 'editPswd1'");
     view = finder.findRequiredView(source, 2131492964, "method 'onClick'");
     unbinder.view2131492964 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -29,24 +29,24 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
         target.onClick(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131493143, "method 'onClick'");
-    unbinder.view2131493143 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
-    view = finder.findRequiredView(source, 2131493144, "method 'onClick'");
-    unbinder.view2131493144 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onClick(p0);
-      }
-    });
     view = finder.findRequiredView(source, 2131493147, "method 'onClick'");
     unbinder.view2131493147 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493148, "method 'onClick'");
+    unbinder.view2131493148 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131493151, "method 'onClick'");
+    unbinder.view2131493151 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,11 +65,11 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
 
     View view2131492964;
 
-    View view2131493143;
-
-    View view2131493144;
-
     View view2131493147;
+
+    View view2131493148;
+
+    View view2131493151;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -87,9 +87,9 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
       target.editUsername = null;
       target.editPswd1 = null;
       view2131492964.setOnClickListener(null);
-      view2131493143.setOnClickListener(null);
-      view2131493144.setOnClickListener(null);
       view2131493147.setOnClickListener(null);
+      view2131493148.setOnClickListener(null);
+      view2131493151.setOnClickListener(null);
     }
   }
 }

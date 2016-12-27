@@ -286,6 +286,10 @@
     <init>();
 }
 
+-keep class com.mlxing.chatui.daoyou.ui.NearbyActivity {
+    <init>();
+}
+
 -keep class cn.jpush.android.ui.PopWinActivity {
     <init>();
 }
