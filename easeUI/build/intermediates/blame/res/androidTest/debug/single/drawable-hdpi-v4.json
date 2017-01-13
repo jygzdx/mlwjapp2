@@ -380,24 +380,24 @@
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chatting_setmode_keyboard_btn_pressed.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_record_animate_01.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_record_animate_01.png"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_video_play_btn_small_nor.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_video_play_btn_small_nor.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_record_animate_01.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_record_animate_01.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_dx_checkbox_off.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_dx_checkbox_off.png"
     },
     {
-        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ee_12.png",
-        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ee_12.png"
-    },
-    {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ee_15.png",
         "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ee_15.png"
+    },
+    {
+        "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ee_12.png",
+        "source": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ee_12.png"
     },
     {
         "merged": "G:\\AndroidStudioProject\\mlwjapp2\\easeUI\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ee_18.png",

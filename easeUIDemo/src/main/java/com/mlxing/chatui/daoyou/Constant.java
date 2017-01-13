@@ -15,7 +15,7 @@ public class Constant {
 
 
     //首页API 玩家 玩群 首页
-    public static String URL_WANJIA = "http://static.mlxing.com/index.html#/players_list";
+    public static String URL_WANJIA = "https://static.mlxing.com/index.html#/players_list";
     public static String URL_WNQUN = "http://static.mlxing.com/index.html#/player_crowd";
 //    public static String URL_SHOUYE = "http://static.mlxing.com/index.html#/home";
 

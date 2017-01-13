@@ -6,10 +6,12 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import easeui.widget.emojicon.EaseEmojiconMenuBase.EaseEmojiconMenuListener;
+
 import com.easemob.easeui.R;
+import com.mlxing.chatui.ui.MainActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +25,7 @@ import easeui.widget.EaseChatExtendMenu.EaseChatExtendMenuItemClickListener;
 import easeui.widget.EaseChatPrimaryMenuBase.EaseChatPrimaryMenuListener;
 import easeui.widget.emojicon.EaseEmojiconMenu;
 import easeui.widget.emojicon.EaseEmojiconMenuBase;
+import easeui.widget.emojicon.EaseEmojiconMenuBase.EaseEmojiconMenuListener;
 
 
 /**
@@ -85,6 +88,7 @@ public class EaseChatInputMenu extends LinearLayout {
         if(chatPrimaryMenu == null){
             chatPrimaryMenu = (EaseChatPrimaryMenu) layoutInflater.inflate(R.layout.ease_layout_chat_primary_menu, null);
         }
+
         primaryMenuContainer.addView(chatPrimaryMenu);
 
         // 表情栏，没有自定义的用默认的
@@ -288,6 +292,15 @@ public class EaseChatInputMenu extends LinearLayout {
             }
 
         }
+    }
+
+    /**
+     * edittext获得焦点，显示软键盘
+     */
+    public void showKeyboard(){
+        chatPrimaryMenu.setFocusable(true);
+        InputMethodManager imm = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     /**

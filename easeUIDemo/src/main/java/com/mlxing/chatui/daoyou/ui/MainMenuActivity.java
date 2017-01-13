@@ -25,6 +25,8 @@ import easeui.widget.EaseTitleBar;
 
 public class MainMenuActivity extends Activity {
 
+    private static final String TAG = "MainMenuActivity";
+
     private RelativeLayout rl_set_clear;
     private RelativeLayout rl_set_help;
     private RelativeLayout rl_set_about;
@@ -147,6 +149,61 @@ public class MainMenuActivity extends Activity {
 
     }
 
+//    /**
+//     * 清除WebView缓存
+//     */
+//    public void clearWebViewCache(){
+//
+//        //清理Webview缓存数据库
+//        try {
+//            deleteDatabase("webview.db");
+//            deleteDatabase("webviewCache.db");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        //WebView 缓存文件
+//        File appCacheDir = new File(getFilesDir().getAbsolutePath()+"/webcache");
+//        Log.e(TAG, "appCacheDir path="+appCacheDir.getAbsolutePath());
+//
+//        File webviewCacheDir = new File(getCacheDir().getAbsolutePath()+"/webviewCache");
+//        Log.e(TAG, "webviewCacheDir path="+webviewCacheDir.getAbsolutePath());
+//
+//        //删除webview 缓存目录
+//        if(webviewCacheDir.exists()){
+//            deleteFile(webviewCacheDir);
+//        }
+//        //删除webview 缓存 缓存目录
+//        if(appCacheDir.exists()){
+//            deleteFile(appCacheDir);
+//        }
+//    }
+//
+//    /**
+//     * 递归删除 文件/文件夹
+//     *
+//     * @param file
+//     */
+//    public void deleteFile(File file) {
+//
+//        Log.i(TAG, "delete file path=" + file.getAbsolutePath());
+//
+//        if (file.exists()) {
+//            if (file.isFile()) {
+//                file.delete();
+//            } else if (file.isDirectory()) {
+//                File files[] = file.listFiles();
+//                for (int i = 0; i < files.length; i++) {
+//                    deleteFile(files[i]);
+//                }
+//            }
+//            file.delete();
+//        } else {
+//            Log.e(TAG, "delete file no exists " + file.getAbsolutePath());
+//        }
+//    }
+//
+
     public void click(View v) {
         switch (v.getId()) {
 //            case R.id.rl_set_feedback://反馈
@@ -155,6 +212,7 @@ public class MainMenuActivity extends Activity {
 //                break;
             case R.id.rl_set_clear://清理
                 String str = "清除成功";
+//                clearWebViewCache();
                 CacheClearHelper.clearAllCache(getApplicationContext());
                 tv_cache_value.setText(CacheClearHelper.getTotalCacheSize(getApplicationContext()));
                 Toast.makeText(MainMenuActivity.this, str, Toast.LENGTH_SHORT).show();

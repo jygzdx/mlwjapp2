@@ -13,7 +13,6 @@ import android.provider.MediaStore;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.text.ClipboardManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -158,6 +157,12 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         registerExtendMenuItem();
         // init input menu
         inputMenu.init(null);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                inputMenu.showKeyboard();
+            }
+        }, 500);
         inputMenu.setChatInputMenuListener(new EaseChatInputMenu.ChatInputMenuListener() {
 
             @Override
@@ -199,6 +204,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams
                 .SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
+
 
     /**
      * 设置属性，监听等
@@ -272,9 +278,11 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
             forwardMessage(forward_msg_id);
         }
         //打开聊天界面是发送
-        if(content!=""&&content!=null){
+        if(content!=""&&content!=null) {
+            if (content != "" && content != null) {
 
-            sendTextMessage(content);
+                sendTextMessage(content);
+            }
         }
     }
 
@@ -750,6 +758,9 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
     protected void sendShareMessage(String title, String image, String content,String url) {
         EMMessage message = EaseCommonUtils.creatShareMessage(toChatUsername, title, image,
                 content,url);
+//    protected void sendShareMessage(String title, String image, String content, String url) {
+//        EMMessage message = EaseCommonUtils.creatShareMessage(toChatUsername, title, image,
+//                content, url);
         sendMessage(message);
     }
 
@@ -884,12 +895,12 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         }
         File file = new File(filePath);
         if (file == null || !file.exists()) {
-            Toast.makeText(getActivity(), R.string.File_does_not_exist, 0).show();
+            Toast.makeText(getActivity(), R.string.File_does_not_exist, Toast.LENGTH_SHORT).show();
             return;
         }
         //大于10M不让发送
         if (file.length() > 10 * 1024 * 1024) {
-            Toast.makeText(getActivity(), R.string.The_file_is_not_greater_than_10_m, 0).show();
+            Toast.makeText(getActivity(), R.string.The_file_is_not_greater_than_10_m, Toast.LENGTH_SHORT).show();
             return;
         }
         sendFileMessage(filePath);
@@ -900,7 +911,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
      */
     protected void selectPicFromCamera() {
         if (!EaseCommonUtils.isExitsSdcard()) {
-            Toast.makeText(getActivity(), R.string.sd_card_does_not_exist, 0).show();
+            Toast.makeText(getActivity(), R.string.sd_card_does_not_exist, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -970,7 +981,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
         if (chatType == EaseConstant.CHATTYPE_GROUP) {
             EMGroup group = EMGroupManager.getInstance().getGroup(toChatUsername);
             if (group == null) {
-                Toast.makeText(getActivity(), R.string.gorup_not_found, 0).show();
+                Toast.makeText(getActivity(), R.string.gorup_not_found, Toast.LENGTH_SHORT).show();
                 return;
             }
             if (chatFragmentListener != null) {
@@ -1013,10 +1024,17 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
                                     .MESSAGE_ATTR_EXPRESSION_ID, null));
                 }
                 if (forward_msg.getBooleanAttribute(EaseConstant.MESSAGE_ATTR_IS_SHARE, false)) {
-                    sendShareMessage(forward_msg.getStringAttribute(EaseConstant.SHARE_TITLE,"title")
-                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_IMAGE,"image")
-                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_CONTENT,"content")
-                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_URL,"url"));
+//<<<<<<< Updated upstream
+//                    sendShareMessage(forward_msg.getStringAttribute(EaseConstant.SHARE_TITLE,"title")
+//                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_IMAGE,"image")
+//                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_CONTENT,"content")
+//                    ,forward_msg.getStringAttribute(EaseConstant.SHARE_URL,"url"));
+//=======
+                    sendShareMessage(forward_msg.getStringAttribute(EaseConstant.SHARE_TITLE,
+                            "title")
+                            , forward_msg.getStringAttribute(EaseConstant.SHARE_IMAGE, "image")
+                            , forward_msg.getStringAttribute(EaseConstant.SHARE_CONTENT, "content")
+                            , forward_msg.getStringAttribute(EaseConstant.SHARE_URL, "url"));
                 } else {
                     // 获取消息内容，发送消息
                     String content = ((TextMessageBody) forward_msg.getBody()).getMessage();
@@ -1065,7 +1083,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
 
                 public void run() {
                     if (toChatUsername.equals(groupId)) {
-                        Toast.makeText(getActivity(), R.string.you_are_group, 1).show();
+                        Toast.makeText(getActivity(), R.string.you_are_group, Toast.LENGTH_LONG).show();
                         getActivity().finish();
                     }
                 }
@@ -1079,7 +1097,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMEventListene
             getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     if (toChatUsername.equals(groupId)) {
-                        Toast.makeText(getActivity(), R.string.the_current_group, 1).show();
+                        Toast.makeText(getActivity(), R.string.the_current_group, Toast.LENGTH_LONG).show();
                         getActivity().finish();
                     }
                 }

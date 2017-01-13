@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mlxing.chatui.daoyou.ui.NearbyActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:background="@color/location_search_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    >
+        <EditText
+            android:id="@+id/et_search_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:lines="1"
+            android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+            android:hint="搜索"/>
+        <Button
+            android:id="@+id/btn_cancel_location"
+            android:background="@null"
+            android:text="取消"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="@color/cancel_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ll_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"/>
+</RelativeLayout>

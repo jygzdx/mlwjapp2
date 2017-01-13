@@ -75,7 +75,15 @@
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide">
+<!--<<<<<<< Updated upstream-->
 
+<!--=======-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+<!--&gt;>>>>>> Stashed changes-->
         </activity>
         <activity
             android:name=".daoyou.DaoYouMainActivity"
@@ -476,6 +484,7 @@
         </activity>
         <activity android:name=".daoyou.ui.DealActivity">
         </activity>
+<!--<<<<<<< Updated upstream-->
         <activity android:name=".daoyou.ui.NearbyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -483,6 +492,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<!--=======-->
+        <!--<activity android:name=".daoyou.ui.NearbyActivity">-->
+
+        <!--</activity>-->
+<!--&gt;>>>>>> Stashed changes-->
     </application>
 
 </manifest>
